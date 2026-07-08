@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E4: Calidad y Operación — QhawAI</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          </svg>
+        </div>
+        <span class="brand-name">QhawAI</span>
+      </div>
+      <div class="brand-sub">Línea: <strong>Software</strong><br>Gary F. Yunganina · UPeU 2026-I</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-top-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        Portada General
+      </a>
+      <div class="acc-group">
+        <button class="acc-header open" data-acc="software">
+          <span class="acc-dot software"></span>
+          Software
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body open" id="acc-software">
+          <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
+          <a href="entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
+          <a href="arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
+          <a href="base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
+          <a href="manual_usuario.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="infra">
+          <span class="acc-dot infra"></span>
+          Infraestructura
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-infra">
+            <a href="../infraestructura/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="gestion">
+          <span class="acc-dot gestion"></span>
+          Gestión
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-gestion">
+            <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-footer">Semestre 2026-I · CE021–CE024<br>Ingeniería de Sistemas</div>
+  </aside>
+  <div class="sidebar-overlay"></div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <div class="breadcrumb">
+        <span>QhawAI</span><span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">E4 · Calidad y Operación</span>
+      </div>
+      <button class="hamburger" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="page-header">
+        <div class="page-label">Entregable 4 · CE024 — Calidad y Operación</div>
+        <h1 class="page-title">Calidad, Operación y Evolución del Sistema</h1>
+        <p class="page-desc">Estrategia de pruebas, 12 casos de prueba ejecutados, pipeline CI/CD, 6 incidencias técnicas resueltas, auditoría técnica interna y plan de mejora en 3 ciclos.</p>
+      </div>
+
+      <div class="callout callout-success">
+        <span class="callout-icon">✅</span>
+        <div class="callout-body">
+          <strong>Estado general:</strong> FUNCIONAL CON DEUDA TÉCNICA CONTROLADA.
+          13/13 casos de prueba aprobados · 6 incidencias resueltas · Desplegado en producción.
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row cols-4" style="margin-bottom:32px">
+        <div class="stat-card"><div class="stat-num">13/13</div><div class="stat-label">Pruebas aprobadas</div></div>
+        <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">Incidencias resueltas</div></div>
+        <div class="stat-card"><div class="stat-num">7/10</div><div class="stat-label">Seguridad (auditoría)</div></div>
+        <div class="stat-card"><div class="stat-num">9/10</div><div class="stat-label">Confiabilidad</div></div>
+      </div>
+
+      <!-- Pruebas -->
+      <div class="section">
+        <h2 class="section-title">1. Pruebas — Casos de Prueba</h2>
+
+        <div class="callout callout-info">
+          <span class="callout-icon">ℹ️</span>
+          <div class="callout-body">Estrategia de <strong>pruebas manuales sistematizadas</strong> sobre el entorno de producción real (cPanel). Cada flujo crítico tiene entradas, salida esperada y resultado obtenido.</div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>ID</th><th>Descripción</th><th>Flujo/RN</th><th>Estado</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CP-01</td>
+                <td class="td-label">Reconocimiento puntual</td>
+                <td>RF-01, RF-02</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-02</td>
+                <td class="td-label">Reconocimiento con tardanza (15 min)</td>
+                <td>RF-01, RF-02</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-03</td>
+                <td class="td-label">Intento de registro duplicado ignorado</td>
+                <td>RN-01</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-04</td>
+                <td class="td-label">Registro fuera del horario de corte</td>
+                <td>RN-02</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-05</td>
+                <td class="td-label">Persona desconocida no registrada</td>
+                <td>RF-01</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-06</td>
+                <td class="td-label">Sync offline — registro sin internet</td>
+                <td>RF-04, HU-05</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-07</td>
+                <td class="td-label">Sync offline no sobreescribe registro online</td>
+                <td>RN-03, DA-05</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-08</td>
+                <td class="td-label">Reporte por día incluye docentes ausentes</td>
+                <td>RF-07, RN-07</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-09</td>
+                <td class="td-label">Exportación a Excel con colores</td>
+                <td>RF-07</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-10</td>
+                <td class="td-label">Notificación push a padre (&lt;30 seg)</td>
+                <td>RF-05, HU-02</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-11</td>
+                <td class="td-label">Cambio de cámara frontal/trasera</td>
+                <td>RF-10, HU-01</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>CP-12</td>
+                <td class="td-label">Foto panorámica guardada como evidencia</td>
+                <td>RF-12</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>PLV-05</td>
+                <td class="td-label">minutos_tarde &gt;127 (SMALLINT overflow fix)</td>
+                <td>INC-004</td>
+                <td><span class="badge badge-success">APROBADO</span></td>
+              </tr>
+              <tr>
+                <td>PLV-01</td>
+                <td class="td-label">Confianza exactamente en umbral (55.0%)</td>
+                <td>RN-05</td>
+                <td><span class="badge badge-muted">PENDIENTE</span></td>
+              </tr>
+              <tr>
+                <td>PLV-02</td>
+                <td class="td-label">Confianza justo bajo umbral (54.9%)</td>
+                <td>RN-05</td>
+                <td><span class="badge badge-muted">PENDIENTE</span></td>
+              </tr>
+              <tr>
+                <td>PLV-03</td>
+                <td class="td-label">Tardanza de exactamente 0 minutos</td>
+                <td>RF-02</td>
+                <td><span class="badge badge-muted">PENDIENTE</span></td>
+              </tr>
+              <tr>
+                <td>PLV-04</td>
+                <td class="td-label">Tardanza de 1 minuto</td>
+                <td>RF-02</td>
+                <td><span class="badge badge-muted">PENDIENTE</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- Evidencias Casos de Prueba -->
+      <div class="section">
+        <h2 class="section-title">1.2 Evidencias Fotográficas — Casos de Prueba</h2>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp01.png" alt="CP-01 — Reconocimiento puntual: badge Puntual visible, panel de sesión actualizado" loading="lazy">
+          <div class="img-caption">CP-01 — Reconocimiento puntual: badge Puntual visible, panel de sesión actualizado</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp02.png" alt="CP-02 — Reconocimiento con tardanza: badge Tardanza y minutos de retraso" loading="lazy">
+          <div class="img-caption">CP-02 — Reconocimiento con tardanza: badge Tardanza y minutos de retraso</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp03.png" alt="CP-03 — Intento duplicado: segundo reconocimiento ignorado sin nuevo registro" loading="lazy">
+          <div class="img-caption">CP-03 — Intento duplicado: segundo reconocimiento ignorado sin nuevo registro</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp04.png" alt="CP-04 — Fuera de horario de corte: overlay naranja, sin registro en BD" loading="lazy">
+          <div class="img-caption">CP-04 — Fuera de horario de corte: overlay naranja, sin registro en BD</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp05.png" alt="CP-05 — Persona desconocida: rectángulo rojo, sin nombre ni registro" loading="lazy">
+          <div class="img-caption">CP-05 — Persona desconocida: rectángulo rojo, sin nombre ni registro</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp06.png" alt="CP-06 — Sync offline: app móvil con registros pendientes de sincronización" loading="lazy">
+          <div class="img-caption">CP-06 — Sync offline: app móvil con registros pendientes de sincronización</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp07.png" alt="CP-07 — Offline no sobreescribe: MySQL conserva el registro original con foto facial" loading="lazy">
+          <div class="img-caption">CP-07 — Offline no sobreescribe: MySQL conserva el registro original con foto facial</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp08.png" alt="CP-08 — Reporte incluye docentes: columna de faltas con docentes ausentres" loading="lazy">
+          <div class="img-caption">CP-08 — Reporte incluye docentes: columna de faltas con docentes ausentres</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp09.png" alt="CP-09 — Excel con colores: filas rojas para Falta, blancas para Asistencia" loading="lazy">
+          <div class="img-caption">CP-09 — Excel con colores: filas rojas para Falta, blancas para Asistencia</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp10.png" alt="CP-10 — Notificación push al padre: celular con notificación en menos de 30 segundos" loading="lazy">
+          <div class="img-caption">CP-10 — Notificación push al padre: celular con notificación en menos de 30 segundos</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cp11.png" alt="CP-11 — Cambio de cámara: botón de flip visible, cambio frontal/trasera operativo" loading="lazy">
+          <div class="img-caption">CP-11 — Cambio de cámara: botón de flip visible, cambio frontal/trasera operativo</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cp12.png" alt="CP-12 — Foto panorámica: columna full_frame_path con imagen en historial" loading="lazy">
+          <div class="img-caption">CP-12 — Foto panorámica: columna full_frame_path con imagen en historial</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-plv01.png" alt="PLV-01 — Umbral exacto 55.0%: confianza en límite acepta el registro" loading="lazy">
+          <div class="img-caption">PLV-01 — Umbral exacto 55.0%: confianza en límite acepta el registro</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-plv02.png" alt="PLV-02 — Bajo umbral 54.9%: confianza insuficiente, registro ignorado" loading="lazy">
+          <div class="img-caption">PLV-02 — Bajo umbral 54.9%: confianza insuficiente, registro ignorado</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-plv03.png" alt="PLV-03 — Segundo intento bloqueado: RN-01 respetada" loading="lazy">
+          <div class="img-caption">PLV-03 — Segundo intento bloqueado: RN-01 respetada</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-plv04.png" alt="PLV-04 — Fuera de hora: overlay naranja, INC-003 corregida" loading="lazy">
+          <div class="img-caption">PLV-04 — Fuera de hora: overlay naranja, INC-003 corregida</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-plv05.png" alt="PLV-05 — minutos_tarde > 127: SMALLINT overflow corregido (INC-004)" loading="lazy">
+          <div class="img-caption">PLV-05 — minutos_tarde > 127: SMALLINT overflow corregido (INC-004)</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-plv-extra.png" alt="Evidencia adicional de verificación en entorno de producción" loading="lazy">
+          <div class="img-caption">Evidencia adicional de verificación en entorno de producción</div>
+        </div>
+        </div>
+      </div>
+      <!-- CI/CD -->
+      <div class="section">
+        <h2 class="section-title">2. Integración y Despliegue Continuo</h2>
+
+        <div class="card-grid cols-2" style="margin-bottom:20px">
+          <div class="card">
+            <div class="card-title">🔄 GitHub Actions</div>
+            <div class="card-body">Pipeline configurado en <code>.github/workflows/ci.yml</code>. Se activa con cada push a <code>main</code> o pull request.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🚀 Jobs</div>
+            <div class="card-body">
+              <strong>laravel-tests:</strong> PHP 8.3, Composer install, key:generate, php artisan test<br>
+              <strong>python-tests:</strong> Python 3.11, pip install, pytest tests/ -v
+            </div>
+          </div>
+        </div>
+
+        <div class="code-wrap">
+          <div class="code-header"><span class="code-lang">YAML — .github/workflows/ci.yml</span><button class="copy-btn">Copiar</button></div>
+          <pre>name: QhawAI CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  laravel-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: pdo, pdo_mysql, mbstring
+      - name: Install dependencies
+        run: composer install --no-dev
+      - name: Copy .env
+        run: cp .env.example .env
+      - name: Generate key
+        run: php artisan key:generate
+      - name: Run tests
+        run: php artisan test
+
+  python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: pytest tests/ -v</pre>
+        </div>
+
+
+        <h3 class="section-subtitle" style="margin-top:20px">Evidencias del Pipeline</h3>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cicd-01-workflows.png" alt="GitHub Actions — panel de workflows del repositorio" loading="lazy">
+          <div class="img-caption">GitHub Actions — panel de workflows del repositorio</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cicd-02-run-ok.png" alt="Run exitoso — todos los checks en verde" loading="lazy">
+          <div class="img-caption">Run exitoso — todos los checks en verde</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cicd-03-run-detail.png" alt="Detalle de un run — cada step completado (checkout, setup PHP, install, test)" loading="lazy">
+          <div class="img-caption">Detalle de un run — cada step completado (checkout, setup PHP, install, test)</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cicd-04-yml.png" alt="Archivo .github/workflows/ci.yml en el repositorio de GitHub" loading="lazy">
+          <div class="img-caption">Archivo .github/workflows/ci.yml en el repositorio de GitHub</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e4-cicd-05-commits.png" alt="Historial de commits en GitHub — últimos cambios del proyecto" loading="lazy">
+          <div class="img-caption">Historial de commits en GitHub — últimos cambios del proyecto</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e4-cicd-06-log.png" alt="storage/logs/laravel.log — sin errores críticos en producción" loading="lazy">
+          <div class="img-caption">storage/logs/laravel.log — sin errores críticos en producción</div>
+        </div>
+        </div>
+        <h3 class="section-subtitle">Proceso de despliegue manual (cPanel)</h3>
+        <ol class="flow-list">
+          <li class="flow-item"><span class="flow-num">1</span><span class="flow-text"><strong>Preparación local:</strong> <code>git add</code> → <code>git commit -m "descripción"</code> → <code>git push origin main</code></span></li>
+          <li class="flow-item"><span class="flow-num">2</span><span class="flow-text"><strong>Actualización servidor (SSH):</strong> <code>git pull origin main</code> → <code>composer install</code> → <code>php artisan config:cache</code></span></li>
+          <li class="flow-item"><span class="flow-num">3</span><span class="flow-text"><strong>Migraciones pendientes:</strong> phpMyAdmin → SQL → ejecutar <code>ALTER TABLE</code> manualmente</span></li>
+          <li class="flow-item"><span class="flow-num">4</span><span class="flow-text"><strong>Verificación post-deploy:</strong> abrir login → tomar asistencia de prueba → revisar <code>storage/logs/laravel.log</code></span></li>
+        </ol>
+      </div>
+
+      <!-- Incidencias -->
+      <div class="section">
+        <h2 class="section-title">3. Gestión de Incidencias</h2>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-001</span>
+            <span class="badge badge-warning">Severidad: Media</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">Botón de cambio de cámara no aparece en dispositivos móviles</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span><code>enumerateDevices()</code> se ejecutaba antes de que el usuario concediera permiso de cámara. En móviles, sin permiso previo, la API retorna 0 dispositivos.</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span><code>resources/views/attendance/index.blade.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Mover la llamada a <code>_checkMultipleCameras()</code> para que se ejecute <em>después</em> de que <code>getUserMedia()</code> resuelva exitosamente.
+          </div>
+        </div>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-002</span>
+            <span class="badge badge-danger">Severidad: Alta</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">Tardanza siempre se calculaba como 0 en sync offline</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span><code>syncOffline()</code> no calculaba tardanza; asignaba hardcodeado <code>false/0</code>.</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span><code>app/Http/Controllers/Api/MobileDataController.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Implementar <code>calcularTardanza($hora, $turno)</code> que consulta <code>Configuracion::current()</code> — la misma fuente que usa la API Python.
+          </div>
+        </div>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-003</span>
+            <span class="badge badge-danger">Severidad: Alta</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">minutos_tarde devolvía valores negativos</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span>El orden de parámetros en <code>diffInMinutes()</code> era incorrecto: <code>$llegada->diffInMinutes($limite)</code> da negativo cuando llegada &gt; límite.</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span><code>app/Http/Controllers/Api/MobileDataController.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Invertir el orden: <code>$limite->diffInMinutes($llegada)</code> retorna positivo cuando llegada es posterior al límite.
+          </div>
+        </div>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-004</span>
+            <span class="badge badge-danger">Severidad: Alta</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">Error 500 al sincronizar personas muy tarde (&gt;127 minutos)</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span>La columna <code>minutos_tarde</code> era <code>TINYINT</code> (máximo 127). Valores de 128+ causaban desbordamiento en MySQL.</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span>Migración <code>2026_06_28_000002_change_minutos_tarde.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Migración de <code>TINYINT</code> a <code>SMALLINT UNSIGNED</code> (máximo 65,535). <code>ALTER TABLE asistencia MODIFY COLUMN minutos_tarde SMALLINT UNSIGNED NOT NULL DEFAULT 0;</code>
+          </div>
+        </div>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-005</span>
+            <span class="badge badge-warning">Severidad: Media</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">Docentes ausentes no aparecían en reporte "por día"</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span>El scope global <code>$personaScope</code> siempre calculaba <code>Persona::estudiantes()</code> cuando <code>$subtipo</code> era null, excluyendo docentes.</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span><code>app/Http/Controllers/AttendanceController.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Crear <code>$scopeDia</code> local que usa <code>Persona::query()</code> (todos los tipos) cuando no hay filtro de subtipo.
+          </div>
+        </div>
+
+        <div class="incident-card">
+          <div class="incident-header">
+            <span class="incident-id">INC-006</span>
+            <span class="badge badge-danger">Severidad: Alta</span>
+            <span class="badge badge-success">RESUELTO</span>
+          </div>
+          <div class="incident-title">Registros offline sobreescribían asistencias con foto facial</div>
+          <div class="incident-row">
+            <div class="incident-field"><label>Causa raíz</label><span><code>updateOrCreate</code> en <code>syncOffline()</code> actualizaba el registro existente aunque ya tuviera datos de mayor calidad (foto, confianza).</span></div>
+            <div class="incident-field"><label>Archivo afectado</label><span><code>app/Http/Controllers/Api/MobileDataController.php</code></span></div>
+          </div>
+          <div class="incident-solution">
+            <strong>Solución:</strong> Cambiar <code>updateOrCreate</code> por <code>firstOrCreate</code>: si ya existe un registro para ese DNI y esa fecha, se conserva el original sin modificar.
+          </div>
+        </div>
+      </div>
+
+      <!-- Auditoría -->
+      <div class="section">
+        <h2 class="section-title">4. Auditoría Técnica Interna</h2>
+
+        <div class="audit-grid">
+          <div class="audit-item">
+            <div class="audit-label">Seguridad</div>
+            <div class="audit-bar-wrap"><div class="audit-bar yellow" style="width:70%"></div></div>
+            <div class="audit-score">7/10 — Riesgo residual en biometría (sin cifrado en disco)</div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-label">Confiabilidad</div>
+            <div class="audit-bar-wrap"><div class="audit-bar green" style="width:90%"></div></div>
+            <div class="audit-score">9/10 — Anti-duplicados, offline, manejo de errores</div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-label">Mantenibilidad</div>
+            <div class="audit-bar-wrap"><div class="audit-bar yellow" style="width:60%"></div></div>
+            <div class="audit-score">6/10 — Buena arquitectura, sin pruebas automáticas</div>
+          </div>
+          <div class="audit-item">
+            <div class="audit-label">Rendimiento</div>
+            <div class="audit-bar-wrap"><div class="audit-bar blue" style="width:80%"></div></div>
+            <div class="audit-score">8/10 — Background threads, índices, Singleton IA</div>
+          </div>
+        </div>
+
+        <div class="table-wrap" style="margin-top:16px">
+          <table>
+            <thead><tr><th>Criterio</th><th>Estado</th><th>Observación</th></tr></thead>
+            <tbody>
+              <tr><td>Autenticación / Autorización</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Middleware en todas las rutas</td></tr>
+              <tr><td>SQL Injection</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Eloquent ORM + PDO prepared statements</td></tr>
+              <tr><td>Contraseñas</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>bcrypt factor 12</td></tr>
+              <tr><td>Datos biométricos</td><td><span class="badge badge-warning">PARCIAL</span></td><td>Sin cifrado en disco para embeddings .pkl</td></tr>
+              <tr><td>URLs internas expuestas</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Python solo accesible por /img-proxy</td></tr>
+              <tr><td>Variables de entorno</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>.env excluido de git</td></tr>
+              <tr><td>CSRF</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Middleware VerifyCsrfToken de Laravel</td></tr>
+              <tr><td>Anti-duplicados</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Dos niveles: memoria Python + UNIQUE KEY BD</td></tr>
+              <tr><td>Modo offline</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>firstOrCreate preserva registro de mayor calidad</td></tr>
+              <tr><td>Separación de capas</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>MVC + Service Layer + microservicio</td></tr>
+              <tr><td>Control de versiones BD</td><td><span class="badge badge-success">CUMPLIDO</span></td><td>Migraciones de Laravel</td></tr>
+              <tr><td>Pruebas automatizadas</td><td><span class="badge badge-danger">AUSENTE</span></td><td>DT-01 en plan de mejora</td></tr>
+              <tr><td>Rate limiting en login</td><td><span class="badge badge-danger">AUSENTE</span></td><td>DT en plan de mejora (M-02)</td></tr>
+              <tr><td>Análisis estático código</td><td><span class="badge badge-danger">AUSENTE</span></td><td>DT-07 · PHPStan + Pylint propuestos</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Deuda técnica -->
+      <div class="section">
+        <h2 class="section-title">3.4 Control de Deuda Técnica</h2>
+
+        <h3 class="section-subtitle">Deuda Crítica</h3>
+        <div class="card-grid cols-3">
+          <div class="card" style="border-left:3px solid var(--danger)">
+            <div class="card-title" style="color:var(--danger)">DT-01</div>
+            <div class="card-body">Sin suite de pruebas automatizadas. Riesgo de regresiones no detectadas. <strong>8–12 horas</strong> de esfuerzo.</div>
+          </div>
+          <div class="card" style="border-left:3px solid var(--danger)">
+            <div class="card-title" style="color:var(--danger)">DT-02</div>
+            <div class="card-body">Sin pipeline CI/CD funcional. Despliegues manuales, lentos y propensos a error. <strong>4–6 horas</strong> de esfuerzo.</div>
+          </div>
+          <div class="card" style="border-left:3px solid var(--danger)">
+            <div class="card-title" style="color:var(--danger)">DT-03</div>
+            <div class="card-body">Migración de reportes "por día" pendiente en producción (INC-005). <strong>30 minutos</strong> para aplicar en cPanel.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Deuda Media</h3>
+        <div class="card-grid cols-2">
+          <div class="card" style="border-left:3px solid var(--warning)">
+            <div class="card-title">DT-04</div>
+            <div class="card-body">Rol "operator" sin implementar completamente. Operadores tienen más acceso del necesario.</div>
+          </div>
+          <div class="card" style="border-left:3px solid var(--warning)">
+            <div class="card-title">DT-05</div>
+            <div class="card-body">Sin paginación en historial de asistencias a largo plazo. Posible degradación con miles de registros.</div>
+          </div>
+          <div class="card" style="border-left:3px solid var(--warning)">
+            <div class="card-title">DT-06</div>
+            <div class="card-body">Logs del servidor Python sin rotación configurada. Los archivos crecen indefinidamente.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan de mejora -->
+      <div class="section">
+        <h2 class="section-title">4.4 Plan de Mejora y Evolución</h2>
+
+        <div class="card-grid cols-3">
+          <div class="card" style="border-top:3px solid var(--danger)">
+            <div class="card-title" style="margin-bottom:12px">Ciclo 1 — Corto plazo<br><small style="color:var(--text-muted);font-weight:400">1 mes</small></div>
+            <ul style="font-size:0.82rem;padding-left:16px;color:var(--text-secondary)">
+              <li>M-01: Aplicar corrección INC-005 en producción</li>
+              <li>M-02: Rate limiting en login (ThrottleRequests)</li>
+              <li>M-03: Pruebas PHPUnit para CP-01 al CP-05</li>
+            </ul>
+          </div>
+          <div class="card" style="border-top:3px solid var(--warning)">
+            <div class="card-title" style="margin-bottom:12px">Ciclo 2 — Mediano plazo<br><small style="color:var(--text-muted);font-weight:400">3 meses</small></div>
+            <ul style="font-size:0.82rem;padding-left:16px;color:var(--text-secondary)">
+              <li>M-04: Configurar pipeline GitHub Actions</li>
+              <li>M-05: Implementar rol operator correctamente</li>
+              <li>M-06: Paginación en historial de asistencias</li>
+              <li>M-07: Rotación de logs Python</li>
+              <li>M-08: Análisis estático (PHPStan + Pylint)</li>
+            </ul>
+          </div>
+          <div class="card" style="border-top:3px solid var(--success)">
+            <div class="card-title" style="margin-bottom:12px">Ciclo 3 — Largo plazo<br><small style="color:var(--text-muted);font-weight:400">6 meses</small></div>
+            <ul style="font-size:0.82rem;padding-left:16px;color:var(--text-secondary)">
+              <li>M-09: Dashboard con gráficos Chart.js</li>
+              <li>M-10: Exportación de reportes programada (email)</li>
+              <li>M-11: Reconocimiento multi-rostro en paralelo</li>
+              <li>M-12: Aplicación web progresiva (PWA)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Métricas -->
+      <div class="section">
+        <h2 class="section-title">3.3 Métricas del Sistema</h2>
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-title">Métricas estructurales</div>
+            <div class="card-body" style="font-size:0.85rem;line-height:2">
+              ~3,500 LOC PHP (Laravel)<br>
+              ~1,200 LOC Python<br>
+              ~800 LOC JavaScript<br>
+              9 tablas principales en BD<br>
+              12 endpoints API REST (móvil)<br>
+              8 endpoints FastAPI (Python)<br>
+              ~20 vistas Blade<br>
+              8 modelos Eloquent<br>
+              14 controladores Laravel
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Métricas de rendimiento</div>
+            <div class="card-body" style="font-size:0.85rem;line-height:2">
+              Detección YOLO-Face: ~50–100ms<br>
+              Reconocimiento ArcFace: ~200–400ms<br>
+              Tiempo total por frame: ~300–600ms<br>
+              Tiempo total con red: ~800–1,500ms<br><br>
+              <strong>Almacenamiento estimado (1000 personas/año):</strong><br>
+              Frames panorámicos (~45KB): ~4.4 GB<br>
+              Recortes de rostro (~15KB): ~1.5 GB<br>
+              MySQL (registros): ~100 MB<br>
+              <strong>Total: ~6 GB/año</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea de Gestión — Evaluación del Perfil de Egreso</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          </svg>
+        </div>
+        <span class="brand-name">UPeU</span>
+      </div>
+      <div class="brand-sub">Evaluación del Perfil de Egreso<br>Ingeniería de Sistemas · 2026-I</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-top-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        Portada General
+      </a>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="software">
+          <span class="acc-dot software"></span>
+          Software
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-software">
+          <a href="../software/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
+          <a href="../software/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
+          <a href="../software/arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
+          <a href="../software/base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
+          <a href="../software/manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="infra">
+          <span class="acc-dot infra"></span>
+          Infraestructura
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-infra">
+            <a href="../infraestructura/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header open" data-acc="gestion">
+          <span class="acc-dot gestion"></span>
+          Gestión
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body open" id="acc-gestion">
+            <a href="index.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
+            <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Diagnóstico</a>
+            <a href="entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>E2 · Modelado de Procesos</a>
+            <a href="entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>E3 · Plan de Proyecto</a>
+            <a href="entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Auditoría y Cierre</a>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-footer">
+      Semestre 2026-I · CE021–CE024<br>
+      Ingeniería de Sistemas
+    </div>
+  </aside>
+  <div class="sidebar-overlay"></div>
+
+  <!-- MAIN -->
+  <div class="main-content">
+    <div class="topbar">
+      <div class="breadcrumb">
+        <a href="../index.html" style="color:var(--text-muted);text-decoration:none">Perfil de Egreso</a>
+        <span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">Línea de Gestión</span>
+      </div>
+      <button class="hamburger" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <div class="hero" style="border-left:4px solid #B45309">
+        <div class="hero-eyebrow" style="color:#B45309">Evaluación del Perfil de Egreso · Línea de Gestión</div>
+        <h1 class="hero-title" style="font-size:2rem">Gestión de Tecnologías de Información</h1>
+        <p class="hero-desc">
+          Portafolio de la línea de Gestión — gobierno de TI, gestión de proyectos, calidad de procesos, auditoría y marcos de referencia ITIL/COBIT. Este espacio será completado con los entregables del estudiante asignado a esta línea.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Línea</span>
+            <span class="hero-meta-value"><span class="linea-badge gestion">Gestión</span></span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Universidad</span>
+            <span class="hero-meta-value">Universidad Peruana Unión (UPeU)</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Semestre</span>
+            <span class="hero-meta-value">2026-I</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Estado</span>
+            <span class="hero-meta-value"><span class="badge" style="background:#FEF9C3;color:#713F12;border:1px solid #FCD34D">⏳ En desarrollo</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder entregables -->
+      <div class="section" id="e1">
+        <h2 class="section-title">Entregables de la Línea</h2>
+        <div class="card-grid cols-2" style="gap:12px">
+          <div class="card" style="opacity:0.6;border-style:dashed">
+            <div class="nav-card-num" style="color:#B45309">Entregable 1 · CE021</div>
+            <div class="card-title">Diagnóstico y Requerimientos</div>
+            <div class="card-body">Análisis de situación actual, identificación de necesidades de gestión y requerimientos del proyecto.</div>
+            <div style="margin-top:10px"><span class="badge" style="background:#FFFBEB;color:#92400E;border:1px solid #FCD34D;font-size:0.68rem">Pendiente</span></div>
+          </div>
+          <div class="card" id="e2" style="opacity:0.6;border-style:dashed">
+            <div class="nav-card-num" style="color:#B45309">Entregable 2 · CE022</div>
+            <div class="card-title">Modelado de Procesos TI</div>
+            <div class="card-body">Mapeo de procesos BPMN, catálogo de servicios, indicadores KPI y tablero de control.</div>
+            <div style="margin-top:10px"><span class="badge" style="background:#FFFBEB;color:#92400E;border:1px solid #FCD34D;font-size:0.68rem">Pendiente</span></div>
+          </div>
+          <div class="card" id="e3" style="opacity:0.6;border-style:dashed">
+            <div class="nav-card-num" style="color:#B45309">Entregable 3 · CE023</div>
+            <div class="card-title">Plan de Proyecto Integrado</div>
+            <div class="card-body">Cronograma, gestión de riesgos, plan de comunicaciones y presupuesto del proyecto.</div>
+            <div style="margin-top:10px"><span class="badge" style="background:#FFFBEB;color:#92400E;border:1px solid #FCD34D;font-size:0.68rem">Pendiente</span></div>
+          </div>
+          <div class="card" id="e4" style="opacity:0.6;border-style:dashed">
+            <div class="nav-card-num" style="color:#B45309">Entregable 4 · CE024</div>
+            <div class="card-title">Auditoría y Cierre</div>
+            <div class="card-body">Auditoría de procesos, lecciones aprendidas, conformidad con ITIL/COBIT y cierre formal.</div>
+            <div style="margin-top:10px"><span class="badge" style="background:#FFFBEB;color:#92400E;border:1px solid #FCD34D;font-size:0.68rem">Pendiente</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Áreas temáticas -->
+      <div class="section">
+        <h2 class="section-title">Áreas de la Línea de Gestión</h2>
+        <div class="card-grid cols-3">
+          <div class="card">
+            <div class="card-icon" style="background:#FFFBEB;color:#B45309">📋</div>
+            <div class="card-title">Gestión de Proyectos</div>
+            <div class="card-body">Metodologías PMI/PMBOK, planificación, control de alcance, tiempo, costo y calidad.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FFFBEB;color:#B45309">🏛️</div>
+            <div class="card-title">Gobierno de TI</div>
+            <div class="card-body">Marcos ITIL v4, COBIT 2019, alineamiento estratégico TI-negocio y gestión de servicios.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FFFBEB;color:#B45309">🔍</div>
+            <div class="card-title">Auditoría y Calidad</div>
+            <div class="card-body">Auditoría de sistemas, ISO 9001, control interno, cumplimiento normativo y mejora continua.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-info">
+        <span class="callout-icon">ℹ️</span>
+        <div class="callout-body">
+          Esta página es el portafolio de la <strong>Línea de Gestión</strong>. Los entregables serán publicados aquí conforme avance el semestre 2026-I. Para ver el portafolio de Software (QhawAI) visita <a href="../index.html" style="color:var(--accent)">la portada principal</a>.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
