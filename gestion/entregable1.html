@@ -122,36 +122,68 @@
       <!-- 1.1 Contexto Organizacional -->
       <div class="section">
         <h2 class="section-title">1.1 Contexto Organizacional</h2>
+
+        <h3 class="section-subtitle">Descripción del sector y entorno competitivo</h3>
         <p>
-          El proyecto se desarrolla en el sector de educación superior, específicamente en la
-          <strong>Universidad Peruana Unión (UPeU) — Campus Juliaca</strong>.
-          Dentro de su cadena de valor académica, el control de asistencia es un proceso operativo fundamental
-          y obligatorio para garantizar la retención estudiantil, la calidad del servicio y la auditoría académica.
+          El sector educativo en el Perú enfrenta actualmente el desafío de la transformación digital.
+          Si bien las instituciones educativas han integrado tecnología en las aulas, los procesos operativos
+          y administrativos, como el control de asistencia, continúan rezagados y dependen de metodologías tradicionales.
+          En un entorno competitivo donde la seguridad de los estudiantes y la tranquilidad de los padres de familia
+          son factores determinantes para la retención y captación de matrícula, las instituciones que no modernizan
+          su infraestructura de control de accesos pierden ventaja competitiva.
         </p>
 
-        <h3 class="section-subtitle" style="margin-top:16px">Mapa de Stakeholders</h3>
+        <h3 class="section-subtitle" style="margin-top:16px">Estructura organizacional</h3>
+        <p>
+          La estructura de la institución es de carácter jerárquico-funcional. Está encabezada por la
+          <strong>Dirección General</strong>, de la cual se desprenden el <strong>Área Administrativa</strong>
+          (finanzas y TI), el <strong>Área Académica</strong> (coordinadores y docentes), y el
+          <strong>Área de Normas/Auxiliares</strong>, quienes son los encargados operativos de vigilar los ingresos,
+          tomar listas de asistencia y comunicarse con los padres de familia ante tardanzas o ausencias.
+        </p>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Cadena de valor</h3>
+        <div class="card-grid cols-2" style="gap:12px">
+          <div class="card" style="background:#EFF6FF;border-color:#93C5FD">
+            <div class="card-icon" style="background:#DBEAFE;color:#2563EB">⚡</div>
+            <div class="card-title">Procesos Primarios</div>
+            <div class="card-body">
+              Admisión y Matrícula → Planificación Académica → <strong>Ejecución y Control Académico</strong>
+              (aquí se enmarca el control de asistencia diaria) → Evaluación de Estudiantes.
+            </div>
+          </div>
+          <div class="card" style="background:#FFFBEB;border-color:#FCD34D">
+            <div class="card-icon" style="background:#FEF9C3;color:#B45309">🔧</div>
+            <div class="card-title">Procesos de Soporte</div>
+            <div class="card-body">
+              Gestión de Tecnologías de la Información (TI), Gestión de Recursos Humanos, e Infraestructura y Mantenimiento.
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Mapa de stakeholders (Partes interesadas)</h3>
         <div class="table-wrapper"><table class="req-table">
           <thead><tr><th>Stakeholder</th><th>Interés</th><th>Descripción</th></tr></thead>
           <tbody>
             <tr>
-              <td>Director / Administración</td>
+              <td>Padres de Familia</td>
               <td><span class="badge badge-ausente">Alto</span></td>
-              <td>Requiere auditoría precisa y acceso a reportes estadísticos confiables para métricas de retención y gestión académica.</td>
+              <td>Buscan conocer en tiempo real la ubicación y seguridad de sus hijos al ingresar a la institución.</td>
             </tr>
             <tr>
-              <td>Docentes (Plana completa)</td>
+              <td>Estudiantes / Docentes</td>
               <td><span class="badge badge-ausente">Alto</span></td>
-              <td>Usuarios directos que requieren una solución de <em>"Fricción Cero"</em> para automatizar la asistencia sin interrumpir el flujo de la sesión de clase.</td>
+              <td>Requieren un proceso de ingreso ágil que no genere cuellos de botella ni pérdida de tiempo.</td>
             </tr>
             <tr>
-              <td>Estudiantes</td>
+              <td>Auxiliares / Personal de Seguridad</td>
               <td><span class="badge badge-tardanza">Medio</span></td>
-              <td>Beneficiados con una <em>"Inclusión Pasiva"</em>, teniendo un registro transparente sin necesidad de portar carnets físicos ni realizar acciones manuales.</td>
+              <td>Necesitan herramientas operativas que faciliten su labor y eliminen el uso de papel.</td>
             </tr>
             <tr>
-              <td>Equipo de Desarrollo/TI</td>
+              <td>Dirección y Administración</td>
               <td><span class="badge badge-ausente">Alto</span></td>
-              <td>Responsables de diseñar la arquitectura (Flutter 3, Laravel 13.5, FastAPI) y mantener una operación sostenible con backups automáticos.</td>
+              <td>Demandan reportes precisos y automatizados en formatos estandarizados (PDF/Excel) para la toma de decisiones.</td>
             </tr>
           </tbody>
         </table></div>
@@ -160,34 +192,87 @@
       <!-- 1.2 Análisis Estratégico -->
       <div class="section">
         <h2 class="section-title">1.2 Análisis Estratégico</h2>
-        <p>
-          El proyecto se alinea directamente con los principios orientadores de la UPeU
-          (<em>"Sé Íntegro. Sé Misionero. Sé Innovador"</em>).
-          La iniciativa impulsa la innovación tecnológica y la transformación digital para optimizar
-          el tiempo efectivo de enseñanza, un objetivo estratégico clave de la institución.
-        </p>
 
-        <h3 class="section-subtitle" style="margin-top:16px">Análisis FODA del Proyecto</h3>
+        <h3 class="section-subtitle">Misión, visión y objetivos estratégicos</h3>
+        <div class="card-grid cols-3" style="gap:12px">
+          <div class="card" style="background:#EFF6FF;border-color:#93C5FD">
+            <div class="card-icon" style="background:#DBEAFE;color:#2563EB">🎯</div>
+            <div class="card-title">Misión</div>
+            <div class="card-body">Brindar un servicio educativo de alta calidad, garantizando un entorno seguro, innovador y formativo para los estudiantes.</div>
+          </div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">👁️</div>
+            <div class="card-title">Visión</div>
+            <div class="card-body">Ser la institución educativa líder en la región, reconocida por su excelencia académica y su vanguardia tecnológica en la gestión de servicios estudiantiles.</div>
+          </div>
+          <div class="card" style="background:#FFFBEB;border-color:#FCD34D">
+            <div class="card-icon" style="background:#FEF9C3;color:#B45309">📈</div>
+            <div class="card-title">Objetivos Estratégicos</div>
+            <div class="card-body">
+              <ol style="margin:0;padding-left:16px;font-size:0.82rem">
+                <li>Modernizar los procesos administrativos mediante TIC.</li>
+                <li>Incrementar la satisfacción y confianza de los padres sobre la seguridad.</li>
+                <li>Optimizar el tiempo efectivo de clases reduciendo la carga operativa docente.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Análisis FODA</h3>
         <div class="card-grid cols-2" style="gap:12px">
           <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
             <div class="card-icon" style="background:#DCFCE7;color:#16A34A">⚡</div>
             <div class="card-title">Fortalezas</div>
-            <div class="card-body">Uso de un stack tecnológico 100% Open Source (YOLOv8 y ArcFace R100), lo que reduce el costo de licencias a <strong>$0</strong>.</div>
+            <div class="card-body">Prestigio institucional, cuerpo docente capacitado y disposición de la dirección hacia la mejora continua.</div>
           </div>
           <div class="card" style="background:#EFF6FF;border-color:#93C5FD">
             <div class="card-icon" style="background:#DBEAFE;color:#2563EB">🌱</div>
             <div class="card-title">Oportunidades</div>
-            <div class="card-body">Modernización del ecosistema TI de la universidad eliminando la dependencia de hardware costoso y mejorando la gobernanza de datos con protección de menores (Ética ACM).</div>
+            <div class="card-body">Accesibilidad a tecnologías emergentes como la Inteligencia Artificial y la visión computacional de bajo costo para el sector educativo.</div>
           </div>
           <div class="card" style="background:#FFF7ED;border-color:#FDBA74">
             <div class="card-icon" style="background:#FFEDD5;color:#EA580C">⚠️</div>
             <div class="card-title">Debilidades</div>
-            <div class="card-body">Dependencia de acciones voluntarias y manuales para el registro genera fricción estructural. Carencia de servidor físico dedicado → uso de VPS en la nube para el backend.</div>
+            <div class="card-body">El registro de asistencia se realiza de manera manual mediante listas de papel o firmas, lo cual genera lentitud, pérdida de información y es altamente propenso a errores humanos.</div>
           </div>
           <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
             <div class="card-icon" style="background:#FEE2E2;color:#DC2626">🛡️</div>
             <div class="card-title">Amenazas</div>
-            <div class="card-body">Inestabilidad de internet en ciertas aulas (mitigado con modo offline y sincronización asíncrona). Baja iluminación en aulas (mitigado con modelo de IA avanzado que supera a sistemas biométricos básicos).</div>
+            <div class="card-body">Riesgos de seguridad por suplantaciones de identidad en los ingresos y el descontento de los padres ante la falta de comunicación inmediata sobre el paradero de sus hijos.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Análisis PESTEL</h3>
+        <div class="card-grid cols-2" style="gap:12px">
+          <div class="card">
+            <div class="card-icon" style="background:#EFF6FF;color:#2563EB">💻</div>
+            <div class="card-title">Tecnológico</div>
+            <div class="card-body">Crecimiento exponencial de modelos de IA (YOLO-Face, InsightFace) que permiten alta precisión a bajo costo computacional.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FEF2F2;color:#DC2626">👥</div>
+            <div class="card-title">Social</div>
+            <div class="card-body">Mayor demanda de los padres de familia por mantenerse informados en tiempo real debido a la inseguridad ciudadana.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FFFBEB;color:#B45309">⚖️</div>
+            <div class="card-title">Legal</div>
+            <div class="card-body">Cumplimiento estricto de la Ley de Protección de Datos Personales (manejo seguro de datos biométricos de menores).</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#F0FDF4;color:#16A34A">🌿</div>
+            <div class="card-title">Ecológico</div>
+            <div class="card-body">Necesidad de reducir la huella de carbono eliminando el uso intensivo de papel en los registros diarios.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Factores críticos de éxito</h3>
+        <div class="callout callout-info">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            Para el éxito del control operativo institucional se requiere: <strong>velocidad</strong> en el procesamiento
+            de entradas (&lt; 2 segundos por persona), <strong>precisión</strong> en la validación de identidad (&gt; 90%),
+            y <strong>comunicación bidireccional</strong> casi instantánea con los tutores legales.
           </div>
         </div>
       </div>
@@ -195,82 +280,138 @@
       <!-- 1.3 Diagnóstico Digital / TI -->
       <div class="section">
         <h2 class="section-title">1.3 Diagnóstico Digital / TI</h2>
-        <h3 class="section-subtitle">Inventario y brechas tecnológicas</h3>
+
+        <h3 class="section-subtitle">Inventario de sistemas de información existentes</h3>
         <p>
-          Actualmente, la institución presenta brechas operativas críticas en el registro de asistencia.
-          El método de <strong>"Lista Manual"</strong> (papel) y <strong>"Lista Web"</strong> presenta las siguientes deficiencias:
+          Actualmente, la institución cuenta con un nivel básico de digitalización. Utilizan ofimática tradicional
+          (Microsoft Excel/Word) para consolidar a fin de mes la información de asistencia recolectada en registros
+          físicos, y correos electrónicos estándar para comunicaciones no urgentes. <strong>No existe un ecosistema
+          de hardware ni microservicios de IA operando.</strong>
         </p>
 
-        <div class="card-grid cols-3" style="gap:12px;margin-top:12px">
-          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
-            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">⏱️</div>
-            <div class="card-title">Eficiencia de tiempo</div>
-            <div class="card-body">El proceso es lento, consumiendo entre <strong>5 y 10 minutos</strong> de la sesión de clase.</div>
-          </div>
-          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
-            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">🔁</div>
-            <div class="card-title">Fricción de uso</div>
-            <div class="card-body">Obliga al docente a detener su clase, generando interrupciones constantes.</div>
-          </div>
-          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
-            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">👤</div>
-            <div class="card-title">Suplantación</div>
-            <div class="card-body">El pase de lista verbal es altamente susceptible a fraudes.</div>
+        <h3 class="section-subtitle" style="margin-top:16px">Nivel de madurez digital</h3>
+        <div class="card" style="background:#FFF7ED;border-color:#FDBA74">
+          <div class="card-icon" style="background:#FFEDD5;color:#EA580C">📊</div>
+          <div class="card-title">Nivel: Inicial / Ad-hoc</div>
+          <div class="card-body">
+            El nivel de madurez organizativa frente a TI es <strong>"Inicial/Ad-hoc"</strong> en el rubro de control
+            de accesos. Las actividades son reactivas y altamente dependientes de la intervención manual del personal.
           </div>
         </div>
 
-        <h3 class="section-subtitle" style="margin-top:16px">Evaluación de alternativas tecnológicas</h3>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Alternativa</th><th>Problema identificado</th></tr></thead>
-          <tbody>
-            <tr><td>Códigos QR</td><td>Genera fricción por olvidos y es transferible entre personas.</td></tr>
-            <tr><td>DNI / Carnet</td><td>Requiere lector físico y es susceptible a préstamo o pérdida.</td></tr>
-            <tr><td>Huella Digital</td><td>Requiere hardware costoso y falla por factores ambientales como la humedad.</td></tr>
-            <tr><td><strong>Reconocimiento Facial (IA)</strong></td><td><strong>Única alternativa que garantiza operación de fricción cero sin hardware personal.</strong></td></tr>
-          </tbody>
-        </table></div>
+        <h3 class="section-subtitle" style="margin-top:16px">Brechas tecnológicas</h3>
+        <p>Existe una brecha crítica entre la necesidad de control de la institución y sus capacidades tecnológicas:</p>
+        <div class="card-grid cols-3" style="gap:12px;margin-top:8px">
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">📷</div>
+            <div class="card-title">Sensores biométricos</div>
+            <div class="card-body">Carencia de sensores de captura biométrica o visión artificial en los puntos de entrada.</div>
+          </div>
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">🗄️</div>
+            <div class="card-title">Base de datos en tiempo real</div>
+            <div class="card-body">Inexistencia de una base de datos relacional robusta e integrada en tiempo real.</div>
+          </div>
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">📲</div>
+            <div class="card-title">Notificaciones push</div>
+            <div class="card-body">Ausencia de un sistema de mensajería push automatizada (FCM) hacia los dispositivos de los padres.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Problemas operativos asociados a TI</h3>
+        <div class="card" style="background:#FEF2F2;border-color:#FCA5A5;border-style:solid">
+          <div class="card-body">
+            El uso exclusivo de listas de papel ocasiona: un <strong>cuello de botella logístico</strong> durante la hora
+            de ingreso, <strong>pérdida de tiempo valioso</strong> en el inicio de la jornada académica,
+            <strong>vulnerabilidad</strong> ante pérdida o daño de los registros físicos, y una absoluta
+            <strong>incapacidad para generar analítica de datos</strong> en tiempo real.
+          </div>
+        </div>
       </div>
 
-      <!-- 1.4 Identificación del Problema -->
+      <!-- 1.4 Identificación del Problema y Alineamiento -->
       <div class="section">
-        <h2 class="section-title">1.4 Identificación del Problema</h2>
+        <h2 class="section-title">1.4 Identificación del Problema y Alineamiento</h2>
 
-        <h3 class="section-subtitle">Definición estructurada</h3>
+        <h3 class="section-subtitle">Definición estructurada del problema</h3>
         <div class="callout callout-info">
           <span class="callout-icon">❗</span>
           <div class="callout-body">
-            Existe una <strong>fricción estructural severa</strong> en la gestión operativa del aula, originada por la
-            dependencia obligatoria de acciones físicas, voluntarias y dependientes de hardware para registrar
-            la asistencia de los estudiantes.
+            El proceso de registro y control de asistencia actual en las instituciones educativas es
+            <strong>deficiente, lento, propenso a errores operativos, altamente vulnerable a suplantaciones
+            de identidad</strong> y conlleva a la pérdida de información histórica.
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Causas raíz</h3>
+        <div class="card-grid cols-3" style="gap:12px">
+          <div class="card">
+            <div class="card-icon" style="background:#FEF2F2;color:#DC2626">👤</div>
+            <div class="card-title">Factor humano</div>
+            <div class="card-body">Dependencia exclusiva del factor humano para tareas repetitivas de validación visual.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FEF2F2;color:#DC2626">📄</div>
+            <div class="card-title">Falta de digitalización</div>
+            <div class="card-body">Inexistencia de sistemas de digitalización en el punto de captura (la entrada a la institución).</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FEF2F2;color:#DC2626">🏛️</div>
+            <div class="card-title">Infraestructura de software</div>
+            <div class="card-body">Falta de infraestructura de software y bases de datos que sistematicen la toma de decisiones.</div>
           </div>
         </div>
 
         <h3 class="section-subtitle" style="margin-top:16px">Impacto estratégico</h3>
-        <div class="card" style="background:#FEF2F2;border-color:#FCA5A5;border-style:solid">
-          <div class="card-body" style="font-size:1rem">
-            Esta fricción operativa genera un impacto negativo comprobado y cuantificable:
-            una <strong>pérdida anual de 1,000 minutos de instrucción por sección</strong>.
-            Esto atenta directamente contra la calidad académica y los objetivos de la institución.
+        <div class="card-grid cols-3" style="gap:12px">
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">💰</div>
+            <div class="card-title">Económico-Operativo</div>
+            <div class="card-body">Horas-hombre desperdiciadas en consolidación manual de datos.</div>
+          </div>
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">📚</div>
+            <div class="card-title">Académico</div>
+            <div class="card-body">Reducción del tiempo efectivo de enseñanza al tomar lista manualmente.</div>
+          </div>
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">🏷️</div>
+            <div class="card-title">Reputacional</div>
+            <div class="card-body">Padres desinformados o preocupados sobre la asistencia puntual de sus hijos.</div>
           </div>
         </div>
 
-        <h3 class="section-subtitle" style="margin-top:16px">Justificación de la intervención</h3>
-        <div class="card-grid cols-2" style="gap:12px;margin-top:8px">
-          <div class="card">
-            <div class="card-icon" style="background:#FFFBEB;color:#B45309">🎯</div>
-            <div class="card-title">Identidad intransferible</div>
-            <div class="card-body">El rostro es la única identidad intransferible que no requiere hardware personal del estudiante.</div>
+        <h3 class="section-subtitle" style="margin-top:16px">Justificación de intervención — Alineamiento con QhawAI</h3>
+        <div class="card" style="background:#FFFBEB;border-color:#FCD34D;border-style:solid">
+          <div class="card-body">
+            Para cerrar las brechas estratégicas y operacionales identificadas, se propone la implementación del proyecto
+            <strong>QhawAI</strong>, un sistema inteligente de control de asistencia basado en reconocimiento facial con
+            Inteligencia Artificial. Esta solución se alinea directamente con los objetivos estratégicos de la institución
+            al reemplazar el registro manual por un flujo completamente automatizado.
           </div>
-          <div class="card">
-            <div class="card-icon" style="background:#FFFBEB;color:#B45309">⚡</div>
-            <div class="card-title">Fricción Cero</div>
-            <div class="card-body">Única alternativa viable que garantiza una operación de fricción cero, devolviendo 1,000 minutos de clase al docente.</div>
+        </div>
+
+        <div class="card-grid cols-3" style="gap:12px;margin-top:12px">
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">⚡</div>
+            <div class="card-title">&lt; 2 segundos</div>
+            <div class="card-body">Detección de rostros y registro de asistencia en menos de 2 segundos de forma ininterrumpida usando YOLO-Face y ArcFace.</div>
+          </div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">📲</div>
+            <div class="card-title">&lt; 30 segundos</div>
+            <div class="card-body">Notificaciones push a los padres en menos de 30 segundos vía Firebase Cloud Messaging.</div>
+          </div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">📊</div>
+            <div class="card-title">Panel de administración</div>
+            <div class="card-body">Panel web (Laravel) + app Android con reportes exportables en PDF/Excel para toma de decisiones.</div>
           </div>
         </div>
         <p style="margin-top:12px">
-          Resulta imperativo rediseñar este proceso mediante la implementación de un
-          <strong>Sistema Inteligente basado en Visión por Computadora (IA)</strong>,
-          resolviendo definitivamente la vulnerabilidad del ecosistema actual.
+          De esta forma, QhawAI genera un <strong>ecosistema seguro, innovador y altamente eficiente</strong>
+          que resuelve las necesidades de todos los stakeholders identificados.
         </p>
       </div>
 

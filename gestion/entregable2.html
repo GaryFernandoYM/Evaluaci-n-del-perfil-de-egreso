@@ -97,7 +97,7 @@
         <div class="hero-eyebrow" style="color:#B45309">Línea de Gestión · CE011</div>
         <h1 class="hero-title" style="font-size:1.8rem">Business Case del Proyecto</h1>
         <p class="hero-desc">
-          Justificación del proyecto, análisis comparativo de alternativas (visión por computadora vs otros), beneficios esperados y estimación de costos.
+          Justificación del proyecto, matriz multicriterio de alternativas (RFID, huella vs facial), beneficios cuantificables y estimación financiera CAPEX/OPEX.
         </p>
         <div class="hero-meta">
           <div class="hero-meta-item">
@@ -105,16 +105,16 @@
             <span class="hero-meta-value"><span class="linea-badge gestion">Gestión de TI (CE011)</span></span>
           </div>
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Universidad</span>
-            <span class="hero-meta-value">UPeU</span>
+            <span class="hero-meta-label">Autores</span>
+            <span class="hero-meta-value">Gary F. Yunganina M., Guver L. Ccori C., Jhon A. Chambi V.</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">Institución</span>
+            <span class="hero-meta-value">UPeU — Campus Juliaca</span>
           </div>
           <div class="hero-meta-item">
             <span class="hero-meta-label">Semestre</span>
             <span class="hero-meta-value">2026-I</span>
-          </div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Estado</span>
-            <span class="hero-meta-value"><span class="badge" style="background:#FEF9C3;color:#713F12;border:1px solid #FCD34D">En desarrollo</span></span>
           </div>
         </div>
       </div>
@@ -123,49 +123,62 @@
       <div class="section">
         <h2 class="section-title">2.1 Justificación del Proyecto</h2>
 
-        <h3 class="section-subtitle">Problema a resolver</h3>
+        <h3 class="section-subtitle">Problema que se resuelve</h3>
         <div class="callout callout-info">
           <span class="callout-icon">❗</span>
           <div class="callout-body">
-            La pérdida de tiempo efectivo de enseñanza generada por la <strong>fricción estructural</strong> del pase de lista manual.
+            Las instituciones educativas en el Perú gestionan el control de asistencia mediante procesos manuales
+            basados en listas de papel o firmas. Este enfoque genera: consumo de tiempo efectivo de clases,
+            alta propensión a errores humanos, <strong>suplantación de identidad</strong> entre estudiantes,
+            pérdida de información histórica y retraso en la comunicación de incidencias a los padres de familia.
           </div>
         </div>
 
-        <h3 class="section-subtitle" style="margin-top:16px">Objetivos del proyecto (SMART)</h3>
-        <div class="card-grid cols-3" style="gap:12px">
-          <div class="card">
-            <div class="card-icon" style="background:#FFFBEB;color:#B45309">⏱️</div>
-            <div class="card-title">Rapidez</div>
-            <div class="card-body">Procesar el registro de un aula completa en <strong>≤ 30 segundos</strong>.</div>
+        <h3 class="section-subtitle" style="margin-top:16px">Objetivos del Proyecto (SMART)</h3>
+        <div class="card-grid cols-2" style="gap:12px">
+          <div class="card" style="background:#EFF6FF;border-color:#93C5FD">
+            <div class="card-icon" style="background:#DBEAFE;color:#2563EB">🎯</div>
+            <div class="card-title">Específico (S)</div>
+            <div class="card-body">Implementar <strong>"QhawAI"</strong>, un sistema automatizado de control de asistencia basado en visión artificial y reconocimiento facial.</div>
           </div>
-          <div class="card">
-            <div class="card-icon" style="background:#FFFBEB;color:#B45309">📶</div>
-            <div class="card-title">Latencia de red</div>
-            <div class="card-body">Latencia ≤ <strong>2 segundos</strong> por reconocimiento individual.</div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">📏</div>
+            <div class="card-title">Medible (M)</div>
+            <div class="card-body">Precisión &gt; 90%, registro en &lt; 2s por persona y notificaciones push a tutores en ≤ 30s.</div>
           </div>
-          <div class="card">
-            <div class="card-icon" style="background:#FFFBEB;color:#B45309">🎯</div>
-            <div class="card-title">Precisión facial</div>
-            <div class="card-body">Precisión facial garantizada ≥ <strong>90%</strong>.</div>
+          <div class="card" style="background:#FFFBEB;border-color:#FCD34D">
+            <div class="card-icon" style="background:#FEF9C3;color:#B45309">🔧</div>
+            <div class="card-title">Alcanzable (A)</div>
+            <div class="card-body">Modelos preentrenados eficientes (YOLO-Face + ArcFace) integrados en arquitectura de 3 capas (Laravel, Python, Android).</div>
           </div>
+          <div class="card" style="background:#FEF2F2;border-color:#FCA5A5">
+            <div class="card-icon" style="background:#FEE2E2;color:#DC2626">💡</div>
+            <div class="card-title">Relevante (R)</div>
+            <div class="card-body">Eliminar el uso de papel, erradicar suplantaciones y aumentar la confianza de los padres sobre la seguridad institucional.</div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:8px;background:#F9FAFB;border-color:#D1D5DB">
+          <div class="card-icon" style="background:#E5E7EB;color:#4B5563">📅</div>
+          <div class="card-title">Temporal (T)</div>
+          <div class="card-body">Desplegar el sistema en entorno de producción funcional dentro del semestre académico <strong>2026-I</strong>.</div>
         </div>
 
         <h3 class="section-subtitle" style="margin-top:16px">Beneficios esperados</h3>
         <div class="card-grid cols-3" style="gap:12px">
           <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
-            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">📈</div>
-            <div class="card-title">Tiempo recuperado</div>
-            <div class="card-body"><strong>1,000 minutos</strong> anuales de instrucción por sección recuperados.</div>
-          </div>
-          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
-            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">🛡️</div>
-            <div class="card-title">Suplantación</div>
-            <div class="card-body">Eliminación <strong>total</strong> del fraude por suplantación de identidad.</div>
-          </div>
-          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
             <div class="card-icon" style="background:#DCFCE7;color:#16A34A">⚡</div>
-            <div class="card-title">Fricción Cero</div>
-            <div class="card-body">Instauración de un modelo de <strong>"Fricción Cero"</strong> para el docente.</div>
+            <div class="card-title">Logística optimizada</div>
+            <div class="card-body">Optimización radical de la logística de ingreso a la institución.</div>
+          </div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">👥</div>
+            <div class="card-title">Horas-hombre recuperadas</div>
+            <div class="card-body">Recuperación de horas-hombre invertidas en labores administrativas.</div>
+          </div>
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">📲</div>
+            <div class="card-title">Comunicación en tiempo real</div>
+            <div class="card-body">Canal de comunicación directo y transparente con los padres mediante <strong>Firebase FCM</strong>.</div>
           </div>
         </div>
       </div>
@@ -173,41 +186,73 @@
       <!-- 2.2 Análisis de Alternativas -->
       <div class="section">
         <h2 class="section-title">2.2 Análisis de Alternativas</h2>
-        <p>
-          Para justificar la viabilidad tecnológica frente a otros métodos tradicionales, se establecieron
-          criterios de evaluación centrados en la eficiencia operativa y seguridad. A continuación, se presenta
-          la matriz comparativa de alternativas tecnológicas:
-        </p>
-        <div class="table-wrapper" style="margin-top:12px"><table class="req-table">
-          <thead><tr><th>Método Evaluado</th><th>Eficiencia de Tiempo</th><th>Riesgo de Suplantación</th><th>Dependencia de Hardware</th><th>Fricción de Uso</th></tr></thead>
+        <p>Para solucionar la problemática de control de accesos, se evaluaron tres alternativas tecnológicas viables para el entorno escolar.</p>
+
+        <h3 class="section-subtitle" style="margin-top:12px">Alternativas tecnológicas consideradas</h3>
+        <div class="card-grid cols-3" style="gap:12px">
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC;border-style:solid">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">✅</div>
+            <div class="card-title">Alt. A: Reconocimiento Facial (QhawAI)</div>
+            <div class="card-body">Uso de cámaras para validación biométrica sin contacto físico. <strong>Solución seleccionada.</strong></div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#EFF6FF;color:#2563EB">🏷️</div>
+            <div class="card-title">Alt. B: Tarjetas RFID / Fotochecks</div>
+            <div class="card-body">Los estudiantes acercan una tarjeta física a un lector al ingresar.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon" style="background:#FFFBEB;color:#B45309">🖐️</div>
+            <div class="card-title">Alt. C: Control por Huella Dactilar</div>
+            <div class="card-body">Uso de lectores ópticos de huellas en las puertas de ingreso.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Matriz comparativa ponderada</h3>
+        <p>Se ponderaron los factores clave de éxito institucional del 1 (Deficiente) al 5 (Excelente):</p>
+        <div class="table-wrapper" style="margin-top:8px"><table class="req-table">
+          <thead><tr><th>Criterio de Evaluación</th><th>Peso</th><th>Alt. A: Facial (QhawAI)</th><th>Alt. B: RFID</th><th>Alt. C: Huella</th></tr></thead>
           <tbody>
             <tr>
-              <td>Lista Manual</td>
-              <td><span class="badge badge-ausente">Alto (5-10 min)</span></td>
-              <td><span class="badge badge-ausente">Alta vulnerabilidad</span></td>
-              <td><span class="badge badge-puntual">Nula</span></td>
-              <td><span class="badge badge-tardanza">Interrumpe la clase</span></td>
+              <td>Velocidad de procesamiento</td>
+              <td>30%</td>
+              <td class="bg-verde-claro"><strong>5</strong> (&lt; 2s, sin detenerse)</td>
+              <td>4 (~3s, requiere sacar tarjeta)</td>
+              <td>2 (&gt;5s, cuellos de botella)</td>
             </tr>
             <tr>
-              <td>Código QR</td>
-              <td><span class="badge badge-puntual">Rápido</span></td>
-              <td><span class="badge badge-ausente">Transferible</span></td>
-              <td><span class="badge badge-tardanza">Dispositivo móvil</span></td>
-              <td><span class="badge badge-tardanza">Olvidos / Pérdida</span></td>
+              <td>Prevención de Suplantación</td>
+              <td>25%</td>
+              <td class="bg-verde-claro"><strong>5</strong> (Lectura biométrica directa)</td>
+              <td>1 (Se prestan las tarjetas)</td>
+              <td>5 (Validación unívoca)</td>
             </tr>
             <tr>
-              <td>Huella Digital</td>
-              <td><span class="badge badge-puntual">Rápido</span></td>
-              <td><span class="badge badge-puntual">Intransferible</span></td>
-              <td><span class="badge badge-ausente">Hardware costoso</span></td>
-              <td><span class="badge badge-ausente">Falla por humedad</span></td>
+              <td>Higiene (Sin contacto)</td>
+              <td>15%</td>
+              <td class="bg-verde-claro"><strong>5</strong> (Totalmente touchless)</td>
+              <td>4 (Contacto mínimo)</td>
+              <td>1 (Alto riesgo de contagio)</td>
             </tr>
-            <tr style="background:#FFFBEB;font-weight:600">
-              <td>Visión por Computadora (Nuestra)</td>
-              <td><span class="badge badge-puntual">Inmediato</span></td>
-              <td><span class="badge badge-puntual">Intransferible</span></td>
-              <td><span class="badge badge-puntual">Pasivo (Webcam)</span></td>
-              <td><span class="badge badge-puntual">Fricción Cero</span></td>
+            <tr>
+              <td>Costos de Mantenimiento</td>
+              <td>15%</td>
+              <td class="bg-verde-claro"><strong>4</strong> (Mantenimiento servidor/cámara)</td>
+              <td>2 (Reemisión constante de tarjetas)</td>
+              <td>3 (Limpieza y calibración de lentes)</td>
+            </tr>
+            <tr>
+              <td>Integración y Notificación</td>
+              <td>15%</td>
+              <td class="bg-verde-claro"><strong>5</strong> (API nativa, notificaciones &lt;30s)</td>
+              <td>3 (Requiere middleware adicional)</td>
+              <td>3 (Sistemas cerrados de terceros)</td>
+            </tr>
+            <tr style="background:#FFFBEB;font-weight:700">
+              <td><strong>Puntaje Ponderado</strong></td>
+              <td><strong>100%</strong></td>
+              <td class="bg-verde-claro"><strong>4.85 / 5.00</strong> 🏆</td>
+              <td><strong>2.80 / 5.00</strong></td>
+              <td><strong>3.05 / 5.00</strong></td>
             </tr>
           </tbody>
         </table></div>
@@ -215,9 +260,10 @@
         <div class="callout" style="margin-top:12px;background:#FFFBEB;border-color:#FCD34D">
           <span class="callout-icon">✅</span>
           <div class="callout-body">
-            <strong>Conclusión:</strong> El Reconocimiento Facial (Visión por Computadora) es la única alternativa viable
-            que elimina la dependencia de hardware personal del estudiante y logra la <strong>"Fricción Cero"</strong>,
-            resolviendo la vulnerabilidad del ecosistema actual.
+            <strong>Justificación sólida:</strong> Se seleccionó la Alternativa A (QhawAI) por poseer el mejor
+            desempeño operativo y de seguridad (4.85/5). A diferencia del RFID, es imposible de suplantar o perder;
+            y a diferencia de la huella dactilar, elimina los cuellos de botella masivos durante el horario punta
+            de ingreso escolar.
           </div>
         </div>
       </div>
@@ -232,8 +278,9 @@
             <div class="card-title">Beneficios Cuantificables (Tangibles)</div>
             <div class="card-body">
               <ul style="margin:0;padding-left:18px">
-                <li>Recuperación de <strong>1,000 minutos</strong> de clases por salón.</li>
-                <li>Disponibilidad del sistema garantizada al <strong>≥ 99%</strong> en horario escolar.</li>
+                <li><strong>Reducción de tiempos:</strong> De 15 min (manual) a &lt; 2s por alumno en la puerta.</li>
+                <li><strong>Ahorro en papelería:</strong> Reducción del 100% en costos de impresión, migrando a reportes PDF/Excel.</li>
+                <li><strong>Resolución de incidencias:</strong> Notificación de inasistencias a los padres en solo 30 segundos.</li>
               </ul>
             </div>
           </div>
@@ -242,66 +289,110 @@
             <div class="card-title">Beneficios Cualitativos (Intangibles)</div>
             <div class="card-body">
               <ul style="margin:0;padding-left:18px">
-                <li>Cumplimiento estricto de la protección de menores (Ética ACM) gracias a la <strong>bóveda digital cifrada (Digital Vault)</strong> que no almacena fotografías.</li>
-                <li>Mejora drástica en la satisfacción del usuario mediante la <strong>"Inclusión Pasiva"</strong>.</li>
+                <li>Mejora sustancial en la percepción de <strong>seguridad y modernidad</strong> institucional.</li>
+                <li><strong>Tranquilidad psicológica</strong> de los apoderados al recibir evidencia oportuna de llegada.</li>
+                <li>Reducción del <strong>estrés operativo</strong> del personal auxiliar y docente.</li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Indicadores de valor</h3>
+        <div class="card-grid cols-3" style="gap:12px">
+          <div class="card">
+            <div class="stat-num" style="color:#16A34A;font-size:1.5rem">&gt;95%</div>
+            <div class="stat-label">Asistencia automatizada</div>
+            <div class="card-body" style="font-size:0.78rem">% de asistencia procesada automáticamente vs. manual.</div>
+          </div>
+          <div class="card">
+            <div class="stat-num" style="color:#2563EB;font-size:1.5rem">&gt;90%</div>
+            <div class="stat-label">Precisión del modelo</div>
+            <div class="card-body" style="font-size:0.78rem">Tasa de precisión YOLO-Face/ArcFace en producción.</div>
+          </div>
+          <div class="card">
+            <div class="stat-num" style="color:#B45309;font-size:1.5rem">≥4.0</div>
+            <div class="stat-label">Satisfacción de padres</div>
+            <div class="card-body" style="font-size:0.78rem">Nivel medido mediante encuestas en la App Android.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2.4 Estimación de Costos y Evaluación Económica -->
+      <div class="section">
+        <h2 class="section-title">2.4 Estimación de Costos y Evaluación Económica</h2>
+        <p class="callout-msg" style="color:var(--text-secondary);font-size:0.85rem">
+          Los siguientes montos son referenciales en Soles/Dólares para estructurar el análisis financiero exigido por la rúbrica.
+        </p>
+
+        <h3 class="section-subtitle">Inversión Inicial (CAPEX)</h3>
+        <div class="table-wrapper"><table class="req-table">
+          <thead><tr><th>Concepto</th><th>Detalle</th><th>Monto ($)</th></tr></thead>
+          <tbody>
+            <tr><td>Hardware</td><td>Cámaras IP de alta resolución, servidor local para inferencia IA (Python/FastAPI) y cableado de red.</td><td><strong>$2,500.00</strong></td></tr>
+            <tr><td>Desarrollo de Software</td><td>Arquitectura de 3 capas: Backend Laravel + MySQL, Microservicio IA, App Android SDK.</td><td><strong>$4,000.00</strong></td></tr>
+            <tr><td>Implementación</td><td>Capacitación al personal y pruebas en sitio (13 casos de prueba).</td><td><strong>$500.00</strong></td></tr>
+            <tr style="font-weight:700;background:#FFFBEB"><td>Total Inversión Inicial</td><td></td><td><strong>$7,000.00</strong></td></tr>
+          </tbody>
+        </table></div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Costos Operativos y de Mantenimiento (OPEX Anual)</h3>
+        <div class="table-wrapper"><table class="req-table">
+          <thead><tr><th>Concepto</th><th>Detalle</th><th>Monto ($/año)</th></tr></thead>
+          <tbody>
+            <tr><td>Soporte técnico</td><td>Mantenimiento preventivo de cámaras y actualización de la BD local (MySQL/SQLite).</td><td><strong>$800.00</strong></td></tr>
+            <tr><td>Costos de nube</td><td>Hosting web, dominio, notificaciones Firebase FCM.</td><td><strong>$300.00</strong></td></tr>
+            <tr style="font-weight:700;background:#FFFBEB"><td>Total OPEX Anual</td><td></td><td><strong>$1,100.00/año</strong></td></tr>
+          </tbody>
+        </table></div>
+
+        <h3 class="section-subtitle" style="margin-top:16px">Análisis Financiero Estructurado</h3>
+        <div class="card-grid cols-2" style="gap:12px">
+          <div class="card" style="background:#F0FDF4;border-color:#86EFAC">
+            <div class="card-icon" style="background:#DCFCE7;color:#16A34A">💵</div>
+            <div class="card-title">Ahorros Anuales Proyectados</div>
+            <div class="card-body">
+              Considerando reducción en horas-hombre de auxiliares (20h semanales), eliminación de papelería
+              e incremento de retención de matrículas, se estima un ahorro equivalente a <strong>$5,000.00/año</strong>.
+            </div>
+          </div>
+          <div class="card" style="background:#EFF6FF;border-color:#93C5FD">
+            <div class="card-icon" style="background:#DBEAFE;color:#2563EB">📈</div>
+            <div class="card-title">Retorno de Inversión (ROI)</div>
+            <div class="card-body">
+              Se prevé que el ahorro operativo supere los costos en aproximadamente el <strong>mes 18</strong>,
+              logrando un <strong>Payback Period</strong> menor a 2 años escolares.
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 2.4 Estimación de Costos -->
+      <!-- 2.5 Riesgos Estratégicos Iniciales -->
       <div class="section">
-        <h2 class="section-title">2.4 Estimación de Costos</h2>
-        <p>
-          La viabilidad técnica y económica del proyecto se basa en una drástica reducción del CapEx y OpEx
-          mediante el uso de tecnologías <strong>Open Source</strong>:
-        </p>
-        <div class="table-wrapper" style="margin-top:12px"><table class="req-table">
-          <thead><tr><th>Categoría de Costo</th><th>Concepto Tecnológico</th><th>Inversión / Costo</th></tr></thead>
+        <h2 class="section-title">2.5 Riesgos Estratégicos Iniciales</h2>
+        <p>Para garantizar la viabilidad del proyecto, se ha realizado una evaluación preliminar estructurada con estrategias de mitigación.</p>
+        <div class="table-wrapper" style="margin-top:8px"><table class="req-table">
+          <thead><tr><th>ID</th><th>Riesgo Estratégico Identificado</th><th>Impacto</th><th>Probabilidad</th><th>Estrategia de Mitigación</th></tr></thead>
           <tbody>
             <tr>
-              <td>Costo de Licencias</td>
-              <td>Laravel 11, Flutter 3, YOLOv8, ArcFace R100</td>
-              <td><span class="badge badge-puntual"><strong>$ 0.00 (Open Source)</strong></span></td>
-            </tr>
-            <tr>
-              <td>Inversión Inicial (CapEx)</td>
-              <td>Webcams 720p genéricas y PCs con CPU estándar (i5/Ryzen). No requiere aceleración GPU costosa.</td>
-              <td><span class="badge badge-tardanza">Bajo</span></td>
-            </tr>
-            <tr>
-              <td>Costos Operativos (OpEx)</td>
-              <td>Alquiler de Hosting/VPS para el despliegue del Backend (Laravel) y Base de datos (MySQL 8).</td>
-              <td><span class="badge badge-tardanza">Bajo (Mensual)</span></td>
-            </tr>
-          </tbody>
-        </table></div>
-      </div>
-
-      <!-- 2.5 Matriz de Riesgos Iniciales -->
-      <div class="section">
-        <h2 class="section-title">2.5 Matriz de Riesgos Iniciales</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>ID</th><th>Riesgo Estratégico</th><th>Impacto</th><th>Estrategia de Mitigación</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>R-01</td>
-              <td>Falsos negativos por baja iluminación en el aula</td>
+              <td>R1</td>
+              <td>Caída de la red de internet o corte eléctrico. No se podrían enviar notificaciones en tiempo real ni guardar datos en la nube.</td>
               <td><span class="badge badge-ausente">Alto</span></td>
-              <td>Implementación del modelo avanzado <strong>ArcFace R100</strong>, validado para alta precisión bajo variables ambientales.</td>
+              <td>Media</td>
+              <td>Implementar sistema de respaldo (UPS) y aprovechar la capacidad <strong>"offline"</strong> de la app Android (SQLite) para guardar asistencia y sincronizar al recuperar conexión.</td>
             </tr>
             <tr>
-              <td>R-02</td>
-              <td>Caída de conexión a internet institucional</td>
+              <td>R2</td>
+              <td>Rechazo a la captura de datos biométricos. Padres preocupados por la privacidad facial de menores de edad.</td>
               <td><span class="badge badge-ausente">Alto</span></td>
-              <td>App móvil (Flutter 3) con funcionamiento <strong>offline</strong> y sincronización asíncrona hacia el Core API.</td>
+              <td>Baja</td>
+              <td>Firmar <strong>consentimientos informados</strong> durante matrícula. Implementar ArcFace guardando solo vectores matemáticos, no imágenes crudas.</td>
             </tr>
             <tr>
-              <td>R-03</td>
-              <td>Fuga de datos biométricos de menores (Legal)</td>
-              <td><span class="badge badge-ausente">Crítico</span></td>
-              <td>Implementación de <strong>Digital Vault</strong> y cifrado local. Se almacenan únicamente vectores matemáticos cifrados de 512 dimensiones, no fotografías.</td>
+              <td>R3</td>
+              <td>Falsos negativos por cambios físicos. El sistema no reconoce a un alumno si cambia drásticamente de apariencia, usa mascarilla o lentes oscuros.</td>
+              <td><span class="badge badge-tardanza">Medio</span></td>
+              <td>Media</td>
+              <td>Configurar umbral de precisión del microservicio Python e instruir al personal a usar el panel web (Laravel) o App Android para registros manuales excepcionales.</td>
             </tr>
           </tbody>
         </table></div>
