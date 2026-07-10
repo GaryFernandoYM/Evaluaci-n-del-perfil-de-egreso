@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initTOC();
   initSearch();
+  initVideo();
 });
 
 function initSidebar() {
@@ -101,4 +102,39 @@ function initCopyButtons() {
       });
     });
   });
+}
+
+function initVideo() {
+  const wrap = document.getElementById('heroVideoWrap');
+  const expandBtn = document.getElementById('heroVideoExpand');
+  const modal = document.getElementById('videoModal');
+  const backdrop = document.getElementById('videoModalBackdrop');
+  const closeBtn = document.getElementById('videoModalClose');
+  const iframe = document.getElementById('modalIframe');
+  const loader = document.getElementById('videoModalLoader');
+
+  if (!modal || !iframe) return;
+
+  const ONEDRIVE_EMBED = 'https://www.youtube.com/embed/Earvmk3rGqs?autoplay=1&mute=1&rel=0';
+
+  const openModal = () => {
+    iframe.src = ONEDRIVE_EMBED;
+    modal.classList.add('open');
+    loader.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  };
+
+  wrap?.addEventListener('click', openModal);
+  expandBtn?.addEventListener('click', e => { e.stopPropagation(); openModal(); });
+
+  const closeModal = () => {
+    modal.classList.remove('open');
+    iframe.src = '';
+    document.body.style.overflow = '';
+  };
+  closeBtn?.addEventListener('click', closeModal);
+  backdrop?.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+  iframe.addEventListener('load', () => { loader.style.display = 'none'; });
 }
