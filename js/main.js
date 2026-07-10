@@ -106,68 +106,35 @@ function initCopyButtons() {
 
 function initVideo() {
   const wrap = document.getElementById('heroVideoWrap');
-  const heroVideo = document.getElementById('heroVideo');
-  const playBtn = document.getElementById('heroVideoPlay');
   const expandBtn = document.getElementById('heroVideoExpand');
   const modal = document.getElementById('videoModal');
   const backdrop = document.getElementById('videoModalBackdrop');
   const closeBtn = document.getElementById('videoModalClose');
-  const modalVideo = document.getElementById('modalVideo');
-  const modalBody = document.getElementById('videoModalBody');
+  const iframe = document.getElementById('modalIframe');
+  const loader = document.getElementById('videoModalLoader');
 
-  if (!heroVideo || !modal) return;
+  if (!modal || !iframe) return;
 
-  /* Reproducir / pausar hero */
-  if (playBtn) {
-    playBtn.addEventListener('click', e => {
-      e.stopPropagation();
-      heroVideo.play();
-      playBtn.classList.add('playing');
-    });
-    heroVideo.addEventListener('click', () => {
-      if (heroVideo.paused) {
-        heroVideo.play();
-        playBtn.classList.add('playing');
-      } else {
-        heroVideo.pause();
-        playBtn.classList.remove('playing');
-      }
-    });
-    heroVideo.addEventListener('pause', () => playBtn.classList.remove('playing'));
-    heroVideo.addEventListener('ended', () => playBtn.classList.remove('playing'));
-  }
+  const ONEDRIVE_EMBED = 'https://upeuedupe-my.sharepoint.com/:v:/g/personal/gary_yunganina_upeu_edu_pe/IQDSc_wgFQC1QYQHqGy6MVZ_AQcQ-oOH1NmdRtzQHMBLDkI?embed=1';
 
-  /* Abrir modal */
   const openModal = () => {
+    iframe.src = ONEDRIVE_EMBED;
     modal.classList.add('open');
-    modalBody.classList.remove('zoomed');
-    modalVideo.currentTime = heroVideo.currentTime;
-    if (!heroVideo.paused) modalVideo.play();
+    loader.style.display = 'flex';
     document.body.style.overflow = 'hidden';
   };
 
+  wrap?.addEventListener('click', openModal);
   expandBtn?.addEventListener('click', e => { e.stopPropagation(); openModal(); });
-  heroVideo?.addEventListener('dblclick', openModal);
 
-  /* Cerrar modal */
   const closeModal = () => {
     modal.classList.remove('open');
-    modalVideo.pause();
+    iframe.src = '';
     document.body.style.overflow = '';
   };
   closeBtn?.addEventListener('click', closeModal);
   backdrop?.addEventListener('click', closeModal);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
 
-  /* Zoom con click en el modal */
-  modalBody?.addEventListener('click', e => {
-    if (e.target === modalVideo) {
-      modalBody.classList.toggle('zoomed');
-      if (modalBody.classList.contains('zoomed')) {
-        modalVideo.style.transform = 'scale(1.5)';
-      } else {
-        modalVideo.style.transform = 'scale(1)';
-      }
-    }
-  });
+  iframe.addEventListener('load', () => { loader.style.display = 'none'; });
 }

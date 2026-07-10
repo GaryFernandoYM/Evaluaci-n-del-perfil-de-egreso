@@ -104,18 +104,18 @@
           a los padres en tiempo real. El nombre proviene del quechua <em>qhaw</em> — "ver" o "mirar".
         </p>
 
-        <!-- Video hero -->
+        <!-- Video hero (OneDrive embed) -->
         <div class="hero-video-wrap" id="heroVideoWrap">
-          <video class="hero-video" id="heroVideo" src="video.mp4" muted loop playsinline></video>
-          <button class="hero-video-play" id="heroVideoPlay" aria-label="Reproducir video">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><polygon points="8,5 19,12 8,19"/></svg>
-          </button>
+          <div class="hero-video-preview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><polygon points="8,5 19,12 8,19" fill="currentColor" stroke="none"/><rect x="2" y="2" width="20" height="20" rx="3"/></svg>
+            <span class="hero-video-preview-label">Ver demo</span>
+          </div>
           <button class="hero-video-expand" id="heroVideoExpand" aria-label="Ver en grande">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
           </button>
         </div>
 
-        <!-- Modal video -->
+        <!-- Modal OneDrive -->
         <div class="video-modal" id="videoModal">
           <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
           <div class="video-modal-container">
@@ -123,7 +123,11 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
             <div class="video-modal-body" id="videoModalBody">
-              <video class="video-modal-video" id="modalVideo" src="video.mp4" muted loop playsinline></video>
+              <div class="video-modal-loader" id="videoModalLoader">
+                <div class="spinner"></div>
+                <span>Cargando video...</span>
+              </div>
+              <iframe class="video-modal-iframe" id="modalIframe" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
             </div>
           </div>
         </div>

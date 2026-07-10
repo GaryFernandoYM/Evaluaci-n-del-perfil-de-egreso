@@ -827,38 +827,30 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
   border-radius: var(--radius);
   overflow: hidden;
   margin-bottom: 20px;
-  background: #000;
+  background: #EFF6FF;
   cursor: pointer;
-  max-width: 500px;
+  max-width: 400px;
+  border: 1px solid var(--accent-border);
+  transition: border-color 0.2s;
 }
-.hero-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 280px;
-  object-fit: cover;
-}
-.hero-video-play {
-  position: absolute;
-  inset: 0;
+.hero-video-wrap:hover { border-color: var(--accent); }
+
+.hero-video-preview {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.35);
-  border: none;
-  cursor: pointer;
-  color: #fff;
+  gap: 10px;
+  padding: 48px 24px;
+  color: var(--accent);
   transition: background 0.2s;
 }
-.hero-video-play svg {
-  width: 48px;
-  height: 48px;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
-  transition: transform 0.2s;
+.hero-video-preview svg { opacity: 0.7; }
+.hero-video-preview-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
 }
-.hero-video-play:hover { background: rgba(0,0,0,0.5); }
-.hero-video-play:hover svg { transform: scale(1.1); }
-.hero-video-play.playing { opacity: 0; pointer-events: none; }
 
 .hero-video-expand {
   position: absolute;
@@ -867,20 +859,21 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: rgba(0,0,0,0.55);
-  border: none;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--border);
   cursor: pointer;
-  color: #fff;
+  color: var(--text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s;
   z-index: 2;
   backdrop-filter: blur(4px);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
-.hero-video-expand:hover { background: rgba(0,0,0,0.75); }
+.hero-video-expand:hover { background: #fff; color: var(--accent); }
 
-/* ── Video Modal ────────────────────────────────────────────────── */
+/* ── Video Modal (OneDrive) ─────────────────────────────────────── */
 .video-modal {
   position: fixed;
   inset: 0;
@@ -899,13 +892,13 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
 .video-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.85);
+  background: rgba(0,0,0,0.88);
 }
 .video-modal-container {
   position: relative;
-  width: 90vw;
-  max-width: 900px;
-  max-height: 90vh;
+  width: 95vw;
+  max-width: 960px;
+  max-height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -921,28 +914,46 @@ pre code { background: none; padding: 0; font-size: inherit; color: inherit; bor
   opacity: 0.7;
   transition: opacity 0.2s;
   z-index: 10;
+  padding: 4px;
 }
 .video-modal-close:hover { opacity: 1; }
 
 .video-modal-body {
   width: 100%;
-  max-height: 85vh;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
   overflow: hidden;
-  border-radius: var(--radius);
-  cursor: zoom-in;
   position: relative;
+  background: #000;
 }
-.video-modal-body.zoomed {
-  cursor: zoom-out;
-  overflow: auto;
+.video-modal-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #aaa;
+  font-size: 0.85rem;
+  z-index: 1;
 }
-.video-modal-video {
-  display: block;
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255,255,255,0.15);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.video-modal-iframe {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  transition: transform 0.25s ease;
-  transform-origin: center center;
+  height: 100%;
+  border: 0;
+  z-index: 2;
 }
 
 /* ── Evidencias / Imágenes ───────────────────────────────────────── */
