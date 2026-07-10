@@ -103,6 +103,31 @@
           visión artificial: detecta rostros, identifica personas en menos de 2 segundos y notifica
           a los padres en tiempo real. El nombre proviene del quechua <em>qhaw</em> — "ver" o "mirar".
         </p>
+
+        <!-- Video hero -->
+        <div class="hero-video-wrap" id="heroVideoWrap">
+          <video class="hero-video" id="heroVideo" src="video.mp4" muted loop playsinline></video>
+          <button class="hero-video-play" id="heroVideoPlay" aria-label="Reproducir video">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><polygon points="8,5 19,12 8,19"/></svg>
+          </button>
+          <button class="hero-video-expand" id="heroVideoExpand" aria-label="Ver en grande">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </button>
+        </div>
+
+        <!-- Modal video -->
+        <div class="video-modal" id="videoModal">
+          <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+          <div class="video-modal-container">
+            <button class="video-modal-close" id="videoModalClose" aria-label="Cerrar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="video-modal-body" id="videoModalBody">
+              <video class="video-modal-video" id="modalVideo" src="video.mp4" muted loop playsinline></video>
+            </div>
+          </div>
+        </div>
+
         <div class="hero-meta">
           <div class="hero-meta-item">
             <span class="hero-meta-label">Estudiante</span>
