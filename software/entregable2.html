@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E2: Plataforma de Datos — QhawAI</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          </svg>
+        </div>
+        <span class="brand-name">QhawAI</span>
+      </div>
+      <div class="brand-sub">Línea: <strong>Software</strong><br>Gary F. Yunganina · UPeU 2026-I</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-top-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        Portada General
+      </a>
+      <div class="acc-group">
+        <button class="acc-header open" data-acc="software">
+          <span class="acc-dot software"></span>
+          Software
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body open" id="acc-software">
+          <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
+          <a href="entregable2.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
+          <a href="arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
+          <a href="base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
+          <a href="manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="infra">
+          <span class="acc-dot infra"></span>
+          Infraestructura
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-infra">
+            <a href="../infraestructura/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="gestion">
+          <span class="acc-dot gestion"></span>
+          Gestión
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-gestion">
+            <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-footer">Semestre 2026-I · CE021–CE024<br>Ingeniería de Sistemas</div>
+  </aside>
+  <div class="sidebar-overlay"></div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <div class="breadcrumb">
+        <span>QhawAI</span><span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">E2 · Plataforma de Datos</span>
+      </div>
+      <button class="hamburger" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="page-header">
+        <div class="page-label">Entregable 2 · CE022 — Plataforma de Datos</div>
+        <h1 class="page-title">Plataforma de Datos del Sistema</h1>
+        <p class="page-desc">Modelo entidad-relación, modelo lógico, normalización, diccionario de datos de las 9 tablas MySQL principales y estrategia de seguridad y administración de la base de datos QhawAI.</p>
+      </div>
+
+      <div class="callout callout-info">
+        <span class="callout-icon">💡</span>
+        <div class="callout-body">
+          La BD está en <strong>3NF</strong> con una excepción justificada: <code>asistencia</code> guarda nombre, grado y sección como <em>snapshot</em> para que los reportes históricos sean inmunes a cambios posteriores en los datos del estudiante.
+        </div>
+      </div>
+
+      <!-- Modelo ER -->
+      <div class="section">
+        <h2 class="section-title">1.1 Modelo Entidad-Relación</h2>
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-title">Relaciones principales</div>
+            <div class="card-body" style="font-size:0.82rem;line-height:2">
+              <code>USERS (1)</code> ──&lt; <code>PARENT_STUDENTS</code> &gt;── <code>(1) PERSONAS</code><br>
+              <code>USERS (1)</code> ──&lt; <code>ASISTENCIA</code><br>
+              <code>PERSONAS (1)</code> ──&lt; <code>ASISTENCIA</code><br>
+              <code>GRADOS (1)</code> ──&lt; <code>SECCIONES</code><br>
+              <code>GRADOS (1)</code> ──&lt; <code>PERSONAS</code> [via grado_id]<br>
+              <code>SECCIONES (1)</code> ──&lt; <code>PERSONAS</code> [via seccion_id]<br>
+              <code>AREAS (1)</code> ──&lt; <code>PERSONAS</code> [via area nombre]<br>
+              <code>USERS (1)</code> ──&lt; <code>NOTIFICATIONS</code> [polimórfico]
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Restricciones críticas</div>
+            <div class="card-body" style="font-size:0.85rem">
+              <p><code>UNIQUE KEY (dni, fecha)</code> en tabla <strong>asistencia</strong> garantiza máximo un registro por persona por día a nivel de base de datos.</p>
+              <p>La configuración global tiene fila única: <code>configuracion.id = 1</code> siempre.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img-evidence" style="margin-top:16px">
+          <img src="img/e2-diagrama-er.png" alt="Diagrama Entidad-Relación completo de la base de datos QhawAI" loading="lazy">
+          <div class="img-caption">Diagrama Entidad-Relación completo — base de datos QhawAI</div>
+        </div>
+      </div>
+
+      <!-- Normalización -->
+      <div class="section">
+        <h2 class="section-title">1.3 Normalización</h2>
+        <div class="card-grid cols-3">
+          <div class="card">
+            <div class="card-icon green">✓</div>
+            <div class="card-title">1FN — Cumplida</div>
+            <div class="card-body">Todas las tablas tienen clave primaria y atributos atómicos. No hay grupos repetitivos.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon green">✓</div>
+            <div class="card-title">2FN — Cumplida</div>
+            <div class="card-body">En tablas con clave compuesta, todos los atributos dependen de la clave completa.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon yellow">⚠</div>
+            <div class="card-title">3FN — Con excepción</div>
+            <div class="card-body"><code>asistencia</code> guarda <code>nombre</code>, <code>grado_nombre</code> y <code>seccion_nombre</code> redundantemente. Desnormalización <strong>intencional</strong> para reportes históricos.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diccionario de datos -->
+      <div class="section">
+        <h2 class="section-title">1.4 Diccionario de Datos</h2>
+
+        <h3 class="section-subtitle">Tabla: asistencia</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px">Registro histórico de cada evento de asistencia.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Nulo</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>VARCHAR(36)</td><td>NO</td><td>UUID generado por Laravel, PK</td></tr>
+              <tr><td>dni</td><td>VARCHAR(20)</td><td>NO</td><td>DNI de la persona (snapshot)</td></tr>
+              <tr><td>nombre</td><td>VARCHAR(255)</td><td>NO</td><td>Nombre al momento del registro</td></tr>
+              <tr><td>tipo</td><td>ENUM('estudiante','docente')</td><td>NO</td><td>'estudiante' o 'docente'</td></tr>
+              <tr><td>grado_nombre</td><td>VARCHAR(255)</td><td>SÍ</td><td>Grado al momento del registro (snapshot)</td></tr>
+              <tr><td>seccion_nombre</td><td>VARCHAR(255)</td><td>SÍ</td><td>Sección al momento del registro (snapshot)</td></tr>
+              <tr><td>fecha</td><td>DATE</td><td>NO</td><td>Fecha del registro</td></tr>
+              <tr><td>hora</td><td>TIME</td><td>NO</td><td>Hora de llegada</td></tr>
+              <tr><td>turno</td><td>ENUM('manana','tarde')</td><td>NO</td><td>'manana' o 'tarde'</td></tr>
+              <tr><td>is_late</td><td>TINYINT(1)</td><td>NO</td><td>1 si llegó tarde, 0 si puntual</td></tr>
+              <tr><td>minutos_tarde</td><td>SMALLINT UNSIGNED</td><td>NO</td><td>Minutos de retraso (máx 65,535)</td></tr>
+              <tr><td>confidence_pct</td><td>DECIMAL(5,1)</td><td>SÍ</td><td>Confianza del reconocimiento (0–100)</td></tr>
+              <tr><td>face_image_path</td><td>VARCHAR(512)</td><td>SÍ</td><td>URL o path al recorte del rostro (hasta 512 chars)</td></tr>
+              <tr><td>full_frame_path</td><td>VARCHAR(255)</td><td>SÍ</td><td>URL al frame panorámico</td></tr>
+              <tr><td>recorded_by</td><td>BIGINT UNSIGNED</td><td>SÍ</td><td>FK a users.id (operador)</td></tr>
+              <tr><td>ip_address</td><td>VARCHAR(45)</td><td>SÍ</td><td>IP del dispositivo de registro</td></tr>
+              <tr><td>latitude</td><td>DECIMAL(10,7)</td><td>SÍ</td><td>GPS — latitud</td></tr>
+              <tr><td>longitude</td><td>DECIMAL(10,7)</td><td>SÍ</td><td>GPS — longitud</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: personas</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px">Catálogo maestro de estudiantes y docentes.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED AUTO_INC</td><td>—</td><td>PK interna autoincrementada</td></tr>
+              <tr><td>dni</td><td>VARCHAR(50)</td><td>—</td><td>DNI nacional, UNIQUE KEY</td></tr>
+              <tr><td>nombre</td><td>VARCHAR(255)</td><td>—</td><td>Nombre completo</td></tr>
+              <tr><td>tipo</td><td>ENUM('estudiante','docente')</td><td>'estudiante'</td><td>Tipo de persona</td></tr>
+              <tr><td>grado_id</td><td>BIGINT UNSIGNED</td><td>NULL</td><td>FK a grados.id (nullable)</td></tr>
+              <tr><td>seccion_id</td><td>BIGINT UNSIGNED</td><td>NULL</td><td>FK a secciones.id (nullable)</td></tr>
+              <tr><td>grado_nombre</td><td>VARCHAR(100)</td><td>''</td><td>Nombre del grado (snapshot desnorm.)</td></tr>
+              <tr><td>seccion_nombre</td><td>VARCHAR(50)</td><td>''</td><td>Nombre de la sección (snapshot)</td></tr>
+              <tr><td>turno</td><td>ENUM('manana','tarde')</td><td>'manana'</td><td>Turno asignado</td></tr>
+              <tr><td>area</td><td>VARCHAR(100)</td><td>NULL</td><td>Área del docente (solo tipo='docente')</td></tr>
+              <tr><td>enrollment_complete</td><td>TINYINT(1)</td><td>0</td><td>1 = fotos de reconocimiento listas</td></tr>
+              <tr><td>total_faces</td><td>SMALLINT UNSIGNED</td><td>0</td><td>Fotos de rostro recortadas disponibles</td></tr>
+              <tr><td>total_raw</td><td>SMALLINT UNSIGNED</td><td>0</td><td>Fotos originales cargadas</td></tr>
+              <tr><td>total_augmented</td><td>SMALLINT UNSIGNED</td><td>0</td><td>Fotos aumentadas generadas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: users</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED AUTO_INC</td><td>PK</td></tr>
+              <tr><td>name</td><td>VARCHAR(255)</td><td>Nombre completo del usuario</td></tr>
+              <tr><td>email</td><td>VARCHAR(255) UNIQUE</td><td>Email para login</td></tr>
+              <tr><td>email_verified_at</td><td>TIMESTAMP NULL</td><td>Verificación de email (nullable)</td></tr>
+              <tr><td>password</td><td>VARCHAR(255)</td><td>Hash bcrypt (factor 12)</td></tr>
+              <tr><td>role</td><td>ENUM('admin','parent')</td><td>Solo dos roles: administrador o padre de familia</td></tr>
+              <tr><td>is_super_admin</td><td>TINYINT(1)</td><td>Permite operaciones críticas (eliminar, reset)</td></tr>
+              <tr><td>phone</td><td>VARCHAR(30) NULL</td><td>Teléfono del padre (opcional)</td></tr>
+              <tr><td>fcm_token</td><td>VARCHAR(255) NULL</td><td>Token Firebase FCM para push notifications</td></tr>
+              <tr><td>remember_token</td><td>VARCHAR(100) NULL</td><td>Token sesión persistente de Laravel</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: grados</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED</td><td>AUTO_INC</td><td>PK</td></tr>
+              <tr><td>nombre</td><td>VARCHAR(60)</td><td>—</td><td>Nombre del grado</td></tr>
+              <tr><td>nivel</td><td>VARCHAR(20)</td><td>—</td><td>'primaria' o 'secundaria'</td></tr>
+              <tr><td>horario_entrada</td><td>VARCHAR(8)</td><td>'07:30'</td><td>Hora de entrada HH:MM</td></tr>
+              <tr><td>tolerancia_minutos</td><td>TINYINT</td><td>10</td><td>Minutos antes de tardanza</td></tr>
+              <tr><td>activo</td><td>TINYINT(1)</td><td>1</td><td>0 = desactivado</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: configuracion (fila única)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>1 (siempre)</td><td>PK único del sistema</td></tr>
+              <tr><td>nombre_colegio</td><td>'Mi Colegio'</td><td>Nombre de la institución</td></tr>
+              <tr><td>turno_unico</td><td>1</td><td>1 = solo turno mañana</td></tr>
+              <tr><td>manana_entrada</td><td>'07:30:00'</td><td>Hora de entrada mañana</td></tr>
+              <tr><td>manana_tolerancia</td><td>10</td><td>Tolerancia en minutos</td></tr>
+              <tr><td>manana_corte</td><td>NULL</td><td>Hora de corte mañana</td></tr>
+              <tr><td>tarde_entrada</td><td>NULL</td><td>Hora de entrada tarde</td></tr>
+              <tr><td>tarde_tolerancia</td><td>10</td><td>Tolerancia tarde</td></tr>
+              <tr><td>tarde_corte</td><td>NULL</td><td>Hora de corte tarde</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: areas</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px">Catálogo de áreas académicas para docentes.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED AUTO_INC</td><td>—</td><td>PK</td></tr>
+              <tr><td>nombre</td><td>VARCHAR(100) UNIQUE</td><td>—</td><td>Nombre del área (ej. 'Matemáticas', 'Administración')</td></tr>
+              <tr><td>activo</td><td>TINYINT(1)</td><td>1</td><td>0 = área desactivada</td></tr>
+              <tr><td>created_at</td><td>TIMESTAMP</td><td>NULL</td><td>Fecha de creación</td></tr>
+              <tr><td>updated_at</td><td>TIMESTAMP</td><td>NULL</td><td>Última actualización</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: secciones</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px">Secciones agrupadas por grado.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED AUTO_INC</td><td>—</td><td>PK</td></tr>
+              <tr><td>grado_id</td><td>BIGINT UNSIGNED</td><td>—</td><td>FK a grados.id (CASCADE delete)</td></tr>
+              <tr><td>nombre</td><td>VARCHAR(10)</td><td>—</td><td>Nombre de la sección (ej. 'A', 'B')</td></tr>
+              <tr><td>horario_entrada_override</td><td>VARCHAR(8)</td><td>NULL</td><td>Override de hora de entrada solo para esta sección</td></tr>
+              <tr><td>activo</td><td>TINYINT(1)</td><td>1</td><td>0 = sección desactivada</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Tabla: parent_student</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:12px">Relación entre usuarios padre y sus estudiantes vinculados.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Campo</th><th>Tipo</th><th>Default</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>id</td><td>BIGINT UNSIGNED AUTO_INC</td><td>—</td><td>PK</td></tr>
+              <tr><td>user_id</td><td>BIGINT UNSIGNED</td><td>—</td><td>FK a users.id (CASCADE delete)</td></tr>
+              <tr><td>student_dni</td><td>VARCHAR(50)</td><td>—</td><td>DNI del estudiante vinculado (ref. a personas.dni)</td></tr>
+              <tr><td>created_at</td><td>TIMESTAMP</td><td>NULL</td><td>Fecha de vinculación</td></tr>
+              <tr><td>updated_at</td><td>TIMESTAMP</td><td>NULL</td><td>Última actualización</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:6px">UNIQUE KEY (user_id, student_dni) — un padre no puede vincular al mismo estudiante dos veces.</p>
+        </div>
+      </div>
+
+      <!-- Seguridad -->
+      <div class="section">
+        <h2 class="section-title">4. Seguridad y Administración</h2>
+
+        <h3 class="section-subtitle">Roles de base de datos</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Permiso</th><th>qhawai_app</th><th>qhawai_readonly</th><th>qhawai_dba</th></tr></thead>
+            <tbody>
+              <tr><td>SELECT</td><td><span class="badge badge-success">SÍ</span></td><td><span class="badge badge-success">SÍ</span></td><td><span class="badge badge-success">SÍ</span></td></tr>
+              <tr><td>INSERT / UPDATE</td><td><span class="badge badge-success">SÍ</span></td><td><span class="badge badge-danger">NO</span></td><td><span class="badge badge-success">SÍ</span></td></tr>
+              <tr><td>DELETE</td><td><span class="badge badge-success">SÍ</span></td><td><span class="badge badge-danger">NO</span></td><td><span class="badge badge-success">SÍ</span></td></tr>
+              <tr><td>DDL (CREATE/ALTER)</td><td><span class="badge badge-danger">NO</span></td><td><span class="badge badge-danger">NO</span></td><td><span class="badge badge-success">SÍ</span></td></tr>
+              <tr><td>EXECUTE (procedures)</td><td><span class="badge badge-success">SÍ</span></td><td><span class="badge badge-danger">NO</span></td><td><span class="badge badge-success">SÍ</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-muted);margin-top:8px">Los usuarios MySQL se crean con los scripts de la sección Referencia BD. En desarrollo se usa el usuario root con permisos completos.</p>
+
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-title">🛡️ Protección SQL Injection</div>
+            <div class="card-body">Laravel 13.5 usa PDO con <strong>prepared statements</strong> en todas las consultas vía Eloquent ORM. No se concatenan strings de usuario en queries.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">🔐 Autenticación</div>
+            <div class="card-body">Contraseñas con hash <strong>bcrypt (factor 12)</strong>. Laravel gestiona sesiones con tokens seguros. La API Python usa header <code>X-API-Key</code> en .env.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📝 Auditoría</div>
+            <div class="card-body">Trigger <code>tg_audit_delete_asistencia</code> + tabla <code>auditoria_asistencia</code> implementados como scripts SQL ejecutables (ver sección Referencia BD). Se ejecutan en producción para registrar cada eliminación con id, dni, nombre, fecha y timestamp.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">💾 Backup diario (cron 23:00)</div>
+            <div class="card-body"><code>mysqldump --single-transaction --routines --triggers</code> comprimido con gzip. Retención: 30 días. Restauración vía phpMyAdmin o SSH.</div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Índices de optimización</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Índice</th><th>Columnas</th><th>Propósito</th></tr></thead>
+            <tbody>
+              <tr><td>idx_asistencia_fecha</td><td>fecha</td><td>Consultas de reportes diarios</td></tr>
+              <tr><td>idx_asistencia_dni_fecha</td><td>dni, fecha</td><td>Historial individual de una persona</td></tr>
+              <tr><td>idx_asistencia_tipo_fecha</td><td>tipo, fecha</td><td>Reportes filtrados por tipo de persona</td></tr>
+              <tr><td>idx_asistencia_recorded_by</td><td>recorded_by, fecha</td><td>Actividad de operadores</td></tr>
+              <tr><td>idx_notifications_read_at</td><td>notifiable_id, read_at</td><td>Notificaciones no leídas</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="callout callout-info">
+        <span class="callout-icon">💻</span>
+        <div class="callout-body">
+          Los scripts DDL completos, vistas, procedimientos almacenados, trigger y función de BD están en la sección
+          <a href="base_datos.html">Referencia BD — SQL Scripts</a>.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

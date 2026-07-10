@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E3: Sistema Funcional — QhawAI</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          </svg>
+        </div>
+        <span class="brand-name">QhawAI</span>
+      </div>
+      <div class="brand-sub">Línea: <strong>Software</strong><br>Gary F. Yunganina · UPeU 2026-I</div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-top-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+        Portada General
+      </a>
+      <div class="acc-group">
+        <button class="acc-header open" data-acc="software">
+          <span class="acc-dot software"></span>
+          Software
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body open" id="acc-software">
+          <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
+          <a href="entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
+          <a href="arquitectura.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
+          <a href="base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
+          <a href="manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="infra">
+          <span class="acc-dot infra"></span>
+          Infraestructura
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-infra">
+            <a href="../infraestructura/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
+        </div>
+      </div>
+      <div class="acc-group">
+        <button class="acc-header" data-acc="gestion">
+          <span class="acc-dot gestion"></span>
+          Gestión
+          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="acc-body" id="acc-gestion">
+            <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar-footer">Semestre 2026-I · CE021–CE024<br>Ingeniería de Sistemas</div>
+  </aside>
+  <div class="sidebar-overlay"></div>
+
+  <div class="main-content">
+    <div class="topbar">
+      <div class="breadcrumb">
+        <span>QhawAI</span><span class="breadcrumb-sep">›</span>
+        <span class="breadcrumb-current">E3 · Sistema Funcional</span>
+      </div>
+      <button class="hamburger" aria-label="Menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="content">
+      <div class="page-header">
+        <div class="page-label">Entregable 3 · CE023 — Sistema de Software</div>
+        <h1 class="page-title">Sistema de Software Funcional Integrado</h1>
+        <p class="page-desc">Arquitectura distribuida de 3 capas, módulos Laravel/Python/Android, 6 flujos principales implementados, patrones de diseño aplicados e instrucciones de despliegue.</p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row cols-4" style="margin-bottom:32px">
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Capas de arquitectura</div></div>
+        <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">Flujos implementados</div></div>
+        <div class="stat-card"><div class="stat-num">14</div><div class="stat-label">Controllers Laravel</div></div>
+        <div class="stat-card"><div class="stat-num">~5.5K</div><div class="stat-label">Líneas de código (LOC)</div></div>
+      </div>
+
+      <!-- Arquitectura -->
+      <div class="section">
+        <h2 class="section-title">1. Arquitectura General</h2>
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-icon blue">🌐</div>
+            <div class="card-title">Capa 1 — Presentación</div>
+            <div class="card-body">Laravel Blade + Tailwind CSS + JavaScript vanilla (web) y aplicación Android nativa (móvil).</div>
+          </div>
+          <div class="card">
+            <div class="card-icon yellow">⚙️</div>
+            <div class="card-title">Capa 2 — Lógica de Negocio</div>
+            <div class="card-body">Laravel 13.5 (PHP 8.3): autenticación, reglas de negocio, notificaciones, reportes, API REST para app móvil.</div>
+          </div>
+          <div class="card">
+            <div class="card-icon green">🧠</div>
+            <div class="card-title">Capa 3 — Datos e IA</div>
+            <div class="card-body">MySQL 8.x (persistencia), Python FastAPI (reconocimiento facial), sistema de archivos (imágenes).</div>
+          </div>
+          <div class="card">
+            <div class="card-icon purple">🔌</div>
+            <div class="card-title">Servicios Externos</div>
+            <div class="card-body">Firebase Cloud Messaging (notificaciones push) y GitHub Pages (descarga del APK).</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Módulos -->
+      <div class="section">
+        <h2 class="section-title">1.2 Módulos del Sistema</h2>
+
+        <h3 class="section-subtitle">Backend Laravel (PHP)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Módulo</th><th>Responsabilidad</th></tr></thead>
+            <tbody>
+              <tr><td>Auth (LoginController)</td><td>Autenticación, sesiones, gestión de roles</td></tr>
+              <tr><td>AttendanceController</td><td>Reconocimiento, historial, feed, notificaciones</td></tr>
+              <tr><td>EnrollmentController</td><td>Registro de rostros en Python API</td></tr>
+              <tr><td>ReportController</td><td>Reportes por día, persona y rango</td></tr>
+              <tr><td>DashboardController</td><td>Resumen del día, sync MySQL-Python</td></tr>
+              <tr><td>GradoController</td><td>CRUD grados, secciones y áreas</td></tr>
+              <tr><td>ConfiguracionController</td><td>Horarios, turnos, tolerancia</td></tr>
+              <tr><td>PersonaController</td><td>CRUD estudiantes y docentes</td></tr>
+              <tr><td>Admin/UsersController</td><td>Gestión de usuarios, vinculación padre-hijo</td></tr>
+              <tr><td>Api/MobileDataController</td><td>Endpoints para app Android (Sanctum)</td></tr>
+              <tr><td>FacialApiService</td><td>Cliente HTTP hacia API Python (Guzzle)</td></tr>
+              <tr><td>FcmService</td><td>Envío de notificaciones push FCM</td></tr>
+              <tr><td>ParentController</td><td>Panel del padre, historial de su hijo</td></tr>
+              <tr><td>NotificationController</td><td>CRUD notificaciones del sistema</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="section-subtitle">Microservicio Python (FastAPI)</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Módulo</th><th>Responsabilidad</th></tr></thead>
+            <tbody>
+              <tr><td>api.py</td><td>Endpoints REST, rutas, autenticación por API Key</td></tr>
+              <tr><td>face_recognizer.py</td><td>Detectar y reconocer rostros (YOLO + ArcFace)</td></tr>
+              <tr><td>enrollment.py</td><td>Pipeline de registro de nuevos rostros</td></tr>
+              <tr><td>dataset_manager.py</td><td>Gestionar fotos, metadata y embeddings</td></tr>
+              <tr><td>student_repository.py</td><td>Acceso a MySQL desde Python (PyMySQL)</td></tr>
+              <tr><td>db_sync.py</td><td>Sincronización de datos entre MySQL y dataset local</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Flujos -->
+      <div class="section">
+        <h2 class="section-title">2. Flujos Principales Implementados</h2>
+
+        <div style="margin-bottom:20px">
+          <div class="section-subtitle">Flujo 1 — Toma de asistencia (Web)</div>
+          <ol class="flow-list">
+            <li class="flow-item"><span class="flow-num">1</span><span class="flow-text">Operador abre <code>/attendance</code> e inicia la cámara con <code>getUserMedia()</code></span></li>
+            <li class="flow-item"><span class="flow-num">2</span><span class="flow-text">JavaScript captura un frame cada <strong>200ms</strong> como base64 JPEG (75% calidad)</span></li>
+            <li class="flow-item"><span class="flow-num">3</span><span class="flow-text"><code>POST /attendance/recognize</code> → Laravel reenvía a Python con <code>include_full_frame=false</code></span></li>
+            <li class="flow-item"><span class="flow-num">4</span><span class="flow-text">Python: YOLO-Face detecta rostros → ArcFace genera embedding → busca en base de embeddings</span></li>
+            <li class="flow-item"><span class="flow-num">5</span><span class="flow-text">Verifica: no registrado hoy (cache + BD) → dentro del horario de corte → calcula tardanza</span></li>
+            <li class="flow-item"><span class="flow-num">6</span><span class="flow-text">Guarda recorte del rostro + frame panorámico en <strong>background thread</strong> (sin bloquear respuesta)</span></li>
+            <li class="flow-item"><span class="flow-num">7</span><span class="flow-text">Laravel: <code>INSERT asistencia</code> en MySQL → <code>notifyParents()</code> → push FCM al padre</span></li>
+            <li class="flow-item"><span class="flow-num">8</span><span class="flow-text">Navegador actualiza overlay canvas + paneles laterales con el resultado JSON</span></li>
+          </ol>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <div class="section-subtitle">Flujo 2 — Sync Offline (App Móvil)</div>
+          <ol class="flow-list">
+            <li class="flow-item"><span class="flow-num">1</span><span class="flow-text">App guarda N registros en SQLite local sin conexión a internet</span></li>
+            <li class="flow-item"><span class="flow-num">2</span><span class="flow-text">Al recuperar internet: <code>POST /api/mobile/sync-offline</code> con array de records</span></li>
+            <li class="flow-item"><span class="flow-num">3</span><span class="flow-text">Laravel: <code>calcularTardanza(hora, turno)</code> usando <code>Configuracion::current()</code></span></li>
+            <li class="flow-item"><span class="flow-num">4</span><span class="flow-text"><code>firstOrCreate(dni+fecha)</code> → si ya existe registro online, conserva el original</span></li>
+            <li class="flow-item"><span class="flow-num">5</span><span class="flow-text">Retorna <code>{success: true, saved: N}</code></span></li>
+          </ol>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <div class="section-subtitle">Flujo 3 — Reporte por Rango</div>
+          <ol class="flow-list">
+            <li class="flow-item"><span class="flow-num">1</span><span class="flow-text">Admin selecciona fecha inicio, fin y tipo de persona</span></li>
+            <li class="flow-item"><span class="flow-num">2</span><span class="flow-text">Laravel identifica días escolares válidos (asistió ≥ 10% del total)</span></li>
+            <li class="flow-item"><span class="flow-num">3</span><span class="flow-text">Para cada día válido: genera registros de Asistencia + Falta para personas sin registro</span></li>
+            <li class="flow-item"><span class="flow-num">4</span><span class="flow-text">Exportar PDF: DomPDF con template Blade | Exportar Excel: Maatwebsite/Excel con colores (faltas en rojo)</span></li>
+          </ol>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <div class="section-subtitle">Flujo 4 — Notificación al Padre</div>
+          <ol class="flow-list">
+            <li class="flow-item"><span class="flow-num">1</span><span class="flow-text">Tras <code>INSERT</code> exitoso: <code>notifyParents()</code> busca <code>parent_students</code> por dni</span></li>
+            <li class="flow-item"><span class="flow-num">2</span><span class="flow-text"><code>$parent->notify(new AttendanceNotification($face))</code> → guarda en tabla <code>notifications</code></span></li>
+            <li class="flow-item"><span class="flow-num">3</span><span class="flow-text"><code>FcmService::send()</code> con título y cuerpo formateados → push recibido en &lt;30 segundos</span></li>
+          </ol>
+        </div>
+
+        <div style="margin-bottom:20px">
+          <div class="section-subtitle">Flujo 5 — Enrollment de Nuevo Usuario</div>
+          <ol class="flow-list">
+            <li class="flow-item"><span class="flow-num">1</span><span class="flow-text">Admin captura foto o sube imagen → <code>POST /enrollment</code> con imagen base64 + datos del alumno</span></li>
+            <li class="flow-item"><span class="flow-num">2</span><span class="flow-text">Python valida calidad del rostro (blur, tamaño, ángulo) → genera embedding ArcFace</span></li>
+            <li class="flow-item"><span class="flow-num">3</span><span class="flow-text">Guarda foto en <code>dataset/{dni}/raw/</code> y <code>dataset/{dni}/faces/</code></span></li>
+            <li class="flow-item"><span class="flow-num">4</span><span class="flow-text">Reconstruye base de embeddings → persona reconocible en el siguiente request</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Roles y permisos -->
+      <div class="section">
+        <h2 class="section-title">2.2 Roles y Permisos</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Rol</th><th>Acceso</th><th>Autenticación</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="badge badge-danger">admin</span></td>
+                <td>Dashboard, attendance, reportes, personas, grados, configuración, usuarios</td>
+                <td>Sesión web + middleware <code>role:admin</code></td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-warning">operator</span></td>
+                <td>Solo toma de asistencia (futuro; actualmente usa credenciales admin)</td>
+                <td>Sanctum Bearer token (API móvil)</td>
+              </tr>
+              <tr>
+                <td><span class="badge badge-info">parent</span></td>
+                <td>Solo panel <code>/mi-panel</code> — asistencias de sus hijos vinculados</td>
+                <td>Sesión web + middleware <code>role:parent</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout callout-warning">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            El flag <strong>is_super_admin</strong> permite operaciones críticas adicionales: eliminar registros individuales de asistencia, limpiar toda la asistencia del día, y ver actividad de operadores.
+          </div>
+        </div>
+      </div>
+
+      <!-- Patrones -->
+      <div class="section">
+        <h2 class="section-title">3.2 Patrones y Buenas Prácticas Aplicadas</h2>
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-title">MVC — Laravel</div>
+            <div class="card-body">Models (Eloquent ORM con relaciones, accessors y scopes), Views (Blade templates), Controllers (un controller por dominio de negocio).</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Service Layer</div>
+            <div class="card-body"><code>FacialApiService</code> encapsula toda la comunicación con Python. <code>FcmService</code> encapsula Firebase. Los controllers no conocen los detalles HTTP.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Singleton — Python</div>
+            <div class="card-body"><code>get_recognizer()</code>, <code>get_pipeline()</code>, <code>get_dataset()</code> retornan instancias únicas. Los modelos ONNX (~2GB) se cargan una sola vez al inicio.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Observer — Laravel Notifications</div>
+            <div class="card-body"><code>$parent->notify(new AttendanceNotification())</code> dispara envío a BD (DB channel) y FCM sin que el controller conozca los detalles de cada canal.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Proxy — Imágenes HTTP</div>
+            <div class="card-body">La ruta <code>/img-proxy</code> sirve imágenes del servidor Python como HTTPS. El navegador nunca conoce la URL interna. Previene Mixed Content.</div>
+          </div>
+          <div class="card">
+            <div class="card-title">Background Threads — Python</div>
+            <div class="card-body">Las operaciones de escritura de imágenes no bloquean la respuesta HTTP. Permite responder en &lt;2s aunque guardar la foto tome más tiempo.</div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Capturas funcionales -->
+      <div class="section">
+        <h2 class="section-title">2.3 Capturas del Sistema Funcional</h2>
+        <h3 class="section-subtitle">Sistema Web</h3>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-func-01-login.png" alt="Login del sistema web — autenticación por rol" loading="lazy">
+          <div class="img-caption">Login del sistema web — autenticación por rol</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-func-02-dashboard.png" alt="Dashboard — conteo de asistencias del día actual" loading="lazy">
+          <div class="img-caption">Dashboard — conteo de asistencias del día actual</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-func-03-camara.png" alt="Tomar Asistencia — cámara activa con rectángulos de detección" loading="lazy">
+          <div class="img-caption">Tomar Asistencia — cámara activa con rectángulos de detección</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/3-func-04-panel-detectados.png" alt="Panel lateral izquierdo — alumno detectado con foto y nombre" loading="lazy">
+          <div class="img-caption">Panel lateral izquierdo — alumno detectado con foto y nombre</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-func-09-excel.png" alt="Archivo .xlsx abierto en Excel con datos reales de asistencia" loading="lazy">
+          <div class="img-caption">Archivo .xlsx abierto en Excel con datos reales de asistencia</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-func-10-perfil.png" alt="Perfil individual de estudiante con historial de asistencias" loading="lazy">
+          <div class="img-caption">Perfil individual de estudiante con historial de asistencias</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-func-11-grados.png" alt="Administración de Grados y Secciones" loading="lazy">
+          <div class="img-caption">Administración de Grados y Secciones</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-func-12-config.png" alt="Configuración — horarios de turno mañana/tarde" loading="lazy">
+          <div class="img-caption">Configuración — horarios de turno mañana/tarde</div>
+        </div>
+        </div>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-func-13-mi-panel.png" alt="Panel /mi-panel — asistencias del hijo vinculado (rol padre)" loading="lazy">
+          <div class="img-caption">Panel /mi-panel — asistencias del hijo vinculado (rol padre)</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-func-14-phpmyadmin.png" alt="phpMyAdmin — tabla asistencia con registros reales" loading="lazy">
+          <div class="img-caption">phpMyAdmin — tabla asistencia con registros reales</div>
+        </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Aplicación Móvil Android</h3>
+        <div class="img-grid-mobile">
+        <div class="img-evidence">
+          <img src="img/e3-movil-01-camara.png" alt="App Android — cámara activa" loading="lazy">
+          <div class="img-caption">App Android — cámara activa</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-movil-03-notificacion.png" alt="Celular del padre — notificación push visible" loading="lazy">
+          <div class="img-caption">Celular del padre — notificación push visible</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-movil-04-github-pages.png" alt="GitHub Pages — página de descarga del APK" loading="lazy">
+          <div class="img-caption">GitHub Pages — página de descarga del APK</div>
+        </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Repositorios en GitHub</h3>
+        <div class="img-grid-2">
+        <div class="img-evidence">
+          <img src="img/e3-repo-01-laravel.png" alt="Repositorio Laravel en GitHub — estructura de carpetas" loading="lazy">
+          <div class="img-caption">Repositorio Laravel en GitHub — estructura de carpetas</div>
+        </div>
+        <div class="img-evidence">
+          <img src="img/e3-repo-02-python.png" alt="Repositorio Python en GitHub — estructura de carpetas" loading="lazy">
+          <div class="img-caption">Repositorio Python en GitHub — estructura de carpetas</div>
+        </div>
+        </div>
+      </div>
+      <!-- Despliegue -->
+      <div class="section">
+        <h2 class="section-title">4. Instalación y Despliegue</h2>
+
+        <h3 class="section-subtitle">Requisitos del servidor</h3>
+        <div class="card-grid cols-2">
+          <div class="card">
+            <div class="card-title">🖥️ Servidor (Laravel + Python)</div>
+            <div class="card-body">
+              Linux (Ubuntu 20.04+) · PHP 8.3+ · MySQL 8.x · Composer 2.x<br>
+              Python 3.11+ · pip · <strong>4GB RAM mínimo</strong> (modelos IA ~2GB) · 20GB disco
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">📱 Dispositivo Android</div>
+            <div class="card-body">
+              Android 8.0 (API 26) o superior · Cámara frontal o trasera<br>
+              2GB RAM mínimo · Conexión a internet (para sync)
+            </div>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle" style="margin-top:20px">Backend Laravel</h3>
+        <div class="code-wrap">
+          <div class="code-header">
+            <span class="code-lang">bash</span>
+            <button class="copy-btn">Copiar</button>
+          </div>
+          <pre><span class="cmt"># 1. Instalar dependencias</span>
+composer install --no-dev --optimize-autoloader
+
+<span class="cmt"># 2. Configurar entorno</span>
+cp .env.example .env
+<span class="cmt"># Editar .env: APP_URL, DB_*, FACIAL_API_URL, FACIAL_API_KEY, FIREBASE_CREDENTIALS</span>
+
+<span class="cmt"># 3. Generar clave y migrar</span>
+php artisan key:generate
+php artisan migrate
+
+<span class="cmt"># 4. Crear usuario administrador</span>
+php artisan tinker
+<span class="str">>>> User::create(['name'=>'Admin','email'=>'admin@colegio.pe',
+    'password'=>bcrypt('contraseña'),'role'=>'admin','is_super_admin'=>true]);</span>
+
+<span class="cmt"># 5. Optimizar para producción</span>
+php artisan config:cache && php artisan route:cache && php artisan view:cache
+chmod -R 775 storage bootstrap/cache</pre>
+        </div>
+
+        <h3 class="section-subtitle">API Python (Microservicio IA — Docker)</h3>
+        <div class="code-wrap">
+          <div class="code-header">
+            <span class="code-lang">bash</span>
+            <button class="copy-btn">Copiar</button>
+          </div>
+          <pre><span class="cmt"># El microservicio IA corre en un contenedor Docker.</span>
+<span class="cmt"># Nginx dentro del contenedor enruta al Uvicorn en el puerto interno 80.</span>
+<span class="cmt"># Laravel consume el API en http://localhost:80</span>
+
+<span class="cmt"># Verificar contenedor activo</span>
+docker ps
+
+<span class="cmt"># Ver logs del contenedor</span>
+docker logs &lt;nombre-contenedor&gt;
+
+<span class="cmt"># Reiniciar contenedor (también se reinicia solo con restart: always)</span>
+docker restart &lt;nombre-contenedor&gt;</pre>
+        </div>
+
+        <h3 class="section-subtitle">App Android</h3>
+        <div class="callout callout-success">
+          <span class="callout-icon">📦</span>
+          <div class="callout-body">
+            <strong>Instalación directa:</strong> Visita <a href="https://garyfernandoym.github.io/QhawAI-Descarga/" target="_blank">garyfernandoym.github.io/QhawAI-Descarga/</a> desde el celular → toca "Descargar APK" → habilitar apps de fuentes desconocidas → instalar.
+          </div>
+        </div>
+      </div>
+
+      <!-- Estructura del repositorio -->
+      <div class="section">
+
+        <h3 class="section-subtitle" style="margin-top:20px">Evidencias de Despliegue</h3>
+
+        <div class="img-grid-2">
+        </div>
+        <h2 class="section-title">3.1 Estructura del Repositorio</h2>
+        <div class="card-grid cols-2">
+          <div class="code-wrap" style="margin-bottom:0">
+            <div class="code-header"><span class="code-lang">Laravel (PHP)</span></div>
+            <pre style="font-size:0.78rem">app/
+  Http/Controllers/
+    AttendanceController.php
+    EnrollmentController.php
+    DashboardController.php
+    GradoController.php
+    ConfiguracionController.php
+    PersonaController.php
+    ParentController.php
+    Auth/LoginController.php
+    Admin/UsersController.php
+    Api/MobileDataController.php
+  Models/
+    Asistencia.php · Persona.php
+    User.php · Grado.php
+    Configuracion.php
+  Notifications/
+    AttendanceNotification.php
+  Services/
+    FacialApiService.php
+    FcmService.php</pre>
+          </div>
+          <div class="code-wrap" style="margin-bottom:0">
+            <div class="code-header"><span class="code-lang">Python (FastAPI)</span></div>
+            <pre style="font-size:0.78rem">deteccionrostros/
+  api.py            (FastAPI endpoints)
+  face_recognizer.py(ArcFace logic)
+  enrollment.py     (pipeline)
+  dataset_manager.py(fotos y metadata)
+  student_repository.py (MySQL)
+  db_sync.py
+  logs/
+    attendance_images/{fecha}/
+    attendance_frames/{fecha}/
+    turno_config.json
+  dataset/{dni}/
+    faces/   (embeddings)
+    raw/     (originales)</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stack completo -->
+      <div class="section">
+        <h2 class="section-title">Stack Tecnológico Completo</h2>
+        <div class="card-grid cols-3">
+          <div class="card">
+            <div class="card-title">Backend / Web</div>
+            <div class="card-body" style="font-size:0.82rem;line-height:1.8">
+              Laravel 13.5 · PHP 8.3<br>MySQL 8.x · Eloquent ORM<br>Laravel Sanctum · Notifications<br>DomPDF · Maatwebsite/Excel<br>Guzzle HTTP
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Microservicio IA</div>
+            <div class="card-body" style="font-size:0.82rem;line-height:1.8">
+              Docker · Nginx · Uvicorn<br>Python 3.11 · FastAPI 0.110+<br>InsightFace buffalo_l (ArcFace embeddings 512-d)<br>YOLO-Face · OpenCV 4.x · NumPy · PyMySQL
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Frontend / Apps</div>
+            <div class="card-body" style="font-size:0.82rem;line-height:1.8">
+              Blade Templates · Tailwind CSS<br>JavaScript ES2022 · Canvas API<br>MediaDevices API · Geolocation API<br>Android SDK (Kotlin/Java)<br>Firebase FCM · SQLite · CameraX
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
