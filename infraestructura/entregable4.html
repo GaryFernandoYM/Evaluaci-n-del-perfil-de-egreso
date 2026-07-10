@@ -1,241 +1,2372 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E4 · Calidad y Operación — QhawAI</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entregable 4 CE0312 y CE0313: Implementación y Testing de Red para la infraestructura tecnológica de QhawAI."
+  >
+
+  <title>E4 · Implementación y Testing de Red — QhawAI</title>
+
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
 <div class="layout">
+
+  <!-- ===================================================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================================================== -->
+
   <aside class="sidebar">
+
     <div class="sidebar-brand">
+
       <div class="brand-logo">
+
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="4"></circle>
+
+            <path
+              d="M2 7V5a2 2 0 012-2h2
+                 M2 17v2a2 2 0 002 2h2
+                 M22 7V5a2 2 0 00-2-2h-2
+                 M22 17v2a2 2 0 01-2 2h-2"
+            ></path>
           </svg>
         </div>
+
         <span class="brand-name">QhawAI</span>
+
       </div>
-      <div class="brand-sub">Línea: <strong>Infraestructura</strong><br>UPeU 2026-I</div>
+
+      <div class="brand-sub">
+        Línea:
+        <strong>Infraestructura</strong>
+        <br>
+        UPeU 2026-I
+      </div>
+
     </div>
+
+
     <nav class="sidebar-nav">
+
       <a href="../index.html" class="sidebar-top-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+        </svg>
+
         Portada General
+
       </a>
+
+
+      <!-- SOFTWARE -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="software">
+
+        <button class="acc-header" data-acc="software">
+
           <span class="acc-dot software"></span>
+
           Software
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-software">
-          <a href="../software/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="../software/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
-          <a href="../software/arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
-          <a href="../software/base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
-          <a href="../software/manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div class="acc-body" id="acc-software">
+
+          <a href="../software/entregable1.html" class="nav-link">
+            E1 · Requerimientos y Diseño
+          </a>
+
+          <a href="../software/entregable2.html" class="nav-link">
+            E2 · Plataforma de Datos
+          </a>
+
+          <a href="../software/arquitectura.html" class="nav-link">
+            E3 · Sistema Funcional
+          </a>
+
+          <a href="../software/manual_usuario.html" class="nav-link">
+            E4 · Calidad y Operación
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- INFRAESTRUCTURA -->
+
       <div class="acc-group">
-        <button class="acc-header open " data-acc="infra">
+
+        <button
+          class="acc-header open"
+          data-acc="infra"
+        >
+
           <span class="acc-dot infra"></span>
+
           Infraestructura
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body open " id="acc-infra">
-          <a href="index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
-          <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>E2 · Implementación</a>
-          <a href="entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>E3 · Sistema en Producción</a>
-          <a href="entregable4.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div
+          class="acc-body open"
+          id="acc-infra"
+        >
+
+          <a href="index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="entregable1.html" class="nav-link">
+            E1 · Diseño de Red
+          </a>
+
+          <a href="entregable2.html" class="nav-link">
+            E2 · Planificación de Seguridad
+          </a>
+
+          <a href="entregable3.html" class="nav-link">
+            E3 · Diseño de Centro de Datos
+          </a>
+
+          <a href="entregable4.html" class="nav-link active">
+            E4 · Implementación y Testing de Red
+          </a>
+
+          <a href="entregable5.html" class="nav-link">
+            E5 · Seguridad, Monitoreo y Ética
+          </a>
+
+          <a href="entregable6.html" class="nav-link">
+            E6 · Control de Centro de Datos
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- GESTIÓN -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="gestion">
+
+        <button class="acc-header" data-acc="gestion">
+
           <span class="acc-dot gestion"></span>
+
           Gestión
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-gestion">
-          <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
-          <a href="../gestion/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Diagnóstico</a>
-          <a href="../gestion/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>E2 · Modelado de Procesos</a>
-          <a href="../gestion/entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>E3 · Plan de Proyecto</a>
-          <a href="../gestion/entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Auditoría y Cierre</a>
+
+        <div class="acc-body" id="acc-gestion">
+
+          <a href="../gestion/index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="../gestion/entregable1.html" class="nav-link">
+            E1 · Diagnóstico
+          </a>
+
+          <a href="../gestion/entregable2.html" class="nav-link">
+            E2 · Modelado de Procesos
+          </a>
+
+          <a href="../gestion/entregable3.html" class="nav-link">
+            E3 · Plan de Proyecto
+          </a>
+
+          <a href="../gestion/entregable4.html" class="nav-link">
+            E4 · Auditoría y Cierre
+          </a>
+
         </div>
+
       </div>
+
     </nav>
+
+
     <div class="sidebar-footer">
-      Semestre 2026-I · CE021–CE024<br>
+      Semestre 2026-I
+      <br>
+      CE03 · Infraestructura Tecnológica
+      <br>
       Ingeniería de Sistemas
     </div>
+
   </aside>
+
+
   <div class="sidebar-overlay"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
   <div class="main-content">
+
     <div class="topbar">
+
       <div class="breadcrumb">
-        <a href="../index.html" style="color:var(--text-muted);text-decoration:none">Perfil de Egreso</a>
+
+        <a
+          href="../index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Perfil de Egreso
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <a href="index.html" style="color:var(--text-muted);text-decoration:none">Línea de Infraestructura</a>
+
+        <a
+          href="index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Infraestructura
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">E4 · Calidad y Operación</span>
+
+        <span class="breadcrumb-current">
+          E4 · Implementación y Testing de Red
+        </span>
+
       </div>
-      <button class="hamburger" aria-label="Menú">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+
+
+      <button
+        class="hamburger"
+        aria-label="Abrir menú"
+        type="button"
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
+
       </button>
+
     </div>
-    <div class="content">
-      <div class="hero" style="border-left:4px solid #059669">
-        <div class="hero-eyebrow" style="color:#059669">Línea de Infraestructura · CE024</div>
-        <h1 class="hero-title" style="font-size:1.8rem">E4 — Calidad, Operación y Evolución de Infraestructura</h1>
-        <p class="hero-desc">Pruebas de infraestructura, plan de backup y recuperación, plan de continuidad, incidencias registradas, auditoría y mejoras propuestas.</p>
+
+
+    <main class="content">
+
+      <!-- PORTADA DIGITAL -->
+
+      <section
+        class="hero"
+        style="border-left:4px solid #059669"
+      >
+
+        <div
+          class="hero-eyebrow"
+          style="color:#059669"
+        >
+          Línea de Infraestructura Tecnológica · CE0312–CE0313
+        </div>
+
+        <h1
+          class="hero-title"
+          style="font-size:1.8rem"
+        >
+          Entregable 4 — Implementación y Testing de Red
+        </h1>
+
+        <p class="hero-desc">
+          Configuración de dispositivos, direccionamiento IP, routing,
+          controles de acceso, pruebas de conectividad, medición de
+          rendimiento y monitoreo de la infraestructura de red de QhawAI.
+        </p>
+
+
         <div class="hero-meta">
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Línea</span>
-            <span class="hero-meta-value"><span class="linea-badge infra">Infraestructura</span></span>
-          </div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Universidad</span>
-            <span class="hero-meta-value">UPeU</span>
-          </div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Semestre</span>
-            <span class="hero-meta-value">2026-I</span>
-          </div>
-          <div class="hero-meta-item">
-            <span class="hero-meta-label">Estudiante</span>
-            <span class="hero-meta-value">[FALTA COMPLEMENTAR]</span>
-          </div>
-        </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">2. Pruebas de Infraestructura</h2>
-        <div class="card-grid cols-2" style="gap:10px">
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Competencias
+            </span>
+
+            <span class="hero-meta-value">
+              CE0312 · CE0313
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Línea
+            </span>
+
+            <span class="hero-meta-value">
+              <span class="linea-badge infra">
+                Infraestructura
+              </span>
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Universidad
+            </span>
+
+            <span class="hero-meta-value">
+              Universidad Peruana Unión
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Semestre
+            </span>
+
+            <span class="hero-meta-value">
+              2026-I
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Estudiante
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR NOMBRE]
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Fecha
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR FECHA]
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- RESUMEN EJECUTIVO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Resumen Ejecutivo
+        </h2>
+
+        <p class="section-body">
+          El presente entregable documenta la implementación y validación
+          de la infraestructura de red diseñada para soportar QhawAI,
+          sistema inteligente de control de asistencia mediante
+          reconocimiento facial.
+        </p>
+
+        <p class="section-body">
+          La implementación considera segmentación mediante VLAN,
+          direccionamiento IP estructurado, enlaces troncales IEEE 802.1Q,
+          routing inter-VLAN, rutas estáticas, preparación para routing
+          dinámico, listas de control de acceso, seguridad de puertos,
+          monitoreo SNMPv3 y centralización de logs.
+        </p>
+
+        <p class="section-body">
+          Las pruebas comprenden conectividad permitida, bloqueo de
+          comunicaciones no autorizadas, latencia, pérdida de paquetes,
+          throughput, jitter, convergencia y disponibilidad de los equipos
+          críticos.
+        </p>
+
+        <div
+          class="callout warning"
+          style="margin-top:14px"
+        >
+          <strong>Importante:</strong>
+          las métricas y capturas que figuren como pendientes deberán
+          completarse con resultados obtenidos en Cisco Packet Tracer,
+          laboratorio virtual o dispositivos físicos. No deben presentarse
+          resultados inventados.
+        </div>
+
+      </section>
+
+
+      <!-- 1. ALCANCE -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          1. Alcance y Entorno de Implementación
+        </h2>
+
+        <p class="section-body">
+          La implementación reproduce el diseño desarrollado en el
+          Entregable 1 CE0311. El escenario puede ejecutarse en Cisco Packet
+          Tracer, GNS3, EVE-NG o un laboratorio físico autorizado.
+        </p>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Alcance</th>
+                <th>Estado</th>
+                <th>Evidencia requerida</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Segmentación VLAN</td>
+                <td>VLAN 10, 20, 30, 40, 50, 60 y 100.</td>
+                <td>Configuración preparada.</td>
+                <td>Captura de tabla VLAN.</td>
+              </tr>
+
+              <tr>
+                <td>Routing inter-VLAN</td>
+                <td>Interfaces virtuales en switch de capa 3.</td>
+                <td>Configuración preparada.</td>
+                <td>Tabla de rutas y pruebas.</td>
+              </tr>
+
+              <tr>
+                <td>Routing externo</td>
+                <td>Ruta por defecto hacia firewall o router.</td>
+                <td>Configuración preparada.</td>
+                <td>Salida de show ip route.</td>
+              </tr>
+
+              <tr>
+                <td>Controles de acceso</td>
+                <td>ACL para biometría, usuarios y gestión TI.</td>
+                <td>Configuración preparada.</td>
+                <td>Pruebas permitidas y bloqueadas.</td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo</td>
+                <td>SNMPv3, syslog, NTP y alertas.</td>
+                <td>Pendiente de validar.</td>
+                <td>Dashboard, logs o capturas.</td>
+              </tr>
+
+              <tr>
+                <td>Rendimiento</td>
+                <td>Latencia, pérdida, throughput y jitter.</td>
+                <td>Pendiente de ejecutar.</td>
+                <td>Ping, iperf3 y capturas.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 2. TOPOLOGÍA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          2. Topología Implementada
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-topologia-implementacion-qhawai.png"
+            alt="Topología de implementación y testing de red QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 1. Topología utilizada para implementación y pruebas.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Dispositivo</th>
+                <th>Función</th>
+                <th>Dirección de gestión</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>RTR-EDGE-01</td>
+                <td>Router perimetral</td>
+                <td>Enrutamiento hacia redes externas.</td>
+                <td>10.31.40.2</td>
+              </tr>
+
+              <tr>
+                <td>FW-01</td>
+                <td>Firewall</td>
+                <td>Filtrado perimetral y salida controlada.</td>
+                <td>10.31.40.3</td>
+              </tr>
+
+              <tr>
+                <td>SW-CORE-01</td>
+                <td>Switch capa 3</td>
+                <td>VLAN, routing inter-VLAN y ACL.</td>
+                <td>10.31.40.10</td>
+              </tr>
+
+              <tr>
+                <td>SW-ACC-01</td>
+                <td>Switch de acceso</td>
+                <td>Conexión de cámaras y usuarios.</td>
+                <td>10.31.40.11</td>
+              </tr>
+
+              <tr>
+                <td>SRV-APP-01</td>
+                <td>Servidor Laravel/Nginx</td>
+                <td>API y aplicación principal.</td>
+                <td>10.31.30.10</td>
+              </tr>
+
+              <tr>
+                <td>SRV-IA-01</td>
+                <td>Servidor FastAPI</td>
+                <td>Procesamiento biométrico.</td>
+                <td>10.31.30.20</td>
+              </tr>
+
+              <tr>
+                <td>SRV-DB-01</td>
+                <td>Servidor MySQL</td>
+                <td>Persistencia de información.</td>
+                <td>10.31.30.30</td>
+              </tr>
+
+              <tr>
+                <td>SRV-MON-01</td>
+                <td>Servidor de monitoreo</td>
+                <td>SNMP, syslog, métricas y alertas.</td>
+                <td>10.31.60.10</td>
+              </tr>
+
+              <tr>
+                <td>CAM-BIO-01</td>
+                <td>Dispositivo de captura</td>
+                <td>Captura facial.</td>
+                <td>10.31.20.10</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 3. CONFIGURACIÓN BÁSICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          3. Configuración de Dispositivos
+        </h2>
+
+
+        <h3>3.1 Configuración base del switch principal</h3>
+
+        <div class="code-block">
+<pre>enable
+configure terminal
+
+hostname SW-CORE-01
+no ip domain-lookup
+service password-encryption
+
+enable secret [CLAVE_OCULTA]
+
+banner motd #
+ACCESO EXCLUSIVO PARA PERSONAL AUTORIZADO
+#
+
+ip domain-name qhawai.local
+
+username admin privilege 15 secret [CLAVE_OCULTA]
+
+crypto key generate rsa modulus 2048
+ip ssh version 2
+
+line console 0
+ logging synchronous
+ exec-timeout 5 0
+ login local
+exit
+
+line vty 0 4
+ transport input ssh
+ exec-timeout 5 0
+ login local
+exit
+
+end
+write memory</pre>
+        </div>
+
+
+        <div class="callout warning" style="margin-top:14px">
+          Las contraseñas, llaves y secretos reales deben ocultarse en
+          capturas, configuraciones exportadas y anexos.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.2 Configuración de fecha, hora y NTP
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+clock timezone PET -5 0
+
+ntp server 10.31.60.20
+ntp update-calendar
+
+service timestamps log datetime msec
+service timestamps debug datetime msec
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.3 Desactivación de puertos no utilizados
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+interface range GigabitEthernet0/10-23
+ description PUERTOS_NO_UTILIZADOS
+ shutdown
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.4 Seguridad de puertos de acceso
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+interface GigabitEthernet0/1
+ description CAM-BIO-01
+ switchport mode access
+ switchport access vlan 20
+
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+
+ switchport port-security
+ switchport port-security maximum 1
+ switchport port-security violation restrict
+ switchport port-security mac-address sticky
+
+ storm-control broadcast level 5.00
+ no shutdown
+
+end</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 4. VLAN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          4. Implementación de VLAN y Enlaces Troncales
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-configuracion-vlan-routing-qhawai.png"
+            alt="Configuración de VLAN, direccionamiento y routing QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 2. VLAN, enlaces troncales y routing inter-VLAN.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.1 Creación de VLAN
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+vlan 10
+ name ADMINISTRACION
+
+vlan 20
+ name BIOMETRIA
+
+vlan 30
+ name SERVIDORES
+
+vlan 40
+ name GESTION_TI
+
+vlan 50
+ name USUARIOS
+
+vlan 60
+ name MONITOREO
+
+vlan 100
+ name DMZ
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.2 Configuración del enlace troncal
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+interface GigabitEthernet0/24
+ description TRONCAL_HACIA_SW-ACC-01
+
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40,50,60,100
+ switchport nonegotiate
+
+ no shutdown
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.3 Rapid Spanning Tree
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+spanning-tree mode rapid-pvst
+
+spanning-tree vlan 10,20,30,40,50,60,100 root primary
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.4 Comandos de verificación
+        </h3>
+
+        <div class="code-block">
+<pre>show vlan brief
+show interfaces trunk
+show spanning-tree
+show spanning-tree vlan 20
+show interfaces status
+show port-security interface GigabitEthernet0/1</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 5. DIRECCIONAMIENTO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          5. Implementación del Direccionamiento IP
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>VLAN</th>
+                <th>Nombre</th>
+                <th>Red</th>
+                <th>Gateway</th>
+                <th>Rango sugerido</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>10</td>
+                <td>Administración</td>
+                <td>10.31.10.0/24</td>
+                <td>10.31.10.1</td>
+                <td>10.31.10.10–10.31.10.200</td>
+              </tr>
+
+              <tr>
+                <td>20</td>
+                <td>Biometría</td>
+                <td>10.31.20.0/24</td>
+                <td>10.31.20.1</td>
+                <td>Direcciones estáticas.</td>
+              </tr>
+
+              <tr>
+                <td>30</td>
+                <td>Servidores</td>
+                <td>10.31.30.0/24</td>
+                <td>10.31.30.1</td>
+                <td>Direcciones estáticas.</td>
+              </tr>
+
+              <tr>
+                <td>40</td>
+                <td>Gestión TI</td>
+                <td>10.31.40.0/24</td>
+                <td>10.31.40.1</td>
+                <td>Direcciones estáticas.</td>
+              </tr>
+
+              <tr>
+                <td>50</td>
+                <td>Usuarios</td>
+                <td>10.31.50.0/24</td>
+                <td>10.31.50.1</td>
+                <td>10.31.50.20–10.31.50.220</td>
+              </tr>
+
+              <tr>
+                <td>60</td>
+                <td>Monitoreo</td>
+                <td>10.31.60.0/24</td>
+                <td>10.31.60.1</td>
+                <td>Direcciones estáticas.</td>
+              </tr>
+
+              <tr>
+                <td>100</td>
+                <td>DMZ</td>
+                <td>10.31.100.0/24</td>
+                <td>10.31.100.1</td>
+                <td>Direcciones estáticas.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.1 Interfaces virtuales del switch capa 3
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip routing
+
+interface vlan 10
+ description GW_ADMINISTRACION
+ ip address 10.31.10.1 255.255.255.0
+ no shutdown
+
+interface vlan 20
+ description GW_BIOMETRIA
+ ip address 10.31.20.1 255.255.255.0
+ no shutdown
+
+interface vlan 30
+ description GW_SERVIDORES
+ ip address 10.31.30.1 255.255.255.0
+ no shutdown
+
+interface vlan 40
+ description GW_GESTION_TI
+ ip address 10.31.40.1 255.255.255.0
+ no shutdown
+
+interface vlan 50
+ description GW_USUARIOS
+ ip address 10.31.50.1 255.255.255.0
+ no shutdown
+
+interface vlan 60
+ description GW_MONITOREO
+ ip address 10.31.60.1 255.255.255.0
+ no shutdown
+
+interface vlan 100
+ description GW_DMZ
+ ip address 10.31.100.1 255.255.255.0
+ no shutdown
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.2 Configuración DHCP
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip dhcp excluded-address 10.31.10.1 10.31.10.20
+ip dhcp excluded-address 10.31.50.1 10.31.50.20
+
+ip dhcp pool VLAN10_ADMINISTRACION
+ network 10.31.10.0 255.255.255.0
+ default-router 10.31.10.1
+ dns-server 10.31.30.40
+ domain-name qhawai.local
+
+ip dhcp pool VLAN50_USUARIOS
+ network 10.31.50.0 255.255.255.0
+ default-router 10.31.50.1
+ dns-server 10.31.30.40
+ domain-name qhawai.local
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.3 Verificación de direccionamiento
+        </h3>
+
+        <div class="code-block">
+<pre>show ip interface brief
+show interfaces vlan 20
+show ip dhcp binding
+show ip dhcp pool
+show arp</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 6. ROUTING -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          6. Configuración de Routing
+        </h2>
+
+
+        <h3>6.1 Routing estático para el escenario piloto</h3>
+
+        <p class="section-body">
+          Para el escenario inicial se utiliza una ruta predeterminada hacia
+          el firewall o router perimetral. Esta alternativa es apropiada
+          cuando existe un número reducido de rutas y una sola salida
+          principal.
+        </p>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip route 0.0.0.0 0.0.0.0 10.31.254.1
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          6.2 Routing dinámico para crecimiento
+        </h3>
+
+        <p class="section-body">
+          En una ampliación con varios routers, edificios o enlaces
+          redundantes, podrá implementarse OSPF para mejorar la convergencia
+          y reducir la administración manual.
+        </p>
+
+        <div class="code-block">
+<pre>configure terminal
+
+router ospf 10
+
+ router-id 10.31.255.1
+
+ passive-interface default
+
+ no passive-interface GigabitEthernet1/0/1
+
+ network 10.31.0.0 0.0.255.255 area 0
+
+ default-information originate
+
+end</pre>
+        </div>
+
+
+        <div class="callout info" style="margin-top:14px">
+          En el entorno piloto se validará principalmente el routing estático.
+          OSPF deberá declararse implementado únicamente si se configura y
+          demuestra mediante vecinos y tabla de rutas.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          6.3 Verificación del routing
+        </h3>
+
+        <div class="code-block">
+<pre>show ip route
+show ip route static
+show ip protocols
+show ip ospf neighbor
+show ip ospf interface brief
+traceroute 10.31.30.20</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 7. ACL -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          7. Implementación de Controles de Acceso
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-controles-acl-qhawai.png"
+            alt="Controles ACL y matriz de comunicaciones de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 3. Controles de acceso aplicados entre segmentos.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.1 ACL de dispositivos biométricos
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip access-list extended ACL_BIOMETRIA
+
+ remark PERMITIR HTTPS HACIA SERVIDOR IA
+ permit tcp 10.31.20.0 0.0.0.255 host 10.31.30.20 eq 443
+
+ remark PERMITIR SERVICIO INTERNO FASTAPI
+ permit tcp 10.31.20.0 0.0.0.255 host 10.31.30.20 eq 8000
+
+ remark PERMITIR DNS
+ permit udp 10.31.20.0 0.0.0.255 host 10.31.30.40 eq 53
+
+ remark PERMITIR NTP
+ permit udp 10.31.20.0 0.0.0.255 host 10.31.60.20 eq 123
+
+ remark BLOQUEAR RED ADMINISTRATIVA
+ deny ip 10.31.20.0 0.0.0.255 10.31.10.0 0.0.0.255 log
+
+ remark BLOQUEAR RED DE GESTION
+ deny ip 10.31.20.0 0.0.0.255 10.31.40.0 0.0.0.255 log
+
+ remark BLOQUEAR CUALQUIER OTRO TRAFICO
+ deny ip 10.31.20.0 0.0.0.255 any log
+
+interface vlan 20
+ ip access-group ACL_BIOMETRIA in
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.2 ACL de usuarios
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip access-list extended ACL_USUARIOS
+
+ remark PERMITIR HTTPS HACIA APLICACION
+ permit tcp 10.31.50.0 0.0.0.255 host 10.31.30.10 eq 443
+
+ remark BLOQUEAR MYSQL
+ deny tcp 10.31.50.0 0.0.0.255 10.31.30.0 0.0.0.255 eq 3306 log
+
+ remark BLOQUEAR BIOMETRIA
+ deny ip 10.31.50.0 0.0.0.255 10.31.20.0 0.0.0.255 log
+
+ remark BLOQUEAR GESTION
+ deny ip 10.31.50.0 0.0.0.255 10.31.40.0 0.0.0.255 log
+
+ permit ip 10.31.50.0 0.0.0.255 any
+
+interface vlan 50
+ ip access-group ACL_USUARIOS in
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.3 Restricción de administración remota
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+ip access-list standard ACL_GESTION_REMOTA
+
+ permit 10.31.40.0 0.0.0.255
+ deny any log
+
+line vty 0 4
+ access-class ACL_GESTION_REMOTA in
+ transport input ssh
+ login local
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.4 Firewall local del servidor Ubuntu
+        </h3>
+
+        <div class="code-block">
+<pre>sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+sudo ufw allow from 10.31.40.0/24 to any port 22 proto tcp
+sudo ufw allow from 10.31.10.0/24 to any port 443 proto tcp
+sudo ufw allow from 10.31.50.0/24 to any port 443 proto tcp
+
+sudo ufw deny 3306/tcp
+
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw status verbose</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.5 Verificación de ACL
+        </h3>
+
+        <div class="code-block">
+<pre>show access-lists
+show ip access-lists ACL_BIOMETRIA
+show ip access-lists ACL_USUARIOS
+show ip interface vlan 20
+show ip interface vlan 50
+show logging</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 8. ESTÁNDARES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          8. Cumplimiento de Estándares
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Estándar</th>
+                <th>Aplicación</th>
+                <th>Evidencia</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>IEEE 802.1Q</td>
+                <td>VLAN y enlaces troncales.</td>
+                <td>show interfaces trunk.</td>
+                <td>Pendiente de captura.</td>
+              </tr>
+
+              <tr>
+                <td>IEEE 802.1w</td>
+                <td>Rapid Spanning Tree.</td>
+                <td>show spanning-tree.</td>
+                <td>Pendiente de captura.</td>
+              </tr>
+
+              <tr>
+                <td>IEEE 802.3</td>
+                <td>Conectividad Ethernet.</td>
+                <td>Estado y velocidad de interfaces.</td>
+                <td>Pendiente de validar.</td>
+              </tr>
+
+              <tr>
+                <td>IEEE 802.3af/at</td>
+                <td>Alimentación PoE, si corresponde.</td>
+                <td>Estado del puerto PoE.</td>
+                <td>Según equipo disponible.</td>
+              </tr>
+
+              <tr>
+                <td>TIA/EIA-568</td>
+                <td>Cableado y terminaciones.</td>
+                <td>Plano y fotografía del cableado.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>TIA-569</td>
+                <td>Canalización y espacios.</td>
+                <td>Plano físico.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>TIA-606</td>
+                <td>Etiquetado de cables y puertos.</td>
+                <td>Inventario y códigos.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 11801</td>
+                <td>Cableado genérico.</td>
+                <td>Diseño y selección de componentes.</td>
+                <td>Documentado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 9. PRUEBAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          9. Pruebas de Conectividad y Rendimiento
+        </h2>
+
+        <p class="section-body">
+          La validación debe incluir pruebas positivas, que demuestren que
+          los servicios autorizados funcionan, y pruebas negativas, que
+          demuestren que los accesos prohibidos son bloqueados.
+        </p>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-pruebas-rendimiento-qhawai.png"
+            alt="Pruebas de conectividad y rendimiento de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 4. Esquema de pruebas y métricas de rendimiento.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.1 Matriz de pruebas funcionales
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Resultado esperado</th>
+                <th>Resultado obtenido</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>PR-01</td>
+                <td>CAM-BIO-01</td>
+                <td>Gateway VLAN 20</td>
+                <td>Respuesta correcta.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-02</td>
+                <td>CAM-BIO-01</td>
+                <td>SRV-IA-01</td>
+                <td>Comunicación permitida.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-03</td>
+                <td>CAM-BIO-01</td>
+                <td>VLAN Administración</td>
+                <td>Acceso bloqueado.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-04</td>
+                <td>PC usuario</td>
+                <td>Laravel HTTPS</td>
+                <td>Comunicación permitida.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-05</td>
+                <td>PC usuario</td>
+                <td>MySQL puerto 3306</td>
+                <td>Acceso bloqueado.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-06</td>
+                <td>Gestión TI</td>
+                <td>Switch por SSH</td>
+                <td>Acceso permitido.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-07</td>
+                <td>VLAN Usuarios</td>
+                <td>Switch por SSH</td>
+                <td>Acceso bloqueado.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>PR-08</td>
+                <td>Servidor monitoreo</td>
+                <td>Equipos críticos</td>
+                <td>Consulta SNMP permitida.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.2 Prueba de latencia y pérdida
+        </h3>
+
+        <div class="code-block">
+<pre>ping -c 100 10.31.30.20
+
+ping -c 100 10.31.30.10
+
+ping -c 100 10.31.60.10</pre>
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Criterio de aceptación</th>
+                <th>Resultado obtenido</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Latencia promedio LAN</td>
+                <td>Menor o igual a 10 ms.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+              <tr>
+                <td>Pérdida de paquetes</td>
+                <td>0 % en condiciones normales.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+              <tr>
+                <td>Variación de latencia</td>
+                <td>Sin picos sostenidos anormales.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.3 Prueba de throughput con iperf3
+        </h3>
+
+        <p class="section-body">
+          El servidor de pruebas deberá ejecutar iperf3 en modo servidor y
+          el cliente iniciará conexiones TCP y UDP.
+        </p>
+
+        <div class="code-block">
+<pre># Servidor
+iperf3 -s
+
+# Cliente TCP
+iperf3 -c 10.31.30.20 -t 30 -P 4
+
+# Cliente UDP
+iperf3 -c 10.31.30.20 -u -b 20M -t 30</pre>
+        </div>
+
+
+        <div class="table-wrapper" style="margin-top:14px">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Métrica</th>
+                <th>Criterio</th>
+                <th>Resultado obtenido</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Throughput TCP</td>
+                <td>
+                  Igual o superior al 70 % de la capacidad nominal del enlace.
+                </td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+              <tr>
+                <td>Retransmisiones</td>
+                <td>Sin incremento anormal.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+              <tr>
+                <td>Jitter UDP</td>
+                <td>Menor o igual a 10 ms en LAN.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+              <tr>
+                <td>Pérdida UDP</td>
+                <td>Menor al 1 % en escenario controlado.</td>
+                <td>Pendiente.</td>
+                <td>No evaluado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.4 Prueba de ruta
+        </h3>
+
+        <div class="code-block">
+<pre># Linux
+traceroute 10.31.30.20
+
+# Windows
+tracert 10.31.30.20
+
+# Cisco IOS
+traceroute 10.31.30.20</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.5 Prueba de aislamiento
+        </h3>
+
+        <p class="section-body">
+          Se deberán ejecutar intentos de conexión desde VLAN no autorizadas
+          hacia los servidores, equipos de gestión y dispositivos
+          biométricos. El rechazo deberá verificarse mediante la aplicación,
+          contadores ACL y registros.
+        </p>
+
+        <div class="code-block">
+<pre>show access-lists
+show ip access-lists
+show logging
+
+telnet 10.31.30.30 3306
+ssh admin@10.31.40.10
+curl -k https://10.31.30.10</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 10. MONITOREO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          10. Implementación de Monitoreo
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-monitoreo-snmp-syslog-qhawai.png"
+            alt="Monitoreo SNMPv3 y syslog de la red QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 5. Monitoreo mediante SNMPv3, syslog y alertas.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.1 Configuración SNMPv3
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+snmp-server view QHAWAI-VIEW iso included
+
+snmp-server group QHAWAI-GROUP v3 priv read QHAWAI-VIEW
+
+snmp-server user monitor QHAWAI-GROUP v3
+ auth sha [CLAVE_AUTH_OCULTA]
+ priv aes 128 [CLAVE_PRIV_OCULTA]
+
+snmp-server host 10.31.60.10 version 3 priv monitor
+
+snmp-server enable traps
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.2 Configuración de syslog
+        </h3>
+
+        <div class="code-block">
+<pre>configure terminal
+
+logging host 10.31.60.10
+logging trap warnings
+logging source-interface vlan 60
+
+service timestamps log datetime msec
+
+end</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.3 Prueba de SNMP
+        </h3>
+
+        <div class="code-block">
+<pre>snmpwalk -v3 \
+-l authPriv \
+-u monitor \
+-a SHA \
+-A [CLAVE_AUTH] \
+-x AES \
+-X [CLAVE_PRIV] \
+10.31.40.10 1.3.6.1.2.1.1</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.4 Eventos que deben monitorearse
+        </h3>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Evento</th>
+                <th>Fuente</th>
+                <th>Severidad</th>
+                <th>Acción esperada</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Interfaz crítica inactiva</td>
+                <td>Switch o router</td>
+                <td>Alta</td>
+                <td>Generar alerta y verificar enlace.</td>
+              </tr>
+
+              <tr>
+                <td>Uso superior al 80 %</td>
+                <td>Interfaz de red</td>
+                <td>Media</td>
+                <td>Analizar tráfico y capacidad.</td>
+              </tr>
+
+              <tr>
+                <td>Intentos SSH fallidos</td>
+                <td>Equipo de red</td>
+                <td>Alta</td>
+                <td>Revisar origen y bloquear si corresponde.</td>
+              </tr>
+
+              <tr>
+                <td>Cambio de configuración</td>
+                <td>Switch, router o firewall</td>
+                <td>Alta</td>
+                <td>Validar autorización.</td>
+              </tr>
+
+              <tr>
+                <td>Coincidencia de ACL denegada</td>
+                <td>Switch o firewall</td>
+                <td>Media/Alta</td>
+                <td>Revisar recurrencia y origen.</td>
+              </tr>
+
+              <tr>
+                <td>Equipo sin respuesta</td>
+                <td>Monitoreo</td>
+                <td>Crítica</td>
+                <td>Activar procedimiento de soporte.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.5 Indicadores de red
+        </h3>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Fórmula</th>
+                <th>Meta</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Disponibilidad</td>
+                <td>Tiempo operativo / tiempo total × 100</td>
+                <td>Igual o superior al 99 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Pérdida de paquetes</td>
+                <td>Paquetes perdidos / enviados × 100</td>
+                <td>0 % en LAN estable.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Latencia promedio</td>
+                <td>Promedio de respuestas ICMP</td>
+                <td>Menor o igual a 10 ms.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Utilización del enlace</td>
+                <td>Tráfico usado / capacidad × 100</td>
+                <td>Menor al 70 % sostenido.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Cobertura de monitoreo</td>
+                <td>Activos monitoreados / activos críticos × 100</td>
+                <td>100 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 11. EVIDENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          11. Gestión de Evidencias
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e4-estructura-evidencias-qhawai.png"
+            alt="Estructura de evidencias del Entregable 4 QhawAI"
+            style="min-height:240px"
+          >
+
+          <div class="img-caption">
+            Figura 6. Organización de configuraciones, capturas, pruebas
+            y logs.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Evidencia</th>
+                <th>Criterio relacionado</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>EV-01</td>
+                <td>Archivo de Packet Tracer o laboratorio.</td>
+                <td>Configuración general.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-02</td>
+                <td>show running-config.</td>
+                <td>Configuración de dispositivos.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-03</td>
+                <td>show vlan brief.</td>
+                <td>Segmentación.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-04</td>
+                <td>show interfaces trunk.</td>
+                <td>IEEE 802.1Q.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-05</td>
+                <td>show ip route.</td>
+                <td>Routing.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-06</td>
+                <td>show access-lists.</td>
+                <td>Controles ACL.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-07</td>
+                <td>Resultados de ping y traceroute.</td>
+                <td>Conectividad.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-08</td>
+                <td>Resultados de iperf3.</td>
+                <td>Rendimiento.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-09</td>
+                <td>Dashboard o prueba SNMP.</td>
+                <td>Monitoreo.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-10</td>
+                <td>Logs centralizados.</td>
+                <td>Documentación y auditoría.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.1 Estructura de carpetas
+        </h3>
+
+        <div class="code-block">
+<pre>CE0312_CE0313_Evidencias/
+│
+├── 01_Topologia/
+│   ├── topologia-final.png
+│   └── qhawai-red.pkt
+│
+├── 02_Configuraciones/
+│   ├── SW-CORE-01.txt
+│   ├── SW-ACC-01.txt
+│   ├── RTR-EDGE-01.txt
+│   └── FW-01.txt
+│
+├── 03_Direccionamiento/
+│   ├── tabla-ip.pdf
+│   └── show-ip-route.png
+│
+├── 04_ACL/
+│   ├── acl-biometria.png
+│   ├── acl-usuarios.png
+│   └── pruebas-bloqueo.png
+│
+├── 05_Pruebas/
+│   ├── ping/
+│   ├── traceroute/
+│   ├── iperf3/
+│   └── wireshark/
+│
+├── 06_Monitoreo/
+│   ├── snmp/
+│   ├── syslog/
+│   └── alertas/
+│
+└── 07_Logs/
+    ├── switch.log
+    ├── firewall.log
+    └── servidor.log</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 12. ÉTICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          12. Calidad Documental y Consideraciones Éticas
+        </h2>
+
+        <p class="section-body">
+          La recopilación de evidencias y ejecución de pruebas deberá
+          realizarse únicamente sobre equipos y redes autorizadas.
+        </p>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
           <div class="req-block" style="margin-bottom:0">
-            <div class="req-id">PI-01 · Prueba de carga básica</div>
+            <div class="req-id">ET-01</div>
             <div class="req-body">
-              Herramienta: [FALTA] · Escenario: [FALTA] usuarios simultáneos<br>
-              Resultado: [FALTA COMPLEMENTAR]
+              No exponer contraseñas, llaves, tokens o secretos.
             </div>
           </div>
+
           <div class="req-block" style="margin-bottom:0">
-            <div class="req-id">PI-02 · Tiempo respuesta API IA</div>
+            <div class="req-id">ET-02</div>
             <div class="req-body">
-              10 imágenes de prueba, medir tiempo promedio<br>
-              Resultado: [FALTA] segundos promedio (meta: &lt;= 3 s)
+              No mostrar rostros ni información personal en las capturas.
             </div>
           </div>
+
           <div class="req-block" style="margin-bottom:0">
-            <div class="req-id">PI-03 · Disponibilidad HTTPS</div>
+            <div class="req-id">ET-03</div>
             <div class="req-body">
-              Herramienta: ssllabs.com/ssltest/<br>
-              Calificación obtenida: [FALTA — A/B/C]
+              No realizar pruebas destructivas sin autorización.
             </div>
           </div>
+
           <div class="req-block" style="margin-bottom:0">
-            <div class="req-id">PI-04 · Acceso sin autenticación</div>
+            <div class="req-id">ET-04</div>
             <div class="req-body">
-              Acceder a /admin, /reportes, /personas sin sesión<br>
-              Esperado: redirección a /login · Resultado: [FALTA]
+              No escanear dispositivos ajenos al alcance.
             </div>
           </div>
-        </div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e4-prueba-carga.png" alt="Prueba de carga" style="min-height:160px">
-          <div class="img-caption">Resultados de la prueba de carga · <code>infra-e4-prueba-carga.png</code></div>
-        </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">3. Plan de Backup y Recuperación</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Tipo</th><th>Frecuencia</th><th>Destino</th><th>Retención</th></tr></thead>
-          <tbody>
-            <tr><td>BD MySQL</td><td>Diario</td><td>[FALTA COMPLEMENTAR]</td><td>7 días</td></tr>
-            <tr><td>Fotos modelos IA</td><td>Semanal</td><td>[FALTA COMPLEMENTAR]</td><td>30 días</td></tr>
-            <tr><td>Código fuente</td><td>Continuo (push)</td><td>GitHub (automático)</td><td>Indefinido</td></tr>
-          </tbody>
-        </table></div>
-        <div class="flow-steps" style="margin-top:12px">
-          <div class="flow-step"><span class="flow-num">1</span><div>Detener servicios: nginx, php-fpm, fastapi</div></div>
-          <div class="flow-step"><span class="flow-num">2</span><div><code>mysql -u root -p [BD] &lt; backup.sql</code></div></div>
-          <div class="flow-step"><span class="flow-num">3</span><div>Verificar integridad de datos</div></div>
-          <div class="flow-step"><span class="flow-num">4</span><div>Reiniciar servicios — tiempo estimado: [FALTA] horas</div></div>
-        </div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e4-backup.png" alt="Evidencia backup" style="min-height:140px">
-          <div class="img-caption">Evidencia de backup realizado · <code>infra-e4-backup.png</code></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">4. Plan de Continuidad del Servicio</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Escenario</th><th>Impacto</th><th>Tiempo rec.</th><th>Acción</th></tr></thead>
-          <tbody>
-            <tr><td>VPS caído</td><td><span class="badge badge-ausente">Total</span></td><td>2-4 horas</td><td>Reiniciar instancia o migrar</td></tr>
-            <tr><td>MySQL corrupto</td><td><span class="badge badge-ausente">Total</span></td><td>1-2 horas</td><td>Restaurar backup del día anterior</td></tr>
-            <tr><td>Contenedor FastAPI detenido</td><td><span class="badge badge-tardanza">Parcial</span></td><td>1-2 minutos</td><td>docker restart [contenedor] — o se reinicia solo (restart: always)</td></tr>
-            <tr><td>Firebase no disponible</td><td><span class="badge badge-tardanza">Parcial</span></td><td>Esperar</td><td>Google SLA 99.99% — caso raro</td></tr>
-            <tr><td>App Android desactualizada</td><td><span class="badge badge-puntual">Sin impacto</span></td><td>N/A</td><td>Actualizar APK manualmente</td></tr>
-          </tbody>
-        </table></div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">5. Incidencias de Infraestructura</h2>
-        <div class="incident-card">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <span class="badge badge-ausente">INFRA-001</span>
-            <strong>FastAPI se detenía por agotamiento de RAM</strong>
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-05</div>
+            <div class="req-body">
+              Mantener trazabilidad de cambios, pruebas y responsables.
+            </div>
           </div>
-          <div class="req-body"><strong>Fecha:</strong> [FALTA] · <strong>Causa:</strong> Agotamiento de memoria RAM del VPS al ejecutar múltiples reconocimientos seguidos<br><strong>Solución:</strong> Reinicio del servicio + aumento de swap / upgrade de RAM · <strong>Estado:</strong> Resuelto</div>
-        </div>
-        <div class="incident-card" style="margin-top:10px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
-            <span class="badge badge-tardanza">INFRA-002</span>
-            <strong>[FALTA COMPLEMENTAR — agregar incidencia real]</strong>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-06</div>
+            <div class="req-body">
+              Diferenciar claramente resultados esperados y obtenidos.
+            </div>
           </div>
-          <div class="req-body"><strong>Fecha:</strong> [FALTA] · <strong>Causa:</strong> [FALTA] · <strong>Solución:</strong> [FALTA] · <strong>Estado:</strong> [FALTA]</div>
+
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">6. Auditoría de Infraestructura</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Aspecto auditado</th><th>Conforme</th><th>Observación</th></tr></thead>
-          <tbody>
-            <tr><td>HTTPS habilitado</td><td><span class="badge badge-puntual">Sí</span></td><td>Let's Encrypt activo</td></tr>
-            <tr><td>Puertos no necesarios cerrados</td><td>[FALTA]</td><td>Verificar con: nmap localhost</td></tr>
-            <tr><td>Credenciales fuera del código</td><td><span class="badge badge-puntual">Sí</span></td><td>.env en .gitignore</td></tr>
-            <tr><td>Backups configurados</td><td>[FALTA]</td><td>[FALTA COMPLEMENTAR]</td></tr>
-            <tr><td>Logs de errores revisados</td><td><span class="badge badge-tardanza">Parcial</span></td><td>storage/logs/laravel.log</td></tr>
-            <tr><td>FastAPI (Docker) no expuesto externo</td><td><span class="badge badge-puntual">Sí</span></td><td>Contenedor interno puerto 80; sin binding público</td></tr>
-            <tr><td>MySQL no expuesto externo</td><td><span class="badge badge-puntual">Sí</span></td><td>Solo localhost</td></tr>
-          </tbody>
-        </table></div>
-      </div>
+      </section>
 
-      <div class="section">
-        <h2 class="section-title">7. Mejoras Propuestas</h2>
-        <div class="card-grid cols-2" style="gap:10px">
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">MJ-01</div><div class="req-body">Configurar alertas automáticas de uptime (UptimeRobot — gratuito)</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">MJ-02</div><div class="req-body">Extender Docker al componente Laravel para unificar entorno (actualmente solo FastAPI usa Docker)</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">MJ-03</div><div class="req-body">Agregar CDN para archivos estáticos (imágenes del modelo facial)</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">MJ-04</div><div class="req-body">Automatizar el despliegue (CD) además del CI ya existente</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">MJ-05</div><div class="req-body">Configurar límites de recursos por proceso (ulimit / Docker limits) para FastAPI</div></div>
+
+      <!-- 13. CONCLUSIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          13. Conclusiones
+        </h2>
+
+        <p class="section-body">
+          La configuración propuesta implementa una red segmentada,
+          administrable y preparada para soportar los servicios de QhawAI.
+        </p>
+
+        <p class="section-body">
+          El direccionamiento IP mantiene una relación clara entre VLAN y
+          subred, mientras el routing inter-VLAN permite controlar las
+          comunicaciones entre segmentos.
+        </p>
+
+        <p class="section-body">
+          Las ACL restringen el acceso a los servidores, dispositivos
+          biométricos y equipos de gestión, aplicando el principio de
+          comunicación mínima necesaria.
+        </p>
+
+        <p class="section-body">
+          La validación definitiva deberá completarse mediante capturas,
+          archivos de configuración y resultados cuantitativos obtenidos
+          durante las pruebas.
+        </p>
+
+      </section>
+
+
+      <!-- 14. ANEXOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          14. Anexos
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Anexo</th>
+                <th>Descripción</th>
+                <th>Archivo</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Anexo A</td>
+                <td>Topología implementada.</td>
+                <td>e4-topologia-implementacion-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo B</td>
+                <td>Configuración VLAN y routing.</td>
+                <td>e4-configuracion-vlan-routing-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo C</td>
+                <td>Controles ACL.</td>
+                <td>e4-controles-acl-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo D</td>
+                <td>Pruebas de rendimiento.</td>
+                <td>e4-pruebas-rendimiento-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo E</td>
+                <td>Monitoreo SNMP y syslog.</td>
+                <td>e4-monitoreo-snmp-syslog-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo F</td>
+                <td>Estructura de evidencias.</td>
+                <td>e4-estructura-evidencias-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo G</td>
+                <td>Configuraciones completas.</td>
+                <td>Carpeta de evidencias.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo H</td>
+                <td>Logs y resultados cuantitativos.</td>
+                <td>Carpeta de evidencias.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
         </div>
-      </div>
 
-    </div>
+      </section>
+
+
+      <!-- VERIFICACIÓN DE RÚBRICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Verificación de la Rúbrica CE0312–CE0313
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>Evidencia preparada</th>
+                <th>Estado actual</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Configuración de dispositivos</td>
+                <td>
+                  Configuración base, SSH, hardening, VLAN y puertos.
+                </td>
+                <td>
+                  Preparado; falta evidencia ejecutada.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Direccionamiento IP</td>
+                <td>
+                  Esquema jerárquico y gateways por VLAN.
+                </td>
+                <td>
+                  Desarrollado.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Routing</td>
+                <td>
+                  Ruta estática y escenario OSPF de crecimiento.
+                </td>
+                <td>
+                  Falta validación en laboratorio.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Controles ACL</td>
+                <td>
+                  ACL de biometría, usuarios y gestión.
+                </td>
+                <td>
+                  Falta prueba permitida/bloqueada.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Estándares</td>
+                <td>
+                  IEEE 802.1Q, 802.1w, 802.3 y TIA/EIA.
+                </td>
+                <td>
+                  Documentado; falta evidencia.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Pruebas de rendimiento</td>
+                <td>
+                  Matrices, comandos y criterios cuantitativos.
+                </td>
+                <td>
+                  Pendiente de ejecución.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo y documentación</td>
+                <td>
+                  SNMPv3, syslog, indicadores y carpeta de evidencias.
+                </td>
+                <td>
+                  Preparado; falta captura real.
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
   </div>
+
 </div>
+
+
 <script src="../js/main.js"></script>
+
 </body>
 </html>
+```

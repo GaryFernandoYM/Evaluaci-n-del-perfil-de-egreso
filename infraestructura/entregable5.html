@@ -1,0 +1,2726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entregable 5 CE0322, CE0323 y CE0324: Implementación, monitoreo y ética de seguridad para QhawAI."
+  >
+
+  <title>E5 · Seguridad, Monitoreo y Ética — QhawAI</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- ===================================================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================================================== -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+
+      <div class="brand-logo">
+
+        <div class="brand-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="4"></circle>
+
+            <path
+              d="M2 7V5a2 2 0 012-2h2
+                 M2 17v2a2 2 0 002 2h2
+                 M22 7V5a2 2 0 00-2-2h-2
+                 M22 17v2a2 2 0 01-2 2h-2"
+            ></path>
+          </svg>
+        </div>
+
+        <span class="brand-name">QhawAI</span>
+
+      </div>
+
+      <div class="brand-sub">
+        Línea:
+        <strong>Infraestructura</strong>
+        <br>
+        UPeU 2026-I
+      </div>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+      <a href="../index.html" class="sidebar-top-link">
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+        </svg>
+
+        Portada General
+
+      </a>
+
+
+      <!-- SOFTWARE -->
+
+      <div class="acc-group">
+
+        <button class="acc-header" data-acc="software">
+
+          <span class="acc-dot software"></span>
+
+          Software
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div class="acc-body" id="acc-software">
+
+          <a href="../software/entregable1.html" class="nav-link">
+            E1 · Requerimientos y Diseño
+          </a>
+
+          <a href="../software/entregable2.html" class="nav-link">
+            E2 · Plataforma de Datos
+          </a>
+
+          <a href="../software/arquitectura.html" class="nav-link">
+            E3 · Sistema Funcional
+          </a>
+
+          <a href="../software/manual_usuario.html" class="nav-link">
+            E4 · Calidad y Operación
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- INFRAESTRUCTURA -->
+
+      <div class="acc-group">
+
+        <button
+          class="acc-header open"
+          data-acc="infra"
+        >
+
+          <span class="acc-dot infra"></span>
+
+          Infraestructura
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div
+          class="acc-body open"
+          id="acc-infra"
+        >
+
+          <a href="index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="entregable1.html" class="nav-link">
+            E1 · Diseño de Red
+          </a>
+
+          <a href="entregable2.html" class="nav-link">
+            E2 · Planificación de Seguridad
+          </a>
+
+          <a href="entregable3.html" class="nav-link">
+            E3 · Diseño de Centro de Datos
+          </a>
+
+          <a href="entregable4.html" class="nav-link">
+            E4 · Implementación y Testing de Red
+          </a>
+
+          <a href="entregable5.html" class="nav-link active">
+            E5 · Seguridad, Monitoreo y Ética
+          </a>
+
+          <a href="entregable6.html" class="nav-link">
+            E6 · Control de Centro de Datos
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- GESTIÓN -->
+
+      <div class="acc-group">
+
+        <button class="acc-header" data-acc="gestion">
+
+          <span class="acc-dot gestion"></span>
+
+          Gestión
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div class="acc-body" id="acc-gestion">
+
+          <a href="../gestion/index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="../gestion/entregable1.html" class="nav-link">
+            E1 · Diagnóstico
+          </a>
+
+          <a href="../gestion/entregable2.html" class="nav-link">
+            E2 · Modelado de Procesos
+          </a>
+
+          <a href="../gestion/entregable3.html" class="nav-link">
+            E3 · Plan de Proyecto
+          </a>
+
+          <a href="../gestion/entregable4.html" class="nav-link">
+            E4 · Auditoría y Cierre
+          </a>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+      Semestre 2026-I
+      <br>
+      CE03 · Infraestructura Tecnológica
+      <br>
+      Ingeniería de Sistemas
+    </div>
+
+  </aside>
+
+
+  <div class="sidebar-overlay"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
+  <div class="main-content">
+
+    <div class="topbar">
+
+      <div class="breadcrumb">
+
+        <a
+          href="../index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Perfil de Egreso
+        </a>
+
+        <span class="breadcrumb-sep">›</span>
+
+        <a
+          href="index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Infraestructura
+        </a>
+
+        <span class="breadcrumb-sep">›</span>
+
+        <span class="breadcrumb-current">
+          E5 · Seguridad, Monitoreo y Ética
+        </span>
+
+      </div>
+
+
+      <button
+        class="hamburger"
+        aria-label="Abrir menú"
+        type="button"
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+
+      </button>
+
+    </div>
+
+
+    <main class="content">
+
+      <!-- PORTADA DIGITAL -->
+
+      <section
+        class="hero"
+        style="border-left:4px solid #059669"
+      >
+
+        <div
+          class="hero-eyebrow"
+          style="color:#059669"
+        >
+          Línea de Infraestructura Tecnológica · CE0322–CE0324
+        </div>
+
+        <h1
+          class="hero-title"
+          style="font-size:1.8rem"
+        >
+          Entregable 5 — Implementación, Monitoreo y Ética de Seguridad
+        </h1>
+
+        <p class="hero-desc">
+          Implementación de controles técnicos, mínimo privilegio,
+          gestión de parches, continuidad, monitoreo, auditoría,
+          evaluación de vulnerabilidades y análisis ético para QhawAI.
+        </p>
+
+
+        <div class="hero-meta">
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Competencias
+            </span>
+
+            <span class="hero-meta-value">
+              CE0322 · CE0323 · CE0324
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Línea
+            </span>
+
+            <span class="hero-meta-value">
+              <span class="linea-badge infra">
+                Infraestructura
+              </span>
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Universidad
+            </span>
+
+            <span class="hero-meta-value">
+              Universidad Peruana Unión
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Semestre
+            </span>
+
+            <span class="hero-meta-value">
+              2026-I
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Estudiante
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR NOMBRE]
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Fecha
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR FECHA]
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- RESUMEN EJECUTIVO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Resumen Ejecutivo
+        </h2>
+
+        <p class="section-body">
+          El presente entregable documenta los controles técnicos y
+          organizacionales preparados para proteger la infraestructura
+          tecnológica de QhawAI, sistema inteligente de control de
+          asistencia mediante reconocimiento facial.
+        </p>
+
+        <p class="section-body">
+          La propuesta considera gestión de identidades y accesos,
+          autenticación segura, control basado en roles, mínimo privilegio,
+          cifrado, firewall, protección de servidores, copias de seguridad,
+          gestión de parches, monitoreo, registro centralizado y evaluación
+          de vulnerabilidades.
+        </p>
+
+        <p class="section-body">
+          Debido a que QhawAI procesa datos personales, registros académicos
+          y plantillas biométricas, se incorporan controles específicos de
+          confidencialidad, integridad, disponibilidad, trazabilidad y
+          protección de la privacidad.
+        </p>
+
+        <p class="section-body">
+          El entregable también establece objetivos de continuidad mediante
+          RTO y RPO, indicadores cuantitativos de seguridad y principios
+          éticos basados en el Código de Ética de la ACM.
+        </p>
+
+        <div
+          class="callout warning"
+          style="margin-top:14px"
+        >
+          <strong>Condición de validación:</strong>
+          los resultados de restauración, escaneos, KPIs, alertas y
+          simulaciones deben completarse con evidencias reales. Los datos
+          marcados como pendientes no deben presentarse como ejecutados.
+        </div>
+
+      </section>
+
+
+      <!-- 1. ALCANCE -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          1. Alcance de la Implementación
+        </h2>
+
+        <p class="section-body">
+          El alcance comprende los activos tecnológicos, servicios,
+          credenciales, datos y usuarios autorizados relacionados con
+          la operación de QhawAI.
+        </p>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Función</th>
+                <th>Control principal</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Servidor Ubuntu</td>
+                <td>Host de servicios.</td>
+                <td>Hardening, parches, firewall y logs.</td>
+                <td>Preparado para validación.</td>
+              </tr>
+
+              <tr>
+                <td>Laravel y Nginx</td>
+                <td>Aplicación y proxy web.</td>
+                <td>TLS, permisos, logs y control de rutas.</td>
+                <td>Preparado para validación.</td>
+              </tr>
+
+              <tr>
+                <td>FastAPI</td>
+                <td>Procesamiento biométrico.</td>
+                <td>Red interna, autenticación y límites.</td>
+                <td>Preparado para validación.</td>
+              </tr>
+
+              <tr>
+                <td>MySQL</td>
+                <td>Persistencia de datos.</td>
+                <td>Usuarios mínimos, cifrado y backup.</td>
+                <td>Preparado para validación.</td>
+              </tr>
+
+              <tr>
+                <td>Equipos de red</td>
+                <td>Conectividad y segmentación.</td>
+                <td>ACL, SSH, SNMPv3 y syslog.</td>
+                <td>Definido en E4.</td>
+              </tr>
+
+              <tr>
+                <td>Firebase FCM</td>
+                <td>Notificaciones push.</td>
+                <td>Protección de tokens y credenciales.</td>
+                <td>Servicio externo controlado.</td>
+              </tr>
+
+              <tr>
+                <td>Backups</td>
+                <td>Recuperación de datos.</td>
+                <td>Cifrado, retención y prueba de restauración.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 2. ARQUITECTURA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          2. Arquitectura de Seguridad
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-arquitectura-seguridad-qhawai.png"
+            alt="Arquitectura de seguridad implementada para QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 1. Arquitectura de controles técnicos y monitoreo.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Capa</th>
+                <th>Controles</th>
+                <th>Objetivo</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Identidad</td>
+                <td>RBAC, MFA, cuentas individuales.</td>
+                <td>Evitar accesos no autorizados.</td>
+              </tr>
+
+              <tr>
+                <td>Red</td>
+                <td>VLAN, ACL, firewall, VPN y SSH.</td>
+                <td>Reducir exposición y movimiento lateral.</td>
+              </tr>
+
+              <tr>
+                <td>Servidor</td>
+                <td>Hardening, parches, UFW y Fail2ban.</td>
+                <td>Proteger el sistema operativo.</td>
+              </tr>
+
+              <tr>
+                <td>Aplicación</td>
+                <td>TLS, secretos protegidos y logs.</td>
+                <td>Proteger servicios y sesiones.</td>
+              </tr>
+
+              <tr>
+                <td>Datos</td>
+                <td>Cifrado, permisos y backups.</td>
+                <td>Preservar confidencialidad e integridad.</td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo</td>
+                <td>Wazuh, syslog, métricas y alertas.</td>
+                <td>Detectar y responder a eventos.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 3. IAM -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          3. Gestión de Identidades y Accesos
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-iam-minimo-privilegio-qhawai.png"
+            alt="IAM y mínimo privilegio para QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 2. Modelo IAM, roles y principio de mínimo privilegio.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.1 Roles de acceso
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Acceso permitido</th>
+                <th>Restricción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Administrador de infraestructura</td>
+                <td>Servidor, red, backups y monitoreo.</td>
+                <td>No modifica registros académicos.</td>
+              </tr>
+
+              <tr>
+                <td>Responsable de seguridad</td>
+                <td>Logs, alertas, riesgos e incidentes.</td>
+                <td>No administra datos funcionales.</td>
+              </tr>
+
+              <tr>
+                <td>Administrador de base de datos</td>
+                <td>MySQL, respaldos y recuperación.</td>
+                <td>No administra firewall ni red.</td>
+              </tr>
+
+              <tr>
+                <td>Administrador de aplicación</td>
+                <td>Usuarios y configuración funcional.</td>
+                <td>Sin acceso root al servidor.</td>
+              </tr>
+
+              <tr>
+                <td>Auditor</td>
+                <td>Acceso de lectura a evidencias y logs.</td>
+                <td>No puede modificar configuraciones.</td>
+              </tr>
+
+              <tr>
+                <td>Cuenta de servicio</td>
+                <td>Solo el servicio asignado.</td>
+                <td>Sin sesión interactiva.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.2 Creación de usuarios técnicos
+        </h3>
+
+        <div class="code-block">
+<pre>sudo adduser admin_infra
+sudo adduser operador_backup
+sudo adduser auditor_seguridad
+
+sudo groupadd infraestructura
+sudo groupadd backups
+sudo groupadd auditoria
+
+sudo usermod -aG infraestructura admin_infra
+sudo usermod -aG backups operador_backup
+sudo usermod -aG auditoria auditor_seguridad</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.3 Configuración limitada de sudo
+        </h3>
+
+        <div class="code-block">
+<pre>sudo visudo
+
+# Acceso administrativo autorizado
+%infraestructura ALL=(ALL:ALL) ALL
+
+# El operador solo puede ejecutar el backup
+operador_backup ALL=(root) /usr/local/bin/qhawai-backup.sh
+
+# El auditor no recibe privilegios de escritura</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.4 Reglas de mínimo privilegio
+        </h3>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-01</div>
+            <div class="req-body">
+              Cada persona utilizará una cuenta individual.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-02</div>
+            <div class="req-body">
+              Las cuentas de servicio no tendrán shell interactiva.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-03</div>
+            <div class="req-body">
+              MySQL asignará permisos solo sobre la base requerida.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-04</div>
+            <div class="req-body">
+              Los contenedores se ejecutarán sin usuario root.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-05</div>
+            <div class="req-body">
+              La administración remota se limitará a la VLAN de gestión.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">MP-06</div>
+            <div class="req-body">
+              Los accesos deberán revisarse trimestralmente.
+            </div>
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.5 Usuario limitado en MySQL
+        </h3>
+
+        <div class="code-block">
+<pre>CREATE USER 'qhawai_app'@'10.31.30.%'
+IDENTIFIED BY '[CLAVE_SEGURA]';
+
+GRANT SELECT, INSERT, UPDATE, DELETE
+ON qhawai.*
+TO 'qhawai_app'@'10.31.30.%';
+
+FLUSH PRIVILEGES;</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 4. ACCESO REMOTO Y CIFRADO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          4. Acceso Remoto y Cifrado
+        </h2>
+
+
+        <h3>4.1 Hardening de SSH</h3>
+
+        <div class="code-block">
+<pre>sudo nano /etc/ssh/sshd_config
+
+PermitRootLogin no
+PasswordAuthentication no
+PubkeyAuthentication yes
+MaxAuthTries 3
+LoginGraceTime 30
+AllowGroups infraestructura
+X11Forwarding no
+PermitEmptyPasswords no
+ClientAliveInterval 300
+ClientAliveCountMax 2
+
+sudo sshd -t
+sudo systemctl restart ssh</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.2 Protección con Fail2ban
+        </h3>
+
+        <div class="code-block">
+<pre>sudo apt update
+sudo apt install fail2ban -y
+
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+sudo fail2ban-client status
+sudo fail2ban-client status sshd</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.3 Cifrado de comunicaciones
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Comunicación</th>
+                <th>Protocolo seguro</th>
+                <th>Control</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Usuario – aplicación</td>
+                <td>HTTPS / TLS</td>
+                <td>Certificado válido y redirección HTTP.</td>
+              </tr>
+
+              <tr>
+                <td>Administrador – servidor</td>
+                <td>SSH con llaves</td>
+                <td>Sin acceso root ni contraseña.</td>
+              </tr>
+
+              <tr>
+                <td>Red – monitoreo</td>
+                <td>SNMPv3</td>
+                <td>Autenticación y privacidad.</td>
+              </tr>
+
+              <tr>
+                <td>Backup externo</td>
+                <td>TLS, SFTP o VPN</td>
+                <td>Copia cifrada.</td>
+              </tr>
+
+              <tr>
+                <td>Aplicación – MySQL</td>
+                <td>Red interna restringida</td>
+                <td>Puerto no publicado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.4 Configuración de TLS en Nginx
+        </h3>
+
+        <div class="code-block">
+<pre>server {
+    listen 80;
+    server_name qhawai.example.edu;
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name qhawai.example.edu;
+
+    ssl_certificate /etc/letsencrypt/live/qhawai/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/qhawai/privkey.pem;
+
+    ssl_protocols TLSv1.2 TLSv1.3;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options SAMEORIGIN always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.5 Protección de datos en reposo
+        </h3>
+
+        <p class="section-body">
+          Los respaldos, secretos, plantillas biométricas y archivos
+          críticos deberán almacenarse con permisos restrictivos y
+          cifrado cuando corresponda.
+        </p>
+
+        <div class="code-block">
+<pre>sudo mkdir -p /srv/qhawai/backups
+sudo chown root:backups /srv/qhawai/backups
+sudo chmod 750 /srv/qhawai/backups
+
+# Ejemplo de cifrado de archivo de backup
+gpg --symmetric \
+    --cipher-algo AES256 \
+    qhawai-backup.sql.gz</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 5. FIREWALL -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          5. Firewall y Protección de Servicios
+        </h2>
+
+
+        <h3>5.1 Política predeterminada</h3>
+
+        <div class="code-block">
+<pre>sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+sudo ufw allow from 10.31.40.0/24 to any port 22 proto tcp
+sudo ufw allow from 10.31.10.0/24 to any port 443 proto tcp
+sudo ufw allow from 10.31.50.0/24 to any port 443 proto tcp
+sudo ufw allow from 10.31.60.10 to any port 1514 proto tcp
+
+sudo ufw deny 3306/tcp
+sudo ufw deny 8000/tcp
+
+sudo ufw logging on
+sudo ufw enable
+sudo ufw status verbose</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.2 Matriz de exposición
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Puerto</th>
+                <th>Origen permitido</th>
+                <th>Exposición pública</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>HTTPS QhawAI</td>
+                <td>443</td>
+                <td>Usuarios autorizados.</td>
+                <td>Sí, mediante proxy protegido.</td>
+              </tr>
+
+              <tr>
+                <td>SSH</td>
+                <td>22</td>
+                <td>VLAN Gestión TI.</td>
+                <td>No.</td>
+              </tr>
+
+              <tr>
+                <td>FastAPI</td>
+                <td>8000</td>
+                <td>Laravel o red de servicios.</td>
+                <td>No.</td>
+              </tr>
+
+              <tr>
+                <td>MySQL</td>
+                <td>3306</td>
+                <td>Servidor de aplicación.</td>
+                <td>No.</td>
+              </tr>
+
+              <tr>
+                <td>Wazuh agente</td>
+                <td>1514</td>
+                <td>Servidor de monitoreo.</td>
+                <td>No.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 6. CONTENEDORES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          6. Seguridad de Contenedores
+        </h2>
+
+        <p class="section-body">
+          Los servicios contenerizados deberán utilizar imágenes verificadas,
+          versiones específicas, límites de recursos y usuarios sin
+          privilegios administrativos.
+        </p>
+
+
+        <div class="code-block">
+<pre>services:
+
+  qhawai-ia:
+    image: qhawai/fastapi:1.0.0
+    container_name: qhawai-ia
+
+    user: "1001:1001"
+
+    read_only: true
+
+    cap_drop:
+      - ALL
+
+    security_opt:
+      - no-new-privileges:true
+
+    mem_limit: 4g
+    cpus: 2.0
+
+    restart: unless-stopped
+
+    networks:
+      - red_interna
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  red_interna:
+    internal: true</pre>
+        </div>
+
+
+        <div class="callout info" style="margin-top:14px">
+          Las claves de Firebase, contraseñas de base de datos y secretos
+          no deberán incluirse dentro del archivo Dockerfile, repositorio
+          Git ni imagen del contenedor.
+        </div>
+
+      </section>
+
+
+      <!-- 7. BACKUPS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          7. Implementación de Copias de Seguridad
+        </h2>
+
+
+        <h3>7.1 Estrategia 3-2-1</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Información</th>
+                <th>Frecuencia</th>
+                <th>Destino local</th>
+                <th>Destino externo</th>
+                <th>Retención</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Base de datos</td>
+                <td>Diaria.</td>
+                <td>NAS cifrado.</td>
+                <td>Copia externa cifrada.</td>
+                <td>30 días.</td>
+              </tr>
+
+              <tr>
+                <td>Máquinas virtuales</td>
+                <td>Semanal.</td>
+                <td>NAS.</td>
+                <td>Copia mensual.</td>
+                <td>8–12 semanas.</td>
+              </tr>
+
+              <tr>
+                <td>Configuraciones</td>
+                <td>Después de cada cambio.</td>
+                <td>Repositorio interno.</td>
+                <td>Copia cifrada.</td>
+                <td>10 versiones.</td>
+              </tr>
+
+              <tr>
+                <td>Logs críticos</td>
+                <td>Continua o diaria.</td>
+                <td>Servidor de monitoreo.</td>
+                <td>Archivo protegido.</td>
+                <td>90–180 días.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.2 Script de backup de MySQL
+        </h3>
+
+        <div class="code-block">
+<pre>#!/usr/bin/env bash
+
+set -euo pipefail
+
+FECHA="$(date +%Y-%m-%d_%H-%M-%S)"
+DESTINO="/srv/qhawai/backups"
+ARCHIVO="${DESTINO}/qhawai_${FECHA}.sql.gz"
+
+mkdir -p "${DESTINO}"
+
+mysqldump \
+  --single-transaction \
+  --quick \
+  --lock-tables=false \
+  --defaults-extra-file=/root/.my.cnf \
+  qhawai | gzip > "${ARCHIVO}"
+
+sha256sum "${ARCHIVO}" > "${ARCHIVO}.sha256"
+
+find "${DESTINO}" \
+  -type f \
+  -name "qhawai_*.sql.gz" \
+  -mtime +30 \
+  -delete
+
+echo "Backup completado: ${ARCHIVO}"</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.3 Validación del backup
+        </h3>
+
+        <div class="code-block">
+<pre>sha256sum -c qhawai_2026-01-01_00-00-00.sql.gz.sha256
+
+gunzip -c qhawai_2026-01-01_00-00-00.sql.gz \
+  | mysql \
+  --defaults-extra-file=/root/.my.cnf \
+  qhawai_restauracion</pre>
+        </div>
+
+
+        <div class="callout warning" style="margin-top:14px">
+          Un backup no se considera válido únicamente porque el archivo fue
+          generado. Debe verificarse su integridad y ejecutarse una prueba
+          de restauración.
+        </div>
+
+      </section>
+
+
+      <!-- 8. PARCHES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          8. Gestión de Parches y Actualizaciones
+        </h2>
+
+
+        <h3>8.1 Procedimiento</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Paso</th>
+                <th>Actividad</th>
+                <th>Responsable</th>
+                <th>Evidencia</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>1</td>
+                <td>Identificar actualización y severidad.</td>
+                <td>Infraestructura.</td>
+                <td>Boletín o ticket.</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Revisar impacto y compatibilidad.</td>
+                <td>Infraestructura y aplicación.</td>
+                <td>Evaluación técnica.</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Realizar backup o snapshot.</td>
+                <td>Infraestructura.</td>
+                <td>Registro de backup.</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Probar en entorno controlado.</td>
+                <td>Equipo técnico.</td>
+                <td>Resultado de prueba.</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>Aplicar en ventana autorizada.</td>
+                <td>Infraestructura.</td>
+                <td>Registro de cambio.</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td>Validar servicios y documentar.</td>
+                <td>Infraestructura y auditor.</td>
+                <td>Acta de cierre.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.2 Automatización controlada
+        </h3>
+
+        <div class="code-block">
+<pre>sudo apt update
+sudo apt install unattended-upgrades apt-listchanges -y
+
+sudo dpkg-reconfigure unattended-upgrades
+
+sudo systemctl status unattended-upgrades
+
+sudo unattended-upgrade --dry-run --debug</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.3 Plazos propuestos
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Severidad</th>
+                <th>Plazo de corrección</th>
+                <th>Aprobación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Crítica</td>
+                <td>Máximo 72 horas.</td>
+                <td>Prioritaria.</td>
+              </tr>
+
+              <tr>
+                <td>Alta</td>
+                <td>Máximo 15 días.</td>
+                <td>Ventana programada.</td>
+              </tr>
+
+              <tr>
+                <td>Media</td>
+                <td>Máximo 30 días.</td>
+                <td>Mantenimiento regular.</td>
+              </tr>
+
+              <tr>
+                <td>Baja</td>
+                <td>Siguiente ciclo de mantenimiento.</td>
+                <td>Planificada.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 9. CONTINUIDAD -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          9. Plan de Continuidad y Recuperación
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-continuidad-rto-rpo-qhawai.png"
+            alt="Plan de continuidad, RTO y RPO para QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 3. Escenarios de continuidad, RTO, RPO y recuperación.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.1 Objetivos RTO y RPO
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>RTO propuesto</th>
+                <th>RPO propuesto</th>
+                <th>Prioridad</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Registro de asistencia</td>
+                <td>2 horas.</td>
+                <td>15 minutos.</td>
+                <td>Crítica.</td>
+              </tr>
+
+              <tr>
+                <td>Base de datos</td>
+                <td>4 horas.</td>
+                <td>24 horas o menor.</td>
+                <td>Crítica.</td>
+              </tr>
+
+              <tr>
+                <td>Reconocimiento facial</td>
+                <td>2 horas.</td>
+                <td>No aplica directamente.</td>
+                <td>Alta.</td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo</td>
+                <td>8 horas.</td>
+                <td>1 hora.</td>
+                <td>Media.</td>
+              </tr>
+
+              <tr>
+                <td>Reportes históricos</td>
+                <td>24 horas.</td>
+                <td>24 horas.</td>
+                <td>Media.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.2 Escenarios de continuidad
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Incidente</th>
+                <th>Respuesta</th>
+                <th>Procedimiento alternativo</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Corte eléctrico</td>
+                <td>UPS y apagado controlado.</td>
+                <td>Registro temporal alternativo.</td>
+              </tr>
+
+              <tr>
+                <td>Falla del servidor</td>
+                <td>Restaurar VM o activar host alternativo.</td>
+                <td>Registro manual temporal.</td>
+              </tr>
+
+              <tr>
+                <td>Pérdida de base de datos</td>
+                <td>Restaurar último backup válido.</td>
+                <td>Conciliar registros pendientes.</td>
+              </tr>
+
+              <tr>
+                <td>Ransomware</td>
+                <td>Aislar, analizar y restaurar entorno limpio.</td>
+                <td>Operación temporal sin red afectada.</td>
+              </tr>
+
+              <tr>
+                <td>Compromiso de credenciales</td>
+                <td>Revocar, rotar y revisar accesos.</td>
+                <td>Cuenta administrativa de emergencia.</td>
+              </tr>
+
+              <tr>
+                <td>Falla de Internet</td>
+                <td>Mantener operación local cuando sea posible.</td>
+                <td>Sincronización posterior.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.3 Simulaciones requeridas
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Simulación</th>
+                <th>Resultado esperado</th>
+                <th>Resultado obtenido</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>SIM-01</td>
+                <td>Restauración de MySQL.</td>
+                <td>Base funcional dentro del RTO.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>SIM-02</td>
+                <td>Caída del servidor de aplicación.</td>
+                <td>Recuperación mediante VM o backup.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>SIM-03</td>
+                <td>Revocación de una cuenta comprometida.</td>
+                <td>Acceso bloqueado y evento registrado.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>SIM-04</td>
+                <td>Fallo de actualización.</td>
+                <td>Rollback o restauración de snapshot.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>SIM-05</td>
+                <td>Pérdida temporal de conectividad.</td>
+                <td>Continuidad local o procedimiento alternativo.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 10. KPIS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          10. KPIs de Seguridad
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-dashboard-kpi-seguridad-qhawai.png"
+            alt="Dashboard de KPIs de seguridad de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 4. Indicadores cuantitativos de seguridad.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>KPI</th>
+                <th>Fórmula</th>
+                <th>Meta</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Cumplimiento de parches</td>
+                <td>Activos actualizados / activos evaluados × 100</td>
+                <td>≥ 95 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Backups exitosos</td>
+                <td>Backups exitosos / programados × 100</td>
+                <td>≥ 98 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Restauraciones aprobadas</td>
+                <td>Pruebas exitosas / pruebas realizadas × 100</td>
+                <td>100 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Cobertura de monitoreo</td>
+                <td>Activos monitoreados / activos críticos × 100</td>
+                <td>100 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Vulnerabilidades críticas vencidas</td>
+                <td>Conteo mensual.</td>
+                <td>0.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>MTTD</td>
+                <td>Tiempo total de detección / incidentes.</td>
+                <td>≤ 30 minutos.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>MTTR</td>
+                <td>Tiempo total de recuperación / incidentes.</td>
+                <td>Según RTO.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Accesos privilegiados auditados</td>
+                <td>Accesos registrados / accesos realizados × 100</td>
+                <td>100 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Cuentas compartidas</td>
+                <td>Conteo.</td>
+                <td>0.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 11. REGISTRO Y AUDITORÍA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          11. Registro, Monitoreo y Auditoría
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-registro-auditoria-qhawai.png"
+            alt="Registro centralizado y auditoría de seguridad de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 5. Flujo de logs, correlación, alertas y auditoría.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.1 Fuentes de registros
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Fuente</th>
+                <th>Eventos principales</th>
+                <th>Destino</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Ubuntu Server</td>
+                <td>Inicio de sesión, sudo, servicios y errores.</td>
+                <td>Servidor de monitoreo.</td>
+              </tr>
+
+              <tr>
+                <td>Firewall</td>
+                <td>Tráfico bloqueado, cambios y accesos.</td>
+                <td>Syslog.</td>
+              </tr>
+
+              <tr>
+                <td>Laravel / Nginx</td>
+                <td>Accesos, errores y solicitudes.</td>
+                <td>Wazuh o repositorio central.</td>
+              </tr>
+
+              <tr>
+                <td>MySQL</td>
+                <td>Errores, accesos y consultas críticas.</td>
+                <td>Repositorio protegido.</td>
+              </tr>
+
+              <tr>
+                <td>Docker</td>
+                <td>Inicio, detención, error y estado.</td>
+                <td>Servidor de logs.</td>
+              </tr>
+
+              <tr>
+                <td>Backups</td>
+                <td>Éxito, error, tamaño y duración.</td>
+                <td>Monitoreo y alertas.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.2 Reglas de alerta
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Evento</th>
+                <th>Severidad</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>5 intentos SSH fallidos.</td>
+                <td>Alta.</td>
+                <td>Bloquear origen y revisar.</td>
+              </tr>
+
+              <tr>
+                <td>Cambio de firewall.</td>
+                <td>Alta.</td>
+                <td>Validar autorización.</td>
+              </tr>
+
+              <tr>
+                <td>Backup fallido.</td>
+                <td>Alta.</td>
+                <td>Reejecutar y escalar.</td>
+              </tr>
+
+              <tr>
+                <td>Acceso a datos biométricos.</td>
+                <td>Alta.</td>
+                <td>Verificar usuario y finalidad.</td>
+              </tr>
+
+              <tr>
+                <td>Disco superior al 80 %.</td>
+                <td>Media.</td>
+                <td>Liberar o ampliar capacidad.</td>
+              </tr>
+
+              <tr>
+                <td>Servicio FastAPI detenido.</td>
+                <td>Crítica.</td>
+                <td>Reiniciar y analizar causa.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.3 Verificación de logs de autenticación
+        </h3>
+
+        <div class="code-block">
+<pre>sudo journalctl -u ssh --since today
+sudo journalctl -p warning --since today
+sudo grep "Failed password" /var/log/auth.log
+sudo grep "sudo:" /var/log/auth.log
+sudo ufw status verbose</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 12. VULNERABILIDADES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          12. Evaluación de Vulnerabilidades y Mejora
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-vulnerabilidades-mejora-qhawai.png"
+            alt="Evaluación de vulnerabilidades y mejora continua de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 6. Evaluación, corrección y reescaneo.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.1 Herramientas autorizadas
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Herramienta</th>
+                <th>Objetivo</th>
+                <th>Alcance</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Nmap</td>
+                <td>Identificar puertos y servicios.</td>
+                <td>Servidores autorizados.</td>
+              </tr>
+
+              <tr>
+                <td>Lynis</td>
+                <td>Auditar configuración de Linux.</td>
+                <td>Servidor Ubuntu.</td>
+              </tr>
+
+              <tr>
+                <td>Trivy</td>
+                <td>Escanear imágenes y dependencias.</td>
+                <td>Contenedores propios.</td>
+              </tr>
+
+              <tr>
+                <td>OpenVAS / Greenbone</td>
+                <td>Analizar vulnerabilidades conocidas.</td>
+                <td>Infraestructura autorizada.</td>
+              </tr>
+
+              <tr>
+                <td>Nikto</td>
+                <td>Revisar configuración web.</td>
+                <td>Servidor web autorizado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.2 Comandos de evaluación
+        </h3>
+
+        <div class="code-block">
+<pre># Descubrimiento de servicios autorizados
+nmap -sV -O 10.31.30.10
+
+# Auditoría local de Ubuntu
+sudo lynis audit system
+
+# Escaneo de imagen Docker
+trivy image qhawai/fastapi:1.0.0
+
+# Revisión básica del servicio web autorizado
+nikto -h https://qhawai.example.edu</pre>
+        </div>
+
+
+        <div class="callout warning" style="margin-top:14px">
+          Las evaluaciones deben ejecutarse únicamente contra equipos y
+          servicios autorizados. No deben realizarse escaneos sobre redes
+          ajenas ni pruebas destructivas.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.3 Matriz de hallazgos
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Activo</th>
+                <th>Hallazgo</th>
+                <th>Severidad</th>
+                <th>Acción</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>VUL-01</td>
+                <td>Servidor Ubuntu</td>
+                <td>Servicio innecesario habilitado.</td>
+                <td>Media.</td>
+                <td>Deshabilitar y validar.</td>
+                <td>Pendiente de escaneo.</td>
+              </tr>
+
+              <tr>
+                <td>VUL-02</td>
+                <td>Docker</td>
+                <td>Dependencia con vulnerabilidad conocida.</td>
+                <td>Alta.</td>
+                <td>Actualizar imagen.</td>
+                <td>Pendiente de escaneo.</td>
+              </tr>
+
+              <tr>
+                <td>VUL-03</td>
+                <td>Nginx</td>
+                <td>Cabeceras de seguridad incompletas.</td>
+                <td>Media.</td>
+                <td>Aplicar configuración.</td>
+                <td>Pendiente de validación.</td>
+              </tr>
+
+              <tr>
+                <td>VUL-04</td>
+                <td>Credenciales</td>
+                <td>Ausencia de MFA en cuenta privilegiada.</td>
+                <td>Alta.</td>
+                <td>Habilitar MFA.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.4 Ciclo de mejora
+        </h3>
+
+        <div class="code-block">
+<pre>Definir alcance
+→ Escanear
+→ Analizar hallazgos
+→ Confirmar falsos positivos
+→ Priorizar
+→ Corregir
+→ Reescanear
+→ Documentar riesgo residual</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 13. ÉTICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          13. Ética ACM, Confidencialidad e Impacto
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e5-etica-acm-qhawai.png"
+            alt="Ética ACM, privacidad e impacto social de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 7. Principios éticos aplicados al tratamiento biométrico.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          13.1 Principios aplicados
+        </h3>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-01</div>
+            <div class="req-body">
+              Evitar daños derivados de errores o filtraciones.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-02</div>
+            <div class="req-body">
+              Respetar la privacidad y confidencialidad.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-03</div>
+            <div class="req-body">
+              Utilizar la biometría únicamente para la finalidad informada.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-04</div>
+            <div class="req-body">
+              Proporcionar revisión humana y mecanismo alternativo.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-05</div>
+            <div class="req-body">
+              Minimizar datos, imágenes y periodos de conservación.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-06</div>
+            <div class="req-body">
+              Informar de manera transparente cómo se usan los datos.
+            </div>
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          13.2 Riesgos sociales y medidas
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Impacto posible</th>
+                <th>Consecuencia</th>
+                <th>Medida ética</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Falso positivo.</td>
+                <td>Asistencia asignada incorrectamente.</td>
+                <td>Revisión humana y corrección.</td>
+              </tr>
+
+              <tr>
+                <td>Falso negativo.</td>
+                <td>Usuario no reconocido.</td>
+                <td>Método alternativo de registro.</td>
+              </tr>
+
+              <tr>
+                <td>Percepción de vigilancia.</td>
+                <td>Desconfianza y rechazo.</td>
+                <td>Comunicación clara y limitación de finalidad.</td>
+              </tr>
+
+              <tr>
+                <td>Uso secundario de imágenes.</td>
+                <td>Violación de privacidad.</td>
+                <td>Prohibición expresa y auditoría.</td>
+              </tr>
+
+              <tr>
+                <td>Filtración biométrica.</td>
+                <td>Daño difícil de revertir.</td>
+                <td>Cifrado, acceso restringido y respuesta a incidentes.</td>
+              </tr>
+
+              <tr>
+                <td>Sesgo del reconocimiento.</td>
+                <td>Errores desiguales entre usuarios.</td>
+                <td>Pruebas de precisión y revisión periódica.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          13.3 Confidencialidad de evidencias
+        </h3>
+
+        <p class="section-body">
+          Las capturas, logs y reportes académicos deberán anonimizar
+          nombres, rostros, direcciones públicas, contraseñas, tokens,
+          claves privadas y cualquier información que permita comprometer
+          la infraestructura.
+        </p>
+
+      </section>
+
+
+      <!-- 14. EVIDENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          14. Gestión de Evidencias
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Evidencia</th>
+                <th>Criterio</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>EV-SEG-01</td>
+                <td>Usuarios, grupos y roles.</td>
+                <td>IAM.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-02</td>
+                <td>Acceso SSH mediante llave.</td>
+                <td>Cifrado y acceso.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-03</td>
+                <td>Reglas UFW o firewall.</td>
+                <td>Controles técnicos.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-04</td>
+                <td>Permisos mínimos.</td>
+                <td>Mínimo privilegio.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-05</td>
+                <td>Actualización controlada.</td>
+                <td>Gestión de parches.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-06</td>
+                <td>Backup y checksum.</td>
+                <td>Continuidad.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-07</td>
+                <td>Restauración de base de datos.</td>
+                <td>Continuidad.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-08</td>
+                <td>Dashboard de KPIs.</td>
+                <td>Monitoreo.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-09</td>
+                <td>Logs y alertas.</td>
+                <td>Auditoría.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-10</td>
+                <td>Reporte de vulnerabilidades.</td>
+                <td>Evaluación.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-11</td>
+                <td>Reescaneo posterior.</td>
+                <td>Mejora.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-SEG-12</td>
+                <td>Análisis ético y de privacidad.</td>
+                <td>Ética ACM.</td>
+                <td>Desarrollado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          14.1 Estructura de carpetas
+        </h3>
+
+        <div class="code-block">
+<pre>CE0322_CE0323_CE0324_Evidencias/
+│
+├── 01_IAM/
+│   ├── usuarios-grupos.png
+│   ├── permisos-sudo.png
+│   └── acceso-mfa.png
+│
+├── 02_Cifrado/
+│   ├── tls-nginx.png
+│   ├── ssh-seguro.png
+│   └── backup-cifrado.png
+│
+├── 03_Firewall/
+│   ├── ufw-status.png
+│   ├── puertos-permitidos.png
+│   └── prueba-bloqueo.png
+│
+├── 04_Backups/
+│   ├── backup-exitoso.log
+│   ├── checksum.png
+│   └── restauracion.png
+│
+├── 05_Parches/
+│   ├── inventario-versiones.pdf
+│   ├── actualizaciones.png
+│   └── validacion-servicios.png
+│
+├── 06_Continuidad/
+│   ├── simulacion-servidor.png
+│   ├── restauracion-bd.png
+│   └── medicion-rto-rpo.pdf
+│
+├── 07_Monitoreo/
+│   ├── dashboard.png
+│   ├── alertas.png
+│   └── logs/
+│
+├── 08_Vulnerabilidades/
+│   ├── nmap/
+│   ├── lynis/
+│   ├── trivy/
+│   ├── openvas/
+│   └── reescaneo/
+│
+└── 09_Etica/
+    ├── analisis-impacto.pdf
+    ├── privacidad-biometrica.pdf
+    └── declaracion-acm.pdf</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 15. CONCLUSIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          15. Conclusiones
+        </h2>
+
+        <p class="section-body">
+          La arquitectura de seguridad propuesta integra controles de
+          identidad, red, servidor, aplicación, datos y monitoreo.
+        </p>
+
+        <p class="section-body">
+          El principio de mínimo privilegio se aplica mediante cuentas
+          individuales, roles separados, permisos limitados, servicios
+          internos y restricciones de administración.
+        </p>
+
+        <p class="section-body">
+          La gestión de parches, las copias de seguridad y los planes de
+          continuidad permiten reducir el impacto de fallas, errores y
+          ataques.
+        </p>
+
+        <p class="section-body">
+          Los KPIs, registros centralizados y evaluaciones de vulnerabilidad
+          permitirán medir la eficacia real de los controles una vez que se
+          ejecuten las pruebas.
+        </p>
+
+        <p class="section-body">
+          La integración de ética ACM garantiza que la seguridad no se limite
+          a la tecnología, sino que también considere privacidad,
+          transparencia, impacto social y prevención de daños.
+        </p>
+
+      </section>
+
+
+      <!-- 16. REFERENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          16. Referencias y Marcos Utilizados
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Marco</th>
+                <th>Aplicación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>ISO/IEC 27001</td>
+                <td>Gestión de seguridad de la información.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 27002</td>
+                <td>Controles de acceso, cifrado, logs y continuidad.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 27005</td>
+                <td>Tratamiento y seguimiento de riesgos.</td>
+              </tr>
+
+              <tr>
+                <td>NIST Cybersecurity Framework</td>
+                <td>Identificar, proteger, detectar, responder y recuperar.</td>
+              </tr>
+
+              <tr>
+                <td>CIS Controls</td>
+                <td>Hardening, inventario, parches y monitoreo.</td>
+              </tr>
+
+              <tr>
+                <td>Código de Ética ACM</td>
+                <td>Privacidad, confidencialidad y prevención de daños.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 17. ANEXOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          17. Anexos
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Anexo</th>
+                <th>Descripción</th>
+                <th>Archivo</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Anexo A</td>
+                <td>Arquitectura de seguridad.</td>
+                <td>e5-arquitectura-seguridad-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo B</td>
+                <td>IAM y mínimo privilegio.</td>
+                <td>e5-iam-minimo-privilegio-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo C</td>
+                <td>Continuidad, RTO y RPO.</td>
+                <td>e5-continuidad-rto-rpo-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo D</td>
+                <td>Dashboard de KPIs.</td>
+                <td>e5-dashboard-kpi-seguridad-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo E</td>
+                <td>Registro y auditoría.</td>
+                <td>e5-registro-auditoria-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo F</td>
+                <td>Vulnerabilidades y mejora.</td>
+                <td>e5-vulnerabilidades-mejora-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo G</td>
+                <td>Ética ACM.</td>
+                <td>e5-etica-acm-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo H</td>
+                <td>Configuraciones y escaneos.</td>
+                <td>Carpeta de evidencias.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- VERIFICACIÓN DE RÚBRICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Verificación de la Rúbrica CE0322–CE0324
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>Evidencia preparada</th>
+                <th>Estado actual</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Controles técnicos</td>
+                <td>IAM, TLS, SSH, firewall, backups y contenedores.</td>
+                <td>Preparado; falta prueba real.</td>
+              </tr>
+
+              <tr>
+                <td>Mínimo privilegio</td>
+                <td>Roles, sudo limitado, MySQL y contenedores.</td>
+                <td>Desarrollado.</td>
+              </tr>
+
+              <tr>
+                <td>Parches y actualizaciones</td>
+                <td>Procedimiento, plazos y automatización.</td>
+                <td>Falta evidencia ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>Planes de continuidad</td>
+                <td>RTO, RPO, escenarios y simulaciones.</td>
+                <td>Falta ejecutar simulaciones.</td>
+              </tr>
+
+              <tr>
+                <td>KPIs de seguridad</td>
+                <td>Nueve indicadores cuantitativos.</td>
+                <td>Falta medir resultados.</td>
+              </tr>
+
+              <tr>
+                <td>Registro y auditoría</td>
+                <td>Fuentes de logs, alertas y centralización.</td>
+                <td>Falta captura real.</td>
+              </tr>
+
+              <tr>
+                <td>Vulnerabilidades y mejora</td>
+                <td>Herramientas, matriz y ciclo de reescaneo.</td>
+                <td>Falta ejecutar escaneos.</td>
+              </tr>
+
+              <tr>
+                <td>Ética ACM</td>
+                <td>Privacidad, impacto, revisión y transparencia.</td>
+                <td>Desarrollado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

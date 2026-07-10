@@ -1,249 +1,2226 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E2 · Implementación — QhawAI</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entregable 2 CE0321: Planificación de Seguridad de la infraestructura tecnológica de QhawAI."
+  >
+
+  <title>E2 · Planificación de Seguridad — QhawAI</title>
+
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
 <div class="layout">
+
+  <!-- ===================================================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================================================== -->
+
   <aside class="sidebar">
+
     <div class="sidebar-brand">
+
       <div class="brand-logo">
+
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="4"></circle>
+
+            <path
+              d="M2 7V5a2 2 0 012-2h2
+                 M2 17v2a2 2 0 002 2h2
+                 M22 7V5a2 2 0 00-2-2h-2
+                 M22 17v2a2 2 0 01-2 2h-2"
+            ></path>
           </svg>
         </div>
+
         <span class="brand-name">QhawAI</span>
+
       </div>
-      <div class="brand-sub">Línea: <strong>Infraestructura</strong><br>UPeU 2026-I</div>
+
+      <div class="brand-sub">
+        Línea:
+        <strong>Infraestructura</strong>
+        <br>
+        UPeU 2026-I
+      </div>
+
     </div>
+
+
     <nav class="sidebar-nav">
+
       <a href="../index.html" class="sidebar-top-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+        </svg>
+
         Portada General
+
       </a>
+
+
+      <!-- SOFTWARE -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="software">
+
+        <button class="acc-header" data-acc="software">
+
           <span class="acc-dot software"></span>
+
           Software
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-software">
-          <a href="../software/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="../software/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
-          <a href="../software/arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
-          <a href="../software/base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
-          <a href="../software/manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div class="acc-body" id="acc-software">
+
+          <a
+            href="../software/entregable1.html"
+            class="nav-link"
+          >
+            E1 · Requerimientos y Diseño
+          </a>
+
+          <a
+            href="../software/entregable2.html"
+            class="nav-link"
+          >
+            E2 · Plataforma de Datos
+          </a>
+
+          <a
+            href="../software/arquitectura.html"
+            class="nav-link"
+          >
+            E3 · Sistema Funcional
+          </a>
+
+          <a
+            href="../software/manual_usuario.html"
+            class="nav-link"
+          >
+            E4 · Calidad y Operación
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- INFRAESTRUCTURA -->
+
       <div class="acc-group">
-        <button class="acc-header open " data-acc="infra">
+
+        <button
+          class="acc-header open"
+          data-acc="infra"
+        >
+
           <span class="acc-dot infra"></span>
+
           Infraestructura
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body open " id="acc-infra">
-          <a href="index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
-          <a href="entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="entregable2.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>E2 · Implementación</a>
-          <a href="entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>E3 · Sistema en Producción</a>
-          <a href="entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div
+          class="acc-body open"
+          id="acc-infra"
+        >
+
+          <a href="index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a
+            href="entregable1.html"
+            class="nav-link"
+          >
+            E1 · Diseño de Red
+          </a>
+
+          <a
+            href="entregable2.html"
+            class="nav-link active"
+          >
+            E2 · Planificación de Seguridad
+          </a>
+
+          <a
+            href="entregable3.html"
+            class="nav-link"
+          >
+            E3 · Diseño de Centro de Datos
+          </a>
+
+          <a
+            href="entregable4.html"
+            class="nav-link"
+          >
+            E4 · Implementación y Testing de Red
+          </a>
+
+          <a
+            href="entregable5.html"
+            class="nav-link"
+          >
+            E5 · Seguridad, Monitoreo y Ética
+          </a>
+
+          <a
+            href="entregable6.html"
+            class="nav-link"
+          >
+            E6 · Control de Centro de Datos
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- GESTIÓN -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="gestion">
+
+        <button class="acc-header" data-acc="gestion">
+
           <span class="acc-dot gestion"></span>
+
           Gestión
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-gestion">
-          <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
-          <a href="../gestion/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Diagnóstico</a>
-          <a href="../gestion/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>E2 · Modelado de Procesos</a>
-          <a href="../gestion/entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>E3 · Plan de Proyecto</a>
-          <a href="../gestion/entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Auditoría y Cierre</a>
+
+        <div class="acc-body" id="acc-gestion">
+
+          <a
+            href="../gestion/index.html"
+            class="nav-link"
+          >
+            Portafolio
+          </a>
+
+          <a
+            href="../gestion/entregable1.html"
+            class="nav-link"
+          >
+            E1 · Diagnóstico
+          </a>
+
+          <a
+            href="../gestion/entregable2.html"
+            class="nav-link"
+          >
+            E2 · Modelado de Procesos
+          </a>
+
+          <a
+            href="../gestion/entregable3.html"
+            class="nav-link"
+          >
+            E3 · Plan de Proyecto
+          </a>
+
+          <a
+            href="../gestion/entregable4.html"
+            class="nav-link"
+          >
+            E4 · Auditoría y Cierre
+          </a>
+
         </div>
+
       </div>
+
     </nav>
+
+
     <div class="sidebar-footer">
-      Semestre 2026-I · CE021–CE024<br>
+      Semestre 2026-I
+      <br>
+      CE03 · Infraestructura Tecnológica
+      <br>
       Ingeniería de Sistemas
     </div>
+
   </aside>
+
+
   <div class="sidebar-overlay"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
   <div class="main-content">
+
     <div class="topbar">
+
       <div class="breadcrumb">
-        <a href="../index.html" style="color:var(--text-muted);text-decoration:none">Perfil de Egreso</a>
+
+        <a
+          href="../index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Perfil de Egreso
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <a href="index.html" style="color:var(--text-muted);text-decoration:none">Línea de Infraestructura</a>
+
+        <a
+          href="index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Infraestructura
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">E2 · Implementación</span>
+
+        <span class="breadcrumb-current">
+          E2 · Planificación de Seguridad
+        </span>
+
       </div>
-      <button class="hamburger" aria-label="Menú">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+
+
+      <button
+        class="hamburger"
+        aria-label="Abrir menú"
+        type="button"
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
+
       </button>
+
     </div>
-    <div class="content">
-      <div class="hero" style="border-left:4px solid #059669">
-        <div class="hero-eyebrow" style="color:#059669">Línea de Infraestructura · CE022</div>
-        <h1 class="hero-title" style="font-size:1.8rem">E2 — Implementación de Infraestructura</h1>
-        <p class="hero-desc">Configuración de Nginx, Laravel, FastAPI en contenedor Docker, MySQL, Firebase y CI/CD con GitHub Actions.</p>
+
+
+    <main class="content">
+
+      <!-- PORTADA DIGITAL -->
+
+      <section
+        class="hero"
+        style="border-left:4px solid #059669"
+      >
+
+        <div
+          class="hero-eyebrow"
+          style="color:#059669"
+        >
+          Línea de Infraestructura Tecnológica · CE0321
+        </div>
+
+        <h1
+          class="hero-title"
+          style="font-size:1.8rem"
+        >
+          Entregable 2 — Planificación de Seguridad
+        </h1>
+
+        <p class="hero-desc">
+          Identificación de activos críticos, análisis y tratamiento de
+          riesgos, definición de políticas de seguridad y asignación de
+          roles para la infraestructura tecnológica de QhawAI.
+        </p>
+
+
         <div class="hero-meta">
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Línea</span>
-            <span class="hero-meta-value"><span class="linea-badge infra">Infraestructura</span></span>
+            <span class="hero-meta-label">
+              Competencia
+            </span>
+
+            <span class="hero-meta-value">
+              CE0321
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Universidad</span>
-            <span class="hero-meta-value">UPeU</span>
+            <span class="hero-meta-label">
+              Línea
+            </span>
+
+            <span class="hero-meta-value">
+              <span class="linea-badge infra">
+                Infraestructura
+              </span>
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Semestre</span>
-            <span class="hero-meta-value">2026-I</span>
+            <span class="hero-meta-label">
+              Universidad
+            </span>
+
+            <span class="hero-meta-value">
+              Universidad Peruana Unión
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Estudiante</span>
-            <span class="hero-meta-value">[FALTA COMPLEMENTAR]</span>
+            <span class="hero-meta-label">
+              Semestre
+            </span>
+
+            <span class="hero-meta-value">
+              2026-I
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Estudiante
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR NOMBRE]
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Fecha
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR FECHA]
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- RESUMEN EJECUTIVO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Resumen Ejecutivo
+        </h2>
+
+        <p class="section-body">
+          El presente documento desarrolla la planificación de seguridad
+          para la infraestructura tecnológica que soporta QhawAI, sistema
+          inteligente de control de asistencia mediante reconocimiento facial
+          orientado a una institución educativa.
+        </p>
+
+        <p class="section-body">
+          Debido a que la solución procesa datos personales, registros de
+          asistencia y plantillas biométricas, resulta necesario identificar
+          los activos críticos, analizar las amenazas y vulnerabilidades,
+          establecer controles y definir claramente las responsabilidades
+          de cada participante.
+        </p>
+
+        <p class="section-body">
+          El análisis de riesgos utiliza una metodología cualitativa y
+          semicuantitativa basada en probabilidad e impacto. El nivel de
+          riesgo se obtiene multiplicando ambos valores y clasificándolo como
+          bajo, medio, alto o crítico.
+        </p>
+
+        <p class="section-body">
+          La planificación incluye políticas de acceso, protección de datos,
+          cifrado, respaldos, actualización, monitoreo, continuidad y respuesta
+          ante incidentes. También incorpora principios éticos de la ACM,
+          especialmente privacidad, confidencialidad, transparencia y
+          prevención de daños.
+        </p>
+
+        <div
+          class="callout success"
+          style="margin-top:14px"
+        >
+          <strong>Resultado esperado:</strong>
+          disponer de una planificación de seguridad aplicable, medible y
+          alineada con los riesgos reales de la infraestructura de QhawAI.
+        </div>
+
+      </section>
+
+
+      <!-- 1. INTRODUCCIÓN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          1. Introducción
+        </h2>
+
+        <p class="section-body">
+          La seguridad de la información constituye un requisito esencial
+          para QhawAI debido al tratamiento de información personal,
+          biométrica y académica. Una falla en la infraestructura podría
+          afectar la confidencialidad, integridad, disponibilidad y
+          trazabilidad de los registros.
+        </p>
+
+        <p class="section-body">
+          La planificación presentada permite anticipar riesgos, priorizar
+          controles y establecer responsabilidades antes de ejecutar la
+          implementación técnica.
+        </p>
+
+      </section>
+
+
+      <!-- 2. OBJETIVOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          2. Objetivos de la Planificación de Seguridad
+        </h2>
+
+
+        <h3>2.1 Objetivo general</h3>
+
+        <p class="section-body">
+          Planificar la seguridad de la infraestructura tecnológica de QhawAI
+          mediante la identificación de activos críticos, el análisis de
+          riesgos, la definición de políticas y la asignación de
+          responsabilidades.
+        </p>
+
+
+        <h3>2.2 Objetivos específicos</h3>
+
+
+        <div class="req-block">
+          <div class="req-id">OE-01</div>
+          <div class="req-body">
+            Identificar y clasificar los activos de información,
+            tecnológicos, humanos y de servicio.
           </div>
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">2. Configuración del Servidor Web (Nginx)</h2>
-        <p class="section-body">Nginx actúa como proxy reverso, recibiendo peticiones HTTPS y redirigiendo a Laravel via PHP-FPM en socket Unix.</p>
-        <div class="code-block"><pre>server {
-    listen 443 ssl;
-    root /var/www/qhawai/public;
-    index index.php;
-    ssl_certificate /etc/letsencrypt/live/[dominio]/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/[dominio]/privkey.pem;
 
-    location ~ \.php$ {
-        fastcgi_pass unix:/run/php/php8.3-fpm.sock;
-    }
-}</pre></div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e2-nginx-config.png" alt="Configuración Nginx" style="min-height:160px">
-          <div class="img-caption">Configuración de Nginx activa · <code>infra-e2-nginx-config.png</code></div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">3. Configuración del Entorno Laravel (.env)</h2>
-        <div class="callout callout-warning">
-          <span class="callout-icon">⚠️</span>
-          <div class="callout-body">El archivo <code>.env</code> y <code>firebase-credentials.json</code> están excluidos del repositorio git. Las credenciales se gestionan como variables de entorno del servidor.</div>
-        </div>
-        <div class="code-block"><pre>APP_ENV=production
-APP_DEBUG=false
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=[OCULTO]
-DB_USERNAME=[OCULTO]
-DB_PASSWORD=[OCULTO]
-FIREBASE_CREDENTIALS=[ruta/firebase-credentials.json]</pre></div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">4. Configuración de FastAPI (Motor IA) — Docker + Nginx</h2>
-        <p class="section-body">FastAPI se ejecuta dentro de un <strong>contenedor Docker</strong> con Nginx como servidor web interno. Docker gestiona el ciclo de vida del contenedor automáticamente.</p>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
-          <tbody>
-            <tr><td>Tecnología</td><td>Docker (contenedor)</td></tr>
-            <tr><td>Servidor web interno</td><td>Nginx (dentro del contenedor)</td></tr>
-            <tr><td>Puerto interno</td><td>80 (solo acceso desde el host VPS)</td></tr>
-            <tr><td>Runtime</td><td>Uvicorn + FastAPI (Python 3.11)</td></tr>
-            <tr><td>Inicio</td><td>Automático con Docker (restart: always)</td></tr>
-          </tbody>
-        </table></div>
-        <div class="callout callout-info" style="margin-top:12px">
-          <span class="callout-icon">ℹ️</span>
-          <div class="callout-body">
-            <strong>Flujo interno del contenedor:</strong> Nginx :80 → proxy → Uvicorn :8000 → FastAPI Python<br>
-            Laravel se comunica con el contenedor vía <code>http://localhost:80</code>
+        <div class="req-block">
+          <div class="req-id">OE-02</div>
+          <div class="req-body">
+            Evaluar amenazas, vulnerabilidades, probabilidad e impacto
+            mediante una matriz de riesgos.
           </div>
         </div>
-        <div class="code-block" style="margin-top:12px"><pre>docker ps                          # ver contenedor corriendo
-docker logs [nombre-contenedor]    # ver logs recientes
-docker restart [nombre-contenedor] # reiniciar si es necesario</pre></div>
-        <div class="img-grid-2" style="margin-top:12px">
-          <div class="img-evidence"><img src="../software/img/infra-e2-docker-ps.png" alt="docker ps" style="min-height:140px"><div class="img-caption">docker ps — contenedor FastAPI activo · <code>infra-e2-docker-ps.png</code></div></div>
-          <div class="img-evidence"><img src="../software/img/infra-e2-docker-logs.png" alt="docker logs" style="min-height:140px"><div class="img-caption">docker logs — últimas líneas · <code>infra-e2-docker-logs.png</code></div></div>
-        </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">5. Base de Datos MySQL</h2>
-        <div class="card-grid cols-2" style="gap:10px">
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">Motor</div><div class="req-body">MySQL 8.0 · charset utf8mb4 · collation utf8mb4_unicode_ci</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">Acceso</div><div class="req-body">Solo desde localhost (127.0.0.1), puerto 3306 no expuesto externamente.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">Tablas principales</div><div class="req-body">personas, asistencias, institucion, users, grados, secciones</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">Backup</div><div class="req-body">[FALTA COMPLEMENTAR — método y frecuencia de backup]</div></div>
-        </div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e2-mysql-tablas.png" alt="MySQL tablas" style="min-height:160px">
-          <div class="img-caption">phpMyAdmin o Workbench mostrando las tablas · <code>infra-e2-mysql-tablas.png</code></div>
-        </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">6. Firebase — Servicios en la Nube</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Servicio</th><th>Función</th><th>Estado</th></tr></thead>
-          <tbody>
-            <tr><td>Firebase Auth</td><td>Autenticación Email/Password + Google Sign-In</td><td><span class="badge badge-puntual">Activo</span></td></tr>
-            <tr><td>Firebase FCM</td><td>Notificaciones push a app Android al registrar falta/tardanza</td><td><span class="badge badge-puntual">Activo</span></td></tr>
-            <tr><td>Firebase Storage</td><td>Almacenamiento de fotos para entrenamiento del modelo</td><td>[FALTA]</td></tr>
-          </tbody>
-        </table></div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e2-firebase-console.png" alt="Firebase Console" style="min-height:160px">
-          <div class="img-caption">Firebase Console — resumen del proyecto · <code>infra-e2-firebase-console.png</code></div>
+        <div class="req-block">
+          <div class="req-id">OE-03</div>
+          <div class="req-body">
+            Definir controles y políticas aplicables al contexto de QhawAI.
+          </div>
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">7. CI/CD con GitHub Actions</h2>
-        <div class="flow-steps">
-          <div class="flow-step"><span class="flow-num">1</span><div><strong>Push a rama main</strong> en GitHub</div></div>
-          <div class="flow-step"><span class="flow-num">2</span><div><strong>GitHub Actions</strong> ejecuta pipeline automáticamente</div></div>
-          <div class="flow-step"><span class="flow-num">3</span><div>Instala dependencias PHP (Composer)</div></div>
-          <div class="flow-step"><span class="flow-num">4</span><div>Ejecuta migraciones en SQLite de prueba</div></div>
-          <div class="flow-step"><span class="flow-num">5</span><div>Ejecuta pruebas unitarias (PHPUnit) — si falla, NO se despliega</div></div>
+
+        <div class="req-block">
+          <div class="req-id">OE-04</div>
+          <div class="req-body">
+            Establecer roles y responsabilidades mediante una matriz RACI.
+          </div>
         </div>
-        <div class="img-grid-2" style="margin-top:12px">
-          <div class="img-evidence"><img src="../software/img/infra-e2-actions-lista.png" alt="GitHub Actions lista" style="min-height:140px"><div class="img-caption">Lista de ejecuciones exitosas · <code>infra-e2-actions-lista.png</code></div></div>
-          <div class="img-evidence"><img src="../software/img/infra-e2-actions-detalle.png" alt="GitHub Actions detalle" style="min-height:140px"><div class="img-caption">Detalle de un run exitoso · <code>infra-e2-actions-detalle.png</code></div></div>
+
+
+        <div class="req-block">
+          <div class="req-id">OE-05</div>
+          <div class="req-body">
+            Integrar principios éticos relacionados con privacidad,
+            confidencialidad y prevención de daños.
+          </div>
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">8. Seguridad de la Infraestructura</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Medida</th><th>Estado</th><th>Detalle</th></tr></thead>
-          <tbody>
-            <tr><td>HTTPS / TLS</td><td><span class="badge badge-puntual">Sí</span></td><td>Let's Encrypt, auto-renovación</td></tr>
-            <tr><td>Firewall UFW</td><td>[FALTA]</td><td>Permite solo 22, 80, 443</td></tr>
-            <tr><td>Acceso SSH por llave</td><td>[FALTA]</td><td>Sin contraseña, solo clave pública</td></tr>
-            <tr><td>.env fuera del repositorio</td><td><span class="badge badge-puntual">Sí</span></td><td>.gitignore incluye .env</td></tr>
-            <tr><td>Firebase reglas</td><td>[FALTA]</td><td>Restricción por autenticación</td></tr>
-            <tr><td>MySQL solo localhost</td><td><span class="badge badge-puntual">Sí</span></td><td>Puerto 3306 no expuesto</td></tr>
-            <tr><td>FastAPI en Docker (solo localhost)</td><td><span class="badge badge-puntual">Sí</span></td><td>Puerto 80 interno del contenedor, no expuesto al exterior</td></tr>
-          </tbody>
-        </table></div>
-      </div>
+      </section>
 
-    </div>
+
+      <!-- 3. ALCANCE -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          3. Alcance de Seguridad
+        </h2>
+
+        <p class="section-body">
+          La planificación comprende los componentes tecnológicos,
+          servicios, información y personas relacionadas con la operación
+          de QhawAI.
+        </p>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-01</div>
+            <div class="req-body">
+              Datos personales, biométricos y registros de asistencia.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-02</div>
+            <div class="req-body">
+              Servidores, red, firewall, switches y dispositivos de captura.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-03</div>
+            <div class="req-body">
+              Laravel, FastAPI, MySQL, Nginx, Docker y Firebase FCM.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-04</div>
+            <div class="req-body">
+              Credenciales, configuraciones, respaldos, registros y
+              documentación.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-05</div>
+            <div class="req-body">
+              Administradores, responsables de seguridad, docentes y
+              usuarios autorizados.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">IN-06</div>
+            <div class="req-body">
+              Servicios externos necesarios para notificaciones y
+              continuidad.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 4. METODOLOGÍA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          4. Metodología de Evaluación
+        </h2>
+
+        <p class="section-body">
+          La evaluación se estructura siguiendo principios de gestión de
+          riesgos utilizados en ISO/IEC 27005 y NIST. Cada riesgo se analiza
+          considerando activo, amenaza, vulnerabilidad, probabilidad,
+          impacto, nivel inherente, tratamiento y riesgo residual.
+        </p>
+
+
+        <h3>4.1 Escala de probabilidad</h3>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Valor</th>
+                <th>Nivel</th>
+                <th>Descripción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Rara</td>
+                <td>El evento es poco probable en condiciones normales.</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Improbable</td>
+                <td>Puede ocurrir, pero existen controles preventivos.</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Posible</td>
+                <td>El evento podría presentarse ocasionalmente.</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Probable</td>
+                <td>Existen condiciones que favorecen su ocurrencia.</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>Casi segura</td>
+                <td>Se espera que ocurra si no se aplican controles.</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.2 Escala de impacto
+        </h3>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Valor</th>
+                <th>Nivel</th>
+                <th>Consecuencia</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Insignificante</td>
+                <td>Sin interrupción relevante ni pérdida de información.</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Menor</td>
+                <td>Afectación limitada y recuperación sencilla.</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Moderado</td>
+                <td>Interrupción temporal o afectación controlable.</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Mayor</td>
+                <td>Pérdida relevante, indisponibilidad o incidente serio.</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>Crítico</td>
+                <td>
+                  Exposición biométrica, pérdida significativa o interrupción
+                  prolongada.
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.3 Cálculo del riesgo
+        </h3>
+
+        <div class="code-block">
+          <pre>Nivel de riesgo = Probabilidad × Impacto</pre>
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Resultado</th>
+                <th>Nivel</th>
+                <th>Tratamiento requerido</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1–4</td>
+                <td>Bajo</td>
+                <td>Aceptar y monitorear.</td>
+              </tr>
+
+              <tr>
+                <td>5–9</td>
+                <td>Medio</td>
+                <td>Aplicar controles programados.</td>
+              </tr>
+
+              <tr>
+                <td>10–16</td>
+                <td>Alto</td>
+                <td>Mitigación prioritaria.</td>
+              </tr>
+
+              <tr>
+                <td>17–25</td>
+                <td>Crítico</td>
+                <td>Acción inmediata, evitar o reducir.</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 5. ACTIVOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          5. Identificación de Activos Críticos
+        </h2>
+
+        <p class="section-body">
+          Los activos se valoran considerando confidencialidad, integridad
+          y disponibilidad. Cada dimensión utiliza una escala de 1 a 5.
+        </p>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e2-mapa-activos-qhawai.png"
+            alt="Mapa de activos críticos de QhawAI"
+            style="min-height:250px"
+          >
+
+          <div class="img-caption">
+            Figura 1. Mapa de activos críticos de QhawAI.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Activo</th>
+                <th>Tipo</th>
+                <th>Propietario</th>
+                <th>C</th>
+                <th>I</th>
+                <th>D</th>
+                <th>Criticidad</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>AC-01</td>
+                <td>Plantillas biométricas</td>
+                <td>Información</td>
+                <td>Responsable del sistema</td>
+                <td>5</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-02</td>
+                <td>Datos personales</td>
+                <td>Información</td>
+                <td>Institución educativa</td>
+                <td>5</td>
+                <td>5</td>
+                <td>3</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-03</td>
+                <td>Registros de asistencia</td>
+                <td>Información</td>
+                <td>Administración</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-04</td>
+                <td>Credenciales y secretos</td>
+                <td>Información</td>
+                <td>Administrador TI</td>
+                <td>5</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-05</td>
+                <td>Servidor de aplicaciones</td>
+                <td>Tecnológico</td>
+                <td>Administrador TI</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-06</td>
+                <td>Base de datos MySQL</td>
+                <td>Tecnológico</td>
+                <td>Administrador de BD</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-07</td>
+                <td>Servicio FastAPI</td>
+                <td>Software</td>
+                <td>Responsable técnico</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-08</td>
+                <td>Equipos de red y firewall</td>
+                <td>Tecnológico</td>
+                <td>Administrador de red</td>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-09</td>
+                <td>Dispositivos de captura</td>
+                <td>Tecnológico</td>
+                <td>Responsable del sistema</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-10</td>
+                <td>Copias de seguridad</td>
+                <td>Información</td>
+                <td>Administrador TI</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>Crítica</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-11</td>
+                <td>Logs y registros de auditoría</td>
+                <td>Información</td>
+                <td>Responsable de seguridad</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-12</td>
+                <td>Firebase Cloud Messaging</td>
+                <td>Servicio externo</td>
+                <td>Responsable de aplicación</td>
+                <td>3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-13</td>
+                <td>Configuraciones técnicas</td>
+                <td>Información</td>
+                <td>Administrador TI</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+
+              <tr>
+                <td>AC-14</td>
+                <td>Personal autorizado</td>
+                <td>Humano</td>
+                <td>Institución educativa</td>
+                <td>4</td>
+                <td>5</td>
+                <td>4</td>
+                <td>Alta</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <div
+          class="callout info"
+          style="margin-top:14px"
+        >
+          C = Confidencialidad, I = Integridad y D = Disponibilidad.
+          La valoración deberá ser validada con los responsables de la
+          institución educativa.
+        </div>
+
+      </section>
+
+
+      <!-- 6. RIESGOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          6. Análisis de Riesgos
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e2-matriz-riesgos-qhawai.png"
+            alt="Matriz de riesgos de QhawAI"
+            style="min-height:250px"
+          >
+
+          <div class="img-caption">
+            Figura 2. Matriz de probabilidad e impacto.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Activo</th>
+                <th>Amenaza</th>
+                <th>Vulnerabilidad</th>
+                <th>P</th>
+                <th>I</th>
+                <th>Riesgo</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>R-01</td>
+                <td>Datos biométricos</td>
+                <td>Acceso no autorizado</td>
+                <td>Permisos excesivos o credenciales comprometidas</td>
+                <td>4</td>
+                <td>5</td>
+                <td>20</td>
+                <td>Crítico</td>
+              </tr>
+
+
+              <tr>
+                <td>R-02</td>
+                <td>Base de datos</td>
+                <td>Exposición externa</td>
+                <td>Puerto o servicio publicado incorrectamente</td>
+                <td>3</td>
+                <td>5</td>
+                <td>15</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-03</td>
+                <td>Credenciales</td>
+                <td>Robo de cuenta</td>
+                <td>Contraseña débil o ausencia de MFA</td>
+                <td>4</td>
+                <td>5</td>
+                <td>20</td>
+                <td>Crítico</td>
+              </tr>
+
+
+              <tr>
+                <td>R-04</td>
+                <td>Servidor</td>
+                <td>Malware o ransomware</td>
+                <td>Parches pendientes o privilegios excesivos</td>
+                <td>3</td>
+                <td>5</td>
+                <td>15</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-05</td>
+                <td>Copias de seguridad</td>
+                <td>Pérdida de información</td>
+                <td>Backups no probados o almacenados en un solo medio</td>
+                <td>4</td>
+                <td>5</td>
+                <td>20</td>
+                <td>Crítico</td>
+              </tr>
+
+
+              <tr>
+                <td>R-06</td>
+                <td>Red institucional</td>
+                <td>Movimiento lateral</td>
+                <td>Ausencia de segmentación o ACL</td>
+                <td>3</td>
+                <td>4</td>
+                <td>12</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-07</td>
+                <td>FastAPI</td>
+                <td>Denegación de servicio</td>
+                <td>Ausencia de límites y control de solicitudes</td>
+                <td>3</td>
+                <td>4</td>
+                <td>12</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-08</td>
+                <td>Dispositivo biométrico</td>
+                <td>Suplantación con fotografía</td>
+                <td>Ausencia de mecanismo anti-spoofing</td>
+                <td>3</td>
+                <td>4</td>
+                <td>12</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-09</td>
+                <td>Servidor principal</td>
+                <td>Falla del servicio</td>
+                <td>Punto único de fallo</td>
+                <td>3</td>
+                <td>5</td>
+                <td>15</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-10</td>
+                <td>Logs</td>
+                <td>Manipulación o eliminación</td>
+                <td>Registros almacenados únicamente en el equipo origen</td>
+                <td>3</td>
+                <td>4</td>
+                <td>12</td>
+                <td>Alto</td>
+              </tr>
+
+
+              <tr>
+                <td>R-11</td>
+                <td>Firebase FCM</td>
+                <td>Uso indebido de tokens</td>
+                <td>Protección inadecuada de claves o tokens</td>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-12</td>
+                <td>Configuraciones</td>
+                <td>Error humano</td>
+                <td>Cambios sin revisión ni respaldo</td>
+                <td>4</td>
+                <td>4</td>
+                <td>16</td>
+                <td>Alto</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 7. TRATAMIENTO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          7. Plan de Tratamiento de Riesgos
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e2-ciclo-tratamiento-riesgos-qhawai.png"
+            alt="Ciclo de tratamiento de riesgos de QhawAI"
+            style="min-height:230px"
+          >
+
+          <div class="img-caption">
+            Figura 3. Ciclo de tratamiento y mejora de riesgos.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Riesgo</th>
+                <th>Tratamiento</th>
+                <th>Control propuesto</th>
+                <th>Responsable</th>
+                <th>Residual esperado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>R-01</td>
+                <td>Mitigar</td>
+                <td>
+                  RBAC, cifrado, auditoría y acceso mínimo necesario.
+                </td>
+                <td>Seguridad / Administrador TI</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-02</td>
+                <td>Evitar</td>
+                <td>
+                  MySQL restringido a red interna y reglas de firewall.
+                </td>
+                <td>Administrador de red</td>
+                <td>Bajo</td>
+              </tr>
+
+
+              <tr>
+                <td>R-03</td>
+                <td>Mitigar</td>
+                <td>
+                  MFA, contraseñas robustas, bloqueo y revisión de accesos.
+                </td>
+                <td>Responsable de seguridad</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-04</td>
+                <td>Mitigar</td>
+                <td>
+                  Gestión de parches, mínimo privilegio y protección del host.
+                </td>
+                <td>Administrador TI</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-05</td>
+                <td>Mitigar</td>
+                <td>
+                  Estrategia 3-2-1, cifrado y pruebas de restauración.
+                </td>
+                <td>Administrador TI</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-06</td>
+                <td>Mitigar</td>
+                <td>
+                  VLAN, ACL, firewall y principio de denegación predeterminada.
+                </td>
+                <td>Administrador de red</td>
+                <td>Bajo</td>
+              </tr>
+
+
+              <tr>
+                <td>R-07</td>
+                <td>Mitigar</td>
+                <td>
+                  Rate limiting, monitoreo y límites de recursos.
+                </td>
+                <td>Responsable técnico</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-08</td>
+                <td>Mitigar</td>
+                <td>
+                  Validación de vida, revisión humana y mecanismo alternativo.
+                </td>
+                <td>Responsable del sistema</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-09</td>
+                <td>Mitigar</td>
+                <td>
+                  Backup, virtualización y procedimiento de recuperación.
+                </td>
+                <td>Administrador TI</td>
+                <td>Medio</td>
+              </tr>
+
+
+              <tr>
+                <td>R-10</td>
+                <td>Mitigar</td>
+                <td>
+                  Logs centralizados, acceso restringido y retención.
+                </td>
+                <td>Responsable de seguridad</td>
+                <td>Bajo</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 8. POLÍTICAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          8. Políticas de Seguridad
+        </h2>
+
+
+        <h3>8.1 Política de control de acceso</h3>
+
+        <p class="section-body">
+          Todo acceso deberá realizarse mediante una cuenta individual,
+          autorizada y relacionada con las funciones del usuario. Se aplicará
+          control de acceso basado en roles y mínimo privilegio.
+        </p>
+
+        <div class="callout info">
+          <strong>Evidencia prevista:</strong>
+          matriz de roles, usuarios creados, permisos y registros de acceso.
+          <br>
+          <strong>Revisión:</strong> trimestral o ante cambio de funciones.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.2 Política de contraseñas y autenticación
+        </h3>
+
+        <p class="section-body">
+          Las cuentas privilegiadas deberán utilizar contraseñas robustas,
+          autenticación multifactor cuando sea viable, bloqueo por intentos
+          fallidos y renovación ante sospecha de compromiso.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.3 Política de protección de datos biométricos
+        </h3>
+
+        <p class="section-body">
+          Los datos biométricos serán utilizados únicamente para la finalidad
+          informada. Se minimizará el almacenamiento de fotografías originales
+          y se protegerán las plantillas biométricas mediante cifrado,
+          control de acceso y trazabilidad.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.4 Política de cifrado
+        </h3>
+
+        <p class="section-body">
+          Las comunicaciones externas deberán emplear HTTPS y TLS. Los
+          respaldos, credenciales y datos sensibles deberán protegerse
+          mediante mecanismos criptográficos adecuados.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.5 Política de copias de seguridad
+        </h3>
+
+        <p class="section-body">
+          Se aplicará una estrategia de respaldo con varias copias, medios
+          diferentes y al menos una copia externa o aislada. Toda política
+          de backup deberá incluir pruebas de restauración.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.6 Política de actualizaciones y parches
+        </h3>
+
+        <p class="section-body">
+          Los sistemas operativos, aplicaciones, dependencias, contenedores
+          y dispositivos deberán mantenerse actualizados mediante un
+          procedimiento controlado, probado y documentado.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.7 Política de monitoreo y registros
+        </h3>
+
+        <p class="section-body">
+          Los activos críticos deberán generar logs de acceso, cambios,
+          errores, eventos de seguridad y operación. Los registros deberán
+          conservar fecha, hora, origen y responsable.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.8 Política de incidentes
+        </h3>
+
+        <p class="section-body">
+          Todo incidente deberá ser identificado, reportado, contenido,
+          analizado y documentado. La recuperación deberá finalizar con
+          acciones correctivas y lecciones aprendidas.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.9 Política de servicios externos y Firebase FCM
+        </h3>
+
+        <p class="section-body">
+          Las claves, tokens y credenciales de Firebase Cloud Messaging
+          deberán permanecer fuera del código fuente. El servicio se utilizará
+          únicamente para notificaciones autorizadas.
+        </p>
+
+
+        <h3 style="margin-top:24px">
+          8.10 Política de retención y eliminación
+        </h3>
+
+        <p class="section-body">
+          La información se conservará únicamente durante el periodo
+          necesario. La eliminación deberá ser segura, autorizada y
+          verificable.
+        </p>
+
+      </section>
+
+
+      <!-- 9. ROLES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          9. Roles y Responsabilidades
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e2-organigrama-seguridad-qhawai.png"
+            alt="Organigrama de seguridad de QhawAI"
+            style="min-height:240px"
+          >
+
+          <div class="img-caption">
+            Figura 4. Organización de responsabilidades de seguridad.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Rol</th>
+                <th>Responsabilidades</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Dirección o patrocinador</td>
+                <td>
+                  Aprobar políticas, prioridades, recursos y riesgos
+                  aceptados.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Responsable del proyecto</td>
+                <td>
+                  Coordinar actividades, alcance, documentación y decisiones.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Administrador de infraestructura</td>
+                <td>
+                  Gestionar servidores, red, respaldos, parches y
+                  disponibilidad.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Responsable de seguridad</td>
+                <td>
+                  Evaluar riesgos, revisar eventos y coordinar incidentes.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Administrador de base de datos</td>
+                <td>
+                  Proteger datos, permisos, integridad, respaldos y
+                  recuperación.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Administrador de aplicación</td>
+                <td>
+                  Gestionar usuarios, roles y configuración funcional.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Auditor</td>
+                <td>
+                  Revisar controles, evidencias, cumplimiento y mejoras.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>Usuario autorizado</td>
+                <td>
+                  Utilizar el sistema correctamente y reportar incidentes.
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 10. RACI -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          10. Matriz RACI
+        </h2>
+
+        <p class="section-body">
+          R = Responsable de ejecutar, A = autoridad que aprueba,
+          C = consultado e I = informado.
+        </p>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Actividad</th>
+                <th>Dirección</th>
+                <th>Proyecto</th>
+                <th>Infraestructura</th>
+                <th>Seguridad</th>
+                <th>BD</th>
+                <th>Auditor</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Aprobar políticas</td>
+                <td>A</td>
+                <td>R</td>
+                <td>C</td>
+                <td>C</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+
+
+              <tr>
+                <td>Identificar activos</td>
+                <td>I</td>
+                <td>A</td>
+                <td>R</td>
+                <td>R</td>
+                <td>C</td>
+                <td>C</td>
+              </tr>
+
+
+              <tr>
+                <td>Evaluar riesgos</td>
+                <td>I</td>
+                <td>A</td>
+                <td>C</td>
+                <td>R</td>
+                <td>C</td>
+                <td>C</td>
+              </tr>
+
+
+              <tr>
+                <td>Configurar red y firewall</td>
+                <td>I</td>
+                <td>C</td>
+                <td>R</td>
+                <td>A/C</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+
+
+              <tr>
+                <td>Gestionar accesos</td>
+                <td>A</td>
+                <td>C</td>
+                <td>R</td>
+                <td>R</td>
+                <td>C</td>
+                <td>I</td>
+              </tr>
+
+
+              <tr>
+                <td>Ejecutar respaldos</td>
+                <td>I</td>
+                <td>C</td>
+                <td>R</td>
+                <td>C</td>
+                <td>R</td>
+                <td>I</td>
+              </tr>
+
+
+              <tr>
+                <td>Gestionar incidentes</td>
+                <td>I</td>
+                <td>C</td>
+                <td>R</td>
+                <td>A/R</td>
+                <td>C</td>
+                <td>I</td>
+              </tr>
+
+
+              <tr>
+                <td>Auditar controles</td>
+                <td>A</td>
+                <td>C</td>
+                <td>I</td>
+                <td>C</td>
+                <td>I</td>
+                <td>R</td>
+              </tr>
+
+
+              <tr>
+                <td>Aceptar riesgo residual</td>
+                <td>A</td>
+                <td>R</td>
+                <td>C</td>
+                <td>C</td>
+                <td>I</td>
+                <td>I</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 11. ÉTICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          11. Ética ACM y Tratamiento Responsable
+        </h2>
+
+        <p class="section-body">
+          La planificación de seguridad incorpora principios de
+          responsabilidad profesional, privacidad, confidencialidad y
+          prevención de daños.
+        </p>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-01</div>
+            <div class="req-body">
+              Utilizar los datos biométricos únicamente para la finalidad
+              informada.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-02</div>
+            <div class="req-body">
+              Evitar conservar imágenes originales de manera innecesaria.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-03</div>
+            <div class="req-body">
+              Proporcionar revisión humana ante errores del reconocimiento.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-04</div>
+            <div class="req-body">
+              Mantener un procedimiento alternativo de registro.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-05</div>
+            <div class="req-body">
+              No mostrar rostros, tokens, contraseñas o secretos en evidencias.
+            </div>
+          </div>
+
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ACM-06</div>
+            <div class="req-body">
+              Informar de manera clara sobre el tratamiento de los datos.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 12. REVISIÓN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          12. Revisión y Mejora
+        </h2>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Frecuencia</th>
+                <th>Responsable</th>
+                <th>Evidencia</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Inventario de activos</td>
+                <td>Semestral</td>
+                <td>Infraestructura</td>
+                <td>Inventario actualizado</td>
+              </tr>
+
+              <tr>
+                <td>Matriz de riesgos</td>
+                <td>Semestral o ante cambios</td>
+                <td>Seguridad</td>
+                <td>Matriz aprobada</td>
+              </tr>
+
+              <tr>
+                <td>Usuarios y privilegios</td>
+                <td>Trimestral</td>
+                <td>Seguridad / Administrador</td>
+                <td>Reporte de accesos</td>
+              </tr>
+
+              <tr>
+                <td>Políticas de seguridad</td>
+                <td>Anual</td>
+                <td>Dirección y seguridad</td>
+                <td>Versión aprobada</td>
+              </tr>
+
+              <tr>
+                <td>Backups y restauración</td>
+                <td>Mensual</td>
+                <td>Infraestructura / BD</td>
+                <td>Acta de prueba</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 13. CONCLUSIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          13. Conclusiones
+        </h2>
+
+        <p class="section-body">
+          La planificación identifica como activos de mayor criticidad las
+          plantillas biométricas, la base de datos, las credenciales, los
+          respaldos, el servidor y los dispositivos de red.
+        </p>
+
+        <p class="section-body">
+          Los riesgos prioritarios están relacionados con accesos no
+          autorizados, pérdida de datos, exposición de servicios,
+          credenciales comprometidas, malware, fallos del servidor y errores
+          de configuración.
+        </p>
+
+        <p class="section-body">
+          Las políticas y la matriz RACI permiten establecer controles
+          aplicables y responsables definidos. Su eficacia deberá ser
+          demostrada posteriormente durante la implementación, el monitoreo
+          y las pruebas de seguridad.
+        </p>
+
+      </section>
+
+
+      <!-- 14. REFERENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          14. Referencias y Marcos Utilizados
+        </h2>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Marco o estándar</th>
+                <th>Aplicación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>ISO/IEC 27001</td>
+                <td>Gestión y controles de seguridad de la información.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 27002</td>
+                <td>Buenas prácticas y controles de seguridad.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 27005</td>
+                <td>Identificación, evaluación y tratamiento de riesgos.</td>
+              </tr>
+
+              <tr>
+                <td>NIST</td>
+                <td>Gestión de riesgos, controles y mejora continua.</td>
+              </tr>
+
+              <tr>
+                <td>Código de Ética ACM</td>
+                <td>Privacidad, confidencialidad y prevención de daños.</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 15. ANEXOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          15. Anexos
+        </h2>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Anexo</th>
+                <th>Descripción</th>
+                <th>Archivo</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Anexo A</td>
+                <td>Mapa de activos críticos</td>
+                <td>e2-mapa-activos-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+              <tr>
+                <td>Anexo B</td>
+                <td>Matriz visual de riesgos</td>
+                <td>e2-matriz-riesgos-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+              <tr>
+                <td>Anexo C</td>
+                <td>Organigrama de seguridad</td>
+                <td>e2-organigrama-seguridad-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+              <tr>
+                <td>Anexo D</td>
+                <td>Ciclo de tratamiento de riesgos</td>
+                <td>e2-ciclo-tratamiento-riesgos-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+              <tr>
+                <td>Anexo E</td>
+                <td>Matriz completa de riesgos</td>
+                <td>Incluida en el entregable</td>
+                <td>Desarrollada</td>
+              </tr>
+
+              <tr>
+                <td>Anexo F</td>
+                <td>Matriz RACI</td>
+                <td>Incluida en el entregable</td>
+                <td>Desarrollada</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- VERIFICACIÓN RÚBRICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Verificación de la Rúbrica CE0321
+        </h2>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>Evidencia desarrollada</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Identificación de activos críticos</td>
+                <td>
+                  Inventario clasificado, propietario, valoración CIA y
+                  criticidad.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+              <tr>
+                <td>Análisis de riesgos</td>
+                <td>
+                  Amenaza, vulnerabilidad, probabilidad, impacto, cálculo,
+                  control y residual.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+              <tr>
+                <td>Políticas de seguridad</td>
+                <td>
+                  Diez políticas aplicables al contexto de QhawAI.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+              <tr>
+                <td>Roles y responsabilidades</td>
+                <td>
+                  Organigrama, definición de roles y matriz RACI.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+              <tr>
+                <td>Calidad documental y ética</td>
+                <td>
+                  Estructura profesional, referencias y principios ACM.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
   </div>
+
 </div>
+
+
 <script src="../js/main.js"></script>
+
 </body>
 </html>
+```

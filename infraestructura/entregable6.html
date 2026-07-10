@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entregable 6 CE0332 y CE0333: Implementación y Control de Centro de Datos para QhawAI."
+  >
+
+  <title>E6 · Implementación y Control de Centro de Datos — QhawAI</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- ===================================================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================================================== -->
+
+  <aside class="sidebar">
+
+    <div class="sidebar-brand">
+
+      <div class="brand-logo">
+
+        <div class="brand-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="4"></circle>
+
+            <path
+              d="M2 7V5a2 2 0 012-2h2
+                 M2 17v2a2 2 0 002 2h2
+                 M22 7V5a2 2 0 00-2-2h-2
+                 M22 17v2a2 2 0 01-2 2h-2"
+            ></path>
+          </svg>
+        </div>
+
+        <span class="brand-name">QhawAI</span>
+
+      </div>
+
+      <div class="brand-sub">
+        Línea:
+        <strong>Infraestructura</strong>
+        <br>
+        UPeU 2026-I
+      </div>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+      <a href="../index.html" class="sidebar-top-link">
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+        </svg>
+
+        Portada General
+
+      </a>
+
+
+      <!-- SOFTWARE -->
+
+      <div class="acc-group">
+
+        <button class="acc-header" data-acc="software">
+
+          <span class="acc-dot software"></span>
+
+          Software
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div class="acc-body" id="acc-software">
+
+          <a href="../software/entregable1.html" class="nav-link">
+            E1 · Requerimientos y Diseño
+          </a>
+
+          <a href="../software/entregable2.html" class="nav-link">
+            E2 · Plataforma de Datos
+          </a>
+
+          <a href="../software/arquitectura.html" class="nav-link">
+            E3 · Sistema Funcional
+          </a>
+
+          <a href="../software/manual_usuario.html" class="nav-link">
+            E4 · Calidad y Operación
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- INFRAESTRUCTURA -->
+
+      <div class="acc-group">
+
+        <button
+          class="acc-header open"
+          data-acc="infra"
+        >
+
+          <span class="acc-dot infra"></span>
+
+          Infraestructura
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div
+          class="acc-body open"
+          id="acc-infra"
+        >
+
+          <a href="index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="entregable1.html" class="nav-link">
+            E1 · Diseño de Red
+          </a>
+
+          <a href="entregable2.html" class="nav-link">
+            E2 · Planificación de Seguridad
+          </a>
+
+          <a href="entregable3.html" class="nav-link">
+            E3 · Diseño de Centro de Datos
+          </a>
+
+          <a href="entregable4.html" class="nav-link">
+            E4 · Implementación y Testing de Red
+          </a>
+
+          <a href="entregable5.html" class="nav-link">
+            E5 · Seguridad, Monitoreo y Ética
+          </a>
+
+          <a href="entregable6.html" class="nav-link active">
+            E6 · Control de Centro de Datos
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- GESTIÓN -->
+
+      <div class="acc-group">
+
+        <button class="acc-header" data-acc="gestion">
+
+          <span class="acc-dot gestion"></span>
+
+          Gestión
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
+        </button>
+
+        <div class="acc-body" id="acc-gestion">
+
+          <a href="../gestion/index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a href="../gestion/entregable1.html" class="nav-link">
+            E1 · Diagnóstico
+          </a>
+
+          <a href="../gestion/entregable2.html" class="nav-link">
+            E2 · Modelado de Procesos
+          </a>
+
+          <a href="../gestion/entregable3.html" class="nav-link">
+            E3 · Plan de Proyecto
+          </a>
+
+          <a href="../gestion/entregable4.html" class="nav-link">
+            E4 · Auditoría y Cierre
+          </a>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+    <div class="sidebar-footer">
+      Semestre 2026-I
+      <br>
+      CE03 · Infraestructura Tecnológica
+      <br>
+      Ingeniería de Sistemas
+    </div>
+
+  </aside>
+
+
+  <div class="sidebar-overlay"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
+  <div class="main-content">
+
+    <div class="topbar">
+
+      <div class="breadcrumb">
+
+        <a
+          href="../index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Perfil de Egreso
+        </a>
+
+        <span class="breadcrumb-sep">›</span>
+
+        <a
+          href="index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Infraestructura
+        </a>
+
+        <span class="breadcrumb-sep">›</span>
+
+        <span class="breadcrumb-current">
+          E6 · Implementación y Control de Centro de Datos
+        </span>
+
+      </div>
+
+
+      <button
+        class="hamburger"
+        aria-label="Abrir menú"
+        type="button"
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+
+      </button>
+
+    </div>
+
+
+    <main class="content">
+
+      <!-- PORTADA -->
+
+      <section
+        class="hero"
+        style="border-left:4px solid #059669"
+      >
+
+        <div
+          class="hero-eyebrow"
+          style="color:#059669"
+        >
+          Línea de Infraestructura Tecnológica · CE0332–CE0333
+        </div>
+
+        <h1
+          class="hero-title"
+          style="font-size:1.8rem"
+        >
+          Entregable 6 — Implementación y Control de Centro de Datos
+        </h1>
+
+        <p class="hero-desc">
+          Configuración de servidores físicos y virtuales, servicios
+          institucionales, almacenamiento redundante, políticas de respaldo,
+          SLA, monitoreo, procedimientos operativos y análisis de eficiencia
+          para la infraestructura de QhawAI.
+        </p>
+
+
+        <div class="hero-meta">
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Competencias
+            </span>
+
+            <span class="hero-meta-value">
+              CE0332 · CE0333
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Línea
+            </span>
+
+            <span class="hero-meta-value">
+              <span class="linea-badge infra">
+                Infraestructura
+              </span>
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Universidad
+            </span>
+
+            <span class="hero-meta-value">
+              Universidad Peruana Unión
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Semestre
+            </span>
+
+            <span class="hero-meta-value">
+              2026-I
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Estudiante
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR NOMBRE]
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Fecha
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR FECHA]
+            </span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- RESUMEN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Resumen Ejecutivo
+        </h2>
+
+        <p class="section-body">
+          El presente entregable documenta la implementación y control de
+          la infraestructura de centro de datos diseñada para soportar los
+          servicios tecnológicos de QhawAI.
+        </p>
+
+        <p class="section-body">
+          La arquitectura considera un servidor de virtualización,
+          máquinas virtuales para identidad, DNS, aplicación, inteligencia
+          artificial, base de datos y monitoreo, además de almacenamiento
+          redundante, copias de seguridad y comunicación con servicios
+          externos autorizados.
+        </p>
+
+        <p class="section-body">
+          Se definen procedimientos de creación de máquinas virtuales,
+          configuración de servicios, RAID, almacenamiento iSCSI, backups
+          automatizados, restauración, acuerdos de nivel de servicio,
+          monitoreo de recursos, gestión de incidencias y mantenimiento.
+        </p>
+
+        <p class="section-body">
+          También se incluye una evaluación de consumo eléctrico,
+          aprovechamiento de recursos, capacidad disponible y oportunidades
+          de mejora energética.
+        </p>
+
+        <div
+          class="callout warning"
+          style="margin-top:14px"
+        >
+          <strong>Condición de evidencia:</strong>
+          los comandos y procedimientos se encuentran preparados para el
+          laboratorio. Los resultados operativos, disponibilidad y consumo
+          deberán completarse con mediciones y capturas reales.
+        </div>
+
+      </section>
+
+
+      <!-- 1. ALCANCE -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          1. Alcance de la Implementación
+        </h2>
+
+        <p class="section-body">
+          El alcance comprende el servidor físico, hipervisor, máquinas
+          virtuales, servicios internos, almacenamiento, copias de seguridad,
+          monitoreo y procedimientos necesarios para operar QhawAI.
+        </p>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Función</th>
+                <th>Tecnología propuesta</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>HV-QHAWAI-01</td>
+                <td>Servidor de virtualización.</td>
+                <td>Proxmox VE o equivalente.</td>
+                <td>Preparado para laboratorio.</td>
+              </tr>
+
+              <tr>
+                <td>VM-IDM-01</td>
+                <td>Identidad y directorio.</td>
+                <td>Samba Active Directory.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>VM-DNS-01</td>
+                <td>Resolución interna.</td>
+                <td>DNS de Samba o BIND9.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>VM-APP-01</td>
+                <td>Nginx y Laravel.</td>
+                <td>Ubuntu Server.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>VM-IA-01</td>
+                <td>FastAPI y reconocimiento facial.</td>
+                <td>Ubuntu y Docker.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>VM-DB-01</td>
+                <td>Base de datos.</td>
+                <td>MySQL.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>VM-MON-01</td>
+                <td>Monitoreo y alertas.</td>
+                <td>Zabbix, Grafana o equivalente.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>NAS-BKP-01</td>
+                <td>Backups y almacenamiento.</td>
+                <td>RAID 1 e iSCSI.</td>
+                <td>Pendiente de evidencia.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 2. ARQUITECTURA OPERATIVA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          2. Arquitectura Operativa Implementada
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-arquitectura-operativa-qhawai.png"
+            alt="Arquitectura operativa del centro de datos QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 1. Arquitectura operativa de servidores, servicios,
+            almacenamiento y monitoreo.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Capa</th>
+                <th>Componentes</th>
+                <th>Responsabilidad</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Física</td>
+                <td>Servidor, NAS, UPS, switch y firewall.</td>
+                <td>Capacidad, energía y conectividad.</td>
+              </tr>
+
+              <tr>
+                <td>Virtualización</td>
+                <td>Hipervisor, máquinas virtuales y snapshots.</td>
+                <td>Aislamiento y administración de recursos.</td>
+              </tr>
+
+              <tr>
+                <td>Servicios</td>
+                <td>AD, DNS, Nginx, Laravel, FastAPI y MySQL.</td>
+                <td>Operación funcional de QhawAI.</td>
+              </tr>
+
+              <tr>
+                <td>Datos</td>
+                <td>RAID, NAS, SAN lógico y backups.</td>
+                <td>Persistencia y recuperación.</td>
+              </tr>
+
+              <tr>
+                <td>Control</td>
+                <td>Monitoreo, SLA, logs y procedimientos.</td>
+                <td>Disponibilidad y mejora continua.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 3. SERVIDOR FÍSICO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          3. Configuración del Servidor Físico
+        </h2>
+
+
+        <h3>3.1 Especificaciones de referencia</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Recurso</th>
+                <th>Capacidad propuesta</th>
+                <th>Justificación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Procesador</td>
+                <td>12 núcleos / 24 hilos o equivalente.</td>
+                <td>Virtualización y procesamiento concurrente.</td>
+              </tr>
+
+              <tr>
+                <td>Memoria RAM</td>
+                <td>64 GB ECC.</td>
+                <td>Máquinas virtuales y margen de crecimiento.</td>
+              </tr>
+
+              <tr>
+                <td>Discos del sistema</td>
+                <td>2 × 1 TB SSD en espejo.</td>
+                <td>Redundancia y rendimiento.</td>
+              </tr>
+
+              <tr>
+                <td>Almacenamiento adicional</td>
+                <td>NAS de 4 TB bruto en RAID 1.</td>
+                <td>Backups y repositorio.</td>
+              </tr>
+
+              <tr>
+                <td>Interfaces de red</td>
+                <td>2 × 1 Gbps o superior.</td>
+                <td>Separación de gestión y servicios.</td>
+              </tr>
+
+              <tr>
+                <td>Energía</td>
+                <td>UPS de 1500 VA o superior.</td>
+                <td>Continuidad breve y apagado controlado.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.2 Verificación del hardware en Linux
+        </h3>
+
+        <div class="code-block">
+<pre># Procesador
+lscpu
+
+# Memoria
+free -h
+sudo dmidecode --type memory
+
+# Discos
+lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
+sudo smartctl -a /dev/sda
+
+# Interfaces
+ip -br address
+ethtool enp1s0
+
+# Información general
+hostnamectl</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          3.3 Configuración de hostname y red
+        </h3>
+
+        <div class="code-block">
+<pre>sudo hostnamectl set-hostname HV-QHAWAI-01
+
+sudo nano /etc/hosts
+
+127.0.0.1       localhost
+10.31.40.20     HV-QHAWAI-01.qhawai.local HV-QHAWAI-01</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 4. VIRTUALIZACIÓN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          4. Configuración de Servidores Virtuales
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-servidores-servicios-qhawai.png"
+            alt="Servidores virtuales y servicios del centro de datos QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 2. Distribución de máquinas virtuales y servicios.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.1 Distribución de máquinas virtuales
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>VM</th>
+                <th>Servicio</th>
+                <th>vCPU</th>
+                <th>RAM</th>
+                <th>Disco</th>
+                <th>Red</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>VM-IDM-01</td>
+                <td>Samba AD y DNS.</td>
+                <td>2</td>
+                <td>4 GB</td>
+                <td>80 GB</td>
+                <td>Gestión / Servicios.</td>
+              </tr>
+
+              <tr>
+                <td>VM-APP-01</td>
+                <td>Nginx y Laravel.</td>
+                <td>4</td>
+                <td>6 GB</td>
+                <td>100 GB</td>
+                <td>Servidores / DMZ controlada.</td>
+              </tr>
+
+              <tr>
+                <td>VM-IA-01</td>
+                <td>FastAPI e IA.</td>
+                <td>6</td>
+                <td>16 GB</td>
+                <td>250 GB</td>
+                <td>Servidores.</td>
+              </tr>
+
+              <tr>
+                <td>VM-DB-01</td>
+                <td>MySQL.</td>
+                <td>4</td>
+                <td>8 GB</td>
+                <td>200 GB</td>
+                <td>Datos internos.</td>
+              </tr>
+
+              <tr>
+                <td>VM-MON-01</td>
+                <td>Zabbix, Grafana y logs.</td>
+                <td>4</td>
+                <td>8 GB</td>
+                <td>200 GB</td>
+                <td>Monitoreo.</td>
+              </tr>
+
+              <tr>
+                <td>VM-SVC-01</td>
+                <td>Backups y servicios auxiliares.</td>
+                <td>2</td>
+                <td>4 GB</td>
+                <td>100 GB</td>
+                <td>Gestión.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.2 Ejemplo de creación de VM en Proxmox
+        </h3>
+
+        <div class="code-block">
+<pre># Crear máquina virtual
+qm create 101 \
+  --name VM-APP-01 \
+  --memory 6144 \
+  --cores 4 \
+  --net0 virtio,bridge=vmbr0
+
+# Agregar disco
+qm set 101 \
+  --scsihw virtio-scsi-pci \
+  --scsi0 local-lvm:100
+
+# Agregar ISO
+qm set 101 \
+  --ide2 local:iso/ubuntu-server.iso,media=cdrom
+
+# Orden de arranque
+qm set 101 \
+  --boot order=scsi0\;ide2
+
+# Iniciar
+qm start 101
+
+# Verificar
+qm status 101
+qm config 101</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.3 Control de recursos
+        </h3>
+
+        <div class="code-block">
+<pre># Limitar CPU y memoria de una VM
+qm set 101 --cores 4 --memory 6144 --balloon 4096
+
+# Habilitar agente invitado
+qm set 101 --agent enabled=1
+
+# Configurar inicio automático
+qm set 101 --onboot 1
+
+# Definir prioridad de arranque
+qm set 101 --startup order=2,up=30,down=30</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 5. AD Y DNS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          5. Implementación de Servicios Institucionales
+        </h2>
+
+
+        <h3>5.1 Directorio centralizado mediante Samba AD</h3>
+
+        <p class="section-body">
+          El servicio de directorio permite centralizar usuarios,
+          grupos, autenticación y políticas administrativas. Su uso es
+          apropiado cuando la institución dispone de equipos que requieren
+          identidad centralizada.
+        </p>
+
+        <div class="code-block">
+<pre>sudo apt update
+
+sudo apt install \
+  samba \
+  krb5-config \
+  winbind \
+  smbclient \
+  dnsutils \
+  -y
+
+sudo systemctl disable --now smbd nmbd winbind
+
+sudo samba-tool domain provision \
+  --use-rfc2307 \
+  --realm=QHAWAI.LOCAL \
+  --domain=QHAWAI \
+  --server-role=dc \
+  --dns-backend=SAMBA_INTERNAL</pre>
+        </div>
+
+
+        <div class="callout warning" style="margin-top:14px">
+          Las contraseñas administrativas y claves del dominio no deben
+          mostrarse dentro del portafolio ni de las capturas.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.2 Activación del servicio AD
+        </h3>
+
+        <div class="code-block">
+<pre>sudo systemctl unmask samba-ad-dc
+sudo systemctl enable samba-ad-dc
+sudo systemctl start samba-ad-dc
+
+sudo systemctl status samba-ad-dc</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.3 Verificación del dominio
+        </h3>
+
+        <div class="code-block">
+<pre>samba-tool domain info 127.0.0.1
+
+samba-tool user list
+
+samba-tool group list
+
+host -t A qhawai.local 127.0.0.1
+
+host -t SRV _ldap._tcp.qhawai.local 127.0.0.1
+
+host -t SRV _kerberos._udp.qhawai.local 127.0.0.1</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.4 Creación de usuarios y grupos
+        </h3>
+
+        <div class="code-block">
+<pre>samba-tool group add INFRAESTRUCTURA
+samba-tool group add SEGURIDAD
+samba-tool group add AUDITORIA
+
+samba-tool user create admin.infra
+samba-tool user create auditor.seguridad
+
+samba-tool group addmembers \
+  INFRAESTRUCTURA \
+  admin.infra
+
+samba-tool group addmembers \
+  AUDITORIA \
+  auditor.seguridad</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.5 Servicio DNS interno</h3>
+
+        <p class="section-body">
+          El DNS deberá resolver los nombres internos de servidores y
+          servicios. Si se utiliza Samba AD con DNS interno, la zona se
+          administra mediante las herramientas del dominio.
+        </p>
+
+        <div class="code-block">
+<pre>samba-tool dns add \
+  127.0.0.1 \
+  qhawai.local \
+  vm-app-01 \
+  A \
+  10.31.30.10 \
+  -U Administrator
+
+samba-tool dns add \
+  127.0.0.1 \
+  qhawai.local \
+  vm-ia-01 \
+  A \
+  10.31.30.20 \
+  -U Administrator
+
+samba-tool dns add \
+  127.0.0.1 \
+  qhawai.local \
+  vm-db-01 \
+  A \
+  10.31.30.30 \
+  -U Administrator</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          5.6 Servicios complementarios
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Función</th>
+                <th>Servidor</th>
+                <th>Control</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>DNS</td>
+                <td>Resolución de nombres.</td>
+                <td>VM-IDM-01.</td>
+                <td>Consultas internas autorizadas.</td>
+              </tr>
+
+              <tr>
+                <td>NTP</td>
+                <td>Sincronización horaria.</td>
+                <td>VM-SVC-01.</td>
+                <td>Fuente horaria controlada.</td>
+              </tr>
+
+              <tr>
+                <td>Nginx</td>
+                <td>Proxy reverso HTTPS.</td>
+                <td>VM-APP-01.</td>
+                <td>TLS y registros.</td>
+              </tr>
+
+              <tr>
+                <td>Laravel</td>
+                <td>Backend principal.</td>
+                <td>VM-APP-01.</td>
+                <td>Acceso controlado.</td>
+              </tr>
+
+              <tr>
+                <td>FastAPI</td>
+                <td>Servicio biométrico.</td>
+                <td>VM-IA-01.</td>
+                <td>Red interna.</td>
+              </tr>
+
+              <tr>
+                <td>MySQL</td>
+                <td>Base de datos.</td>
+                <td>VM-DB-01.</td>
+                <td>Sin exposición pública.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 6. CONTENEDORES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          6. Implementación de Servicios de QhawAI
+        </h2>
+
+
+        <h3>6.1 Estructura Docker</h3>
+
+        <div class="code-block">
+<pre>services:
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: qhawai-nginx
+    ports:
+      - "443:443"
+    depends_on:
+      - laravel
+    restart: unless-stopped
+
+  laravel:
+    image: qhawai/laravel:1.0.0
+    container_name: qhawai-laravel
+    restart: unless-stopped
+    networks:
+      - app_network
+      - data_network
+
+  fastapi:
+    image: qhawai/fastapi:1.0.0
+    container_name: qhawai-fastapi
+    user: "1001:1001"
+    read_only: true
+    restart: unless-stopped
+    networks:
+      - app_network
+
+  mysql:
+    image: mysql:8.0
+    container_name: qhawai-mysql
+    restart: unless-stopped
+    networks:
+      - data_network
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+networks:
+  app_network:
+    internal: true
+
+  data_network:
+    internal: true
+
+volumes:
+  mysql_data:</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          6.2 Comandos de control
+        </h3>
+
+        <div class="code-block">
+<pre>docker compose up -d
+
+docker compose ps
+
+docker stats
+
+docker logs qhawai-laravel
+
+docker logs qhawai-fastapi
+
+docker inspect qhawai-fastapi
+
+docker compose restart
+
+docker compose down</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 7. ALMACENAMIENTO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          7. Implementación de Almacenamiento
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-almacenamiento-backup-qhawai.png"
+            alt="Almacenamiento RAID, SAN y backups de QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 3. Arquitectura de almacenamiento redundante y respaldo.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.1 RAID 1 mediante mdadm
+        </h3>
+
+        <p class="section-body">
+          RAID 1 mantiene una copia espejo entre dos discos. Aumenta la
+          disponibilidad ante la falla de un disco, pero no reemplaza las
+          copias de seguridad.
+        </p>
+
+        <div class="code-block">
+<pre>sudo apt update
+sudo apt install mdadm -y
+
+sudo mdadm \
+  --create /dev/md0 \
+  --level=1 \
+  --raid-devices=2 \
+  /dev/sdb \
+  /dev/sdc
+
+cat /proc/mdstat
+
+sudo mdadm --detail /dev/md0
+
+sudo mkfs.ext4 /dev/md0
+
+sudo mkdir -p /srv/storage
+
+sudo mount /dev/md0 /srv/storage</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.2 Persistencia del montaje
+        </h3>
+
+        <div class="code-block">
+<pre>sudo blkid /dev/md0
+
+sudo nano /etc/fstab
+
+UUID=[UUID_DEL_RAID] /srv/storage ext4 defaults,nofail 0 2
+
+sudo mount -a
+
+df -h /srv/storage</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.3 Prueba de estado del RAID
+        </h3>
+
+        <div class="code-block">
+<pre>cat /proc/mdstat
+
+sudo mdadm --detail /dev/md0
+
+sudo smartctl -a /dev/sdb
+
+sudo smartctl -a /dev/sdc</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.4 Implementación de SAN lógico mediante iSCSI
+        </h3>
+
+        <p class="section-body">
+          Para cumplir el escenario de almacenamiento compartido se plantea
+          un SAN lógico mediante iSCSI. El NAS presenta un volumen al
+          hipervisor o a un servidor autorizado.
+        </p>
+
+        <div class="code-block">
+<pre># Servidor de almacenamiento
+sudo apt install targetcli-fb -y
+
+sudo targetcli
+
+/backstores/fileio create \
+  qhawai_lun \
+  /srv/storage/qhawai-san.img \
+  500G
+
+/iscsi create iqn.2026-01.local.qhawai:storage
+
+/iscsi/iqn.2026-01.local.qhawai:storage/tpg1/luns create \
+  /backstores/fileio/qhawai_lun
+
+/iscsi/iqn.2026-01.local.qhawai:storage/tpg1/portals create \
+  10.31.70.10
+
+saveconfig
+exit</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          7.5 Cliente iSCSI
+        </h3>
+
+        <div class="code-block">
+<pre>sudo apt install open-iscsi -y
+
+sudo iscsiadm \
+  -m discovery \
+  -t sendtargets \
+  -p 10.31.70.10
+
+sudo iscsiadm \
+  -m node \
+  --login
+
+lsblk
+
+sudo iscsiadm \
+  -m session</pre>
+        </div>
+
+
+        <div class="callout info" style="margin-top:14px">
+          En un escenario pequeño se prioriza NAS con RAID 1. El SAN iSCSI
+          se utiliza como implementación académica o para una futura
+          ampliación con almacenamiento compartido.
+        </div>
+
+      </section>
+
+
+      <!-- 8. BACKUPS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          8. Políticas de Respaldo y Restauración
+        </h2>
+
+
+        <h3>8.1 Política 3-2-1</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Activo</th>
+                <th>Frecuencia</th>
+                <th>Copia local</th>
+                <th>Copia externa</th>
+                <th>Retención</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Base de datos</td>
+                <td>Diaria.</td>
+                <td>NAS.</td>
+                <td>Copia cifrada.</td>
+                <td>30 días.</td>
+              </tr>
+
+              <tr>
+                <td>Máquinas virtuales</td>
+                <td>Semanal.</td>
+                <td>NAS o PBS.</td>
+                <td>Copia mensual.</td>
+                <td>12 semanas.</td>
+              </tr>
+
+              <tr>
+                <td>Configuraciones</td>
+                <td>Después de cada cambio.</td>
+                <td>Repositorio interno.</td>
+                <td>Repositorio cifrado.</td>
+                <td>10 versiones.</td>
+              </tr>
+
+              <tr>
+                <td>Logs críticos</td>
+                <td>Diaria.</td>
+                <td>Servidor de monitoreo.</td>
+                <td>Archivo protegido.</td>
+                <td>90–180 días.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.2 Backup de máquina virtual en Proxmox
+        </h3>
+
+        <div class="code-block">
+<pre>vzdump 101 \
+  --storage backup-nas \
+  --mode snapshot \
+  --compress zstd \
+  --remove 0
+
+ls -lh /mnt/pve/backup-nas/dump/</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.3 Programación de backup
+        </h3>
+
+        <div class="code-block">
+<pre>sudo crontab -e
+
+# Backup diario de MySQL a las 02:00
+0 2 * * * /usr/local/bin/qhawai-backup-db.sh
+
+# Verificación semanal de archivos
+0 4 * * 0 /usr/local/bin/verificar-backups.sh</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          8.4 Prueba de restauración
+        </h3>
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Prueba</th>
+                <th>Resultado esperado</th>
+                <th>Resultado obtenido</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>RST-01</td>
+                <td>Restaurar base MySQL.</td>
+                <td>Base íntegra y funcional.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>RST-02</td>
+                <td>Restaurar VM-APP-01.</td>
+                <td>Inicio dentro del RTO.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>RST-03</td>
+                <td>Recuperar configuración del hipervisor.</td>
+                <td>Configuración validada.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+              <tr>
+                <td>RST-04</td>
+                <td>Verificar checksum.</td>
+                <td>Integridad correcta.</td>
+                <td>Pendiente.</td>
+                <td>No ejecutada.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 9. SLA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          9. Definición de SLA
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-sla-monitoreo-qhawai.png"
+            alt="SLA y monitoreo del centro de datos QhawAI"
+            style="min-height:270px"
+          >
+
+          <div class="img-caption">
+            Figura 4. SLA, métricas, alertas y monitoreo operativo.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.1 Acuerdos de nivel de servicio
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Disponibilidad</th>
+                <th>Horario</th>
+                <th>RTO</th>
+                <th>RPO</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Aplicación QhawAI</td>
+                <td>≥ 99 %.</td>
+                <td>Horario operativo institucional.</td>
+                <td>2 horas.</td>
+                <td>15 minutos.</td>
+              </tr>
+
+              <tr>
+                <td>Base de datos</td>
+                <td>≥ 99 %.</td>
+                <td>24 × 7.</td>
+                <td>4 horas.</td>
+                <td>24 horas o menor.</td>
+              </tr>
+
+              <tr>
+                <td>Reconocimiento facial</td>
+                <td>≥ 98.5 %.</td>
+                <td>Horario académico.</td>
+                <td>2 horas.</td>
+                <td>No aplica.</td>
+              </tr>
+
+              <tr>
+                <td>DNS e identidad</td>
+                <td>≥ 99 %.</td>
+                <td>24 × 7.</td>
+                <td>4 horas.</td>
+                <td>24 horas.</td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo</td>
+                <td>≥ 98 %.</td>
+                <td>24 × 7.</td>
+                <td>8 horas.</td>
+                <td>1 hora.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.2 Prioridad de incidentes
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Prioridad</th>
+                <th>Descripción</th>
+                <th>Respuesta inicial</th>
+                <th>Objetivo de solución</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>P1 Crítica</td>
+                <td>Sistema principal no disponible.</td>
+                <td>15 minutos.</td>
+                <td>2 horas.</td>
+              </tr>
+
+              <tr>
+                <td>P2 Alta</td>
+                <td>Servicio degradado o función crítica afectada.</td>
+                <td>30 minutos.</td>
+                <td>4 horas.</td>
+              </tr>
+
+              <tr>
+                <td>P3 Media</td>
+                <td>Falla parcial sin interrupción total.</td>
+                <td>4 horas.</td>
+                <td>1 día hábil.</td>
+              </tr>
+
+              <tr>
+                <td>P4 Baja</td>
+                <td>Consulta o mejora no urgente.</td>
+                <td>1 día hábil.</td>
+                <td>Según planificación.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          9.3 Cálculo de disponibilidad
+        </h3>
+
+        <div class="code-block">
+<pre>Disponibilidad (%) =
+
+(Tiempo total - Tiempo de indisponibilidad)
+------------------------------------------------ × 100
+                 Tiempo total</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 10. MONITOREO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          10. Implementación de Monitoreo
+        </h2>
+
+
+        <h3>10.1 Herramientas</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Herramienta</th>
+                <th>Función</th>
+                <th>Objetos monitoreados</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Zabbix</td>
+                <td>Disponibilidad y alertas.</td>
+                <td>Servidores, red, servicios y UPS.</td>
+              </tr>
+
+              <tr>
+                <td>Prometheus</td>
+                <td>Recolección de métricas.</td>
+                <td>CPU, RAM, disco y aplicaciones.</td>
+              </tr>
+
+              <tr>
+                <td>Grafana</td>
+                <td>Dashboards y visualización.</td>
+                <td>Métricas consolidadas.</td>
+              </tr>
+
+              <tr>
+                <td>Wazuh</td>
+                <td>Seguridad y eventos.</td>
+                <td>Logs, accesos y cambios.</td>
+              </tr>
+
+              <tr>
+                <td>SMART</td>
+                <td>Salud de discos.</td>
+                <td>SSD y HDD.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.2 Instalación del agente Zabbix
+        </h3>
+
+        <div class="code-block">
+<pre>sudo apt update
+sudo apt install zabbix-agent2 -y
+
+sudo nano /etc/zabbix/zabbix_agent2.conf
+
+Server=10.31.60.10
+ServerActive=10.31.60.10
+Hostname=VM-APP-01
+
+sudo systemctl enable zabbix-agent2
+sudo systemctl restart zabbix-agent2
+sudo systemctl status zabbix-agent2</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.3 Métricas obligatorias
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Métrica</th>
+                <th>Umbral preventivo</th>
+                <th>Umbral crítico</th>
+                <th>Acción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>CPU</td>
+                <td>70 % durante 15 min.</td>
+                <td>90 % durante 5 min.</td>
+                <td>Analizar procesos y capacidad.</td>
+              </tr>
+
+              <tr>
+                <td>RAM</td>
+                <td>75 %.</td>
+                <td>90 %.</td>
+                <td>Ajustar VM o servicios.</td>
+              </tr>
+
+              <tr>
+                <td>Disco</td>
+                <td>75 %.</td>
+                <td>90 %.</td>
+                <td>Liberar o ampliar.</td>
+              </tr>
+
+              <tr>
+                <td>Temperatura</td>
+                <td>Según fabricante.</td>
+                <td>Sobre límite seguro.</td>
+                <td>Revisar ventilación.</td>
+              </tr>
+
+              <tr>
+                <td>RAID degradado</td>
+                <td>No aplica.</td>
+                <td>Inmediato.</td>
+                <td>Reemplazar disco.</td>
+              </tr>
+
+              <tr>
+                <td>Backup fallido</td>
+                <td>No aplica.</td>
+                <td>Primer fallo.</td>
+                <td>Reejecutar y escalar.</td>
+              </tr>
+
+              <tr>
+                <td>Servicio detenido</td>
+                <td>No aplica.</td>
+                <td>Inmediato.</td>
+                <td>Reiniciar y analizar.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.4 Comandos de control operativo
+        </h3>
+
+        <div class="code-block">
+<pre># Estado de servicios
+systemctl --failed
+
+# Uso de recursos
+top
+free -h
+df -h
+iostat -xz 1
+
+# Máquinas virtuales
+qm list
+
+# Estado del RAID
+cat /proc/mdstat
+mdadm --detail /dev/md0
+
+# Contenedores
+docker compose ps
+docker stats
+
+# Logs
+journalctl -p warning --since today</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 11. PROCEDIMIENTOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          11. Procedimientos Operativos
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-procedimientos-operativos-qhawai.png"
+            alt="Procedimientos operativos del centro de datos QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 5. Ciclo de operación, mantenimiento e incidentes.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.1 Procedimiento de inicio diario
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Paso</th>
+                <th>Actividad</th>
+                <th>Evidencia</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>1</td>
+                <td>Revisar alertas críticas.</td>
+                <td>Dashboard o correo.</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>Verificar máquinas virtuales.</td>
+                <td>Captura del hipervisor.</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td>Revisar servicios principales.</td>
+                <td>Estado de Nginx, Laravel, FastAPI y MySQL.</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td>Validar backup anterior.</td>
+                <td>Log y checksum.</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td>Revisar capacidad.</td>
+                <td>CPU, RAM y disco.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.2 Gestión de cambios
+        </h3>
+
+        <div class="code-block">
+<pre>Solicitud
+→ Evaluación de impacto
+→ Aprobación
+→ Backup o snapshot
+→ Implementación
+→ Pruebas
+→ Validación
+→ Documentación
+→ Cierre</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          11.3 Mantenimiento preventivo
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Actividad</th>
+                <th>Frecuencia</th>
+                <th>Responsable</th>
+                <th>Evidencia</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Revisión de backups.</td>
+                <td>Diaria.</td>
+                <td>Administrador.</td>
+                <td>Log de backup.</td>
+              </tr>
+
+              <tr>
+                <td>Revisión de capacidad.</td>
+                <td>Semanal.</td>
+                <td>Infraestructura.</td>
+                <td>Dashboard.</td>
+              </tr>
+
+              <tr>
+                <td>Prueba de restauración.</td>
+                <td>Mensual.</td>
+                <td>Infraestructura y BD.</td>
+                <td>Acta de prueba.</td>
+              </tr>
+
+              <tr>
+                <td>Actualización de servidores.</td>
+                <td>Mensual o por severidad.</td>
+                <td>Infraestructura.</td>
+                <td>Registro de cambio.</td>
+              </tr>
+
+              <tr>
+                <td>Inspección de UPS.</td>
+                <td>Mensual.</td>
+                <td>Infraestructura.</td>
+                <td>Registro técnico.</td>
+              </tr>
+
+              <tr>
+                <td>Limpieza física.</td>
+                <td>Trimestral.</td>
+                <td>Personal autorizado.</td>
+                <td>Checklist.</td>
+              </tr>
+
+              <tr>
+                <td>Revisión de SLA.</td>
+                <td>Mensual.</td>
+                <td>Responsable del servicio.</td>
+                <td>Reporte de disponibilidad.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 12. ENERGÍA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          12. Evaluación de Eficiencia Energética
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-eficiencia-energetica-qhawai.png"
+            alt="Evaluación de eficiencia energética del centro de datos QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 6. Consumo eléctrico y oportunidades de eficiencia.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.1 Consumo estimado
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Equipo</th>
+                <th>Potencia estimada</th>
+                <th>Horas diarias</th>
+                <th>Consumo diario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Servidor físico</td>
+                <td>450 W</td>
+                <td>24 h</td>
+                <td>10.8 kWh.</td>
+              </tr>
+
+              <tr>
+                <td>NAS</td>
+                <td>80 W</td>
+                <td>24 h</td>
+                <td>1.92 kWh.</td>
+              </tr>
+
+              <tr>
+                <td>Switch</td>
+                <td>60 W</td>
+                <td>24 h</td>
+                <td>1.44 kWh.</td>
+              </tr>
+
+              <tr>
+                <td>Firewall</td>
+                <td>30 W</td>
+                <td>24 h</td>
+                <td>0.72 kWh.</td>
+              </tr>
+
+              <tr>
+                <td>Monitoreo y auxiliares</td>
+                <td>80 W</td>
+                <td>24 h</td>
+                <td>1.92 kWh.</td>
+              </tr>
+
+              <tr>
+                <td><strong>Total estimado</strong></td>
+                <td><strong>700 W</strong></td>
+                <td><strong>24 h</strong></td>
+                <td><strong>16.8 kWh/día</strong></td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.2 Fórmula de consumo
+        </h3>
+
+        <div class="code-block">
+<pre>Consumo diario (kWh) =
+
+Potencia en watts × horas de uso
+--------------------------------
+              1000</pre>
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.3 Proyección mensual
+        </h3>
+
+        <div class="code-block">
+<pre>16.8 kWh/día × 30 días = 504 kWh/mes</pre>
+        </div>
+
+
+        <div class="callout warning" style="margin-top:14px">
+          El resultado es una estimación. El consumo real deberá medirse
+          mediante PDU, UPS, medidor inteligente o lectura eléctrica.
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.4 Medidas de eficiencia
+        </h3>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-01</div>
+            <div class="req-body">
+              Consolidar servicios mediante virtualización.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-02</div>
+            <div class="req-body">
+              Ajustar recursos de las máquinas virtuales.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-03</div>
+            <div class="req-body">
+              Evitar servidores inactivos encendidos.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-04</div>
+            <div class="req-body">
+              Utilizar fuentes de poder eficientes.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-05</div>
+            <div class="req-body">
+              Monitorear temperatura sin sobreenfriamiento.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">EE-06</div>
+            <div class="req-body">
+              Aplicar retención controlada a backups y logs.
+            </div>
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          12.5 Indicador PUE de referencia
+        </h3>
+
+        <div class="code-block">
+<pre>PUE =
+
+Energía total de la instalación
+--------------------------------
+Energía utilizada por equipos TI</pre>
+        </div>
+
+        <p class="section-body">
+          En un micro centro de datos puede no existir instrumentación
+          suficiente para obtener un PUE certificado. Se utilizará únicamente
+          como indicador de referencia cuando existan mediciones separadas.
+        </p>
+
+      </section>
+
+
+      <!-- 13. INDICADORES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          13. Indicadores Operativos
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Fórmula o medición</th>
+                <th>Meta</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Disponibilidad del servicio</td>
+                <td>Tiempo operativo / tiempo total × 100.</td>
+                <td>≥ 99 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Uso promedio de CPU</td>
+                <td>Promedio mensual.</td>
+                <td>&lt; 70 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Uso promedio de RAM</td>
+                <td>Promedio mensual.</td>
+                <td>&lt; 75 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Uso de almacenamiento</td>
+                <td>Espacio usado / capacidad × 100.</td>
+                <td>&lt; 75 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Backups exitosos</td>
+                <td>Backups correctos / programados × 100.</td>
+                <td>≥ 98 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Restauraciones aprobadas</td>
+                <td>Pruebas exitosas / ejecutadas × 100.</td>
+                <td>100 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Incidentes dentro del SLA</td>
+                <td>Incidentes cumplidos / total × 100.</td>
+                <td>≥ 95 %.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>Consumo energético</td>
+                <td>Lectura mensual en kWh.</td>
+                <td>Tendencia controlada.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 14. EVIDENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          14. Gestión de Evidencias
+        </h2>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e6-estructura-evidencias-qhawai.png"
+            alt="Estructura de evidencias del control de centro de datos QhawAI"
+            style="min-height:250px"
+          >
+
+          <div class="img-caption">
+            Figura 7. Organización de configuraciones, métricas y evidencias.
+            Fuente: elaboración propia.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Evidencia</th>
+                <th>Criterio</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>EV-DC-01</td>
+                <td>Inventario del servidor físico.</td>
+                <td>Servidores físicos.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-02</td>
+                <td>Listado de máquinas virtuales.</td>
+                <td>Virtualización.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-03</td>
+                <td>Estado de AD y DNS.</td>
+                <td>Servicios.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-04</td>
+                <td>Estado de Nginx, Laravel y FastAPI.</td>
+                <td>Servicios QhawAI.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-05</td>
+                <td>Estado del RAID.</td>
+                <td>Almacenamiento.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-06</td>
+                <td>Sesión iSCSI activa.</td>
+                <td>SAN.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-07</td>
+                <td>Backup automatizado.</td>
+                <td>Política de respaldo.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-08</td>
+                <td>Prueba de restauración.</td>
+                <td>Recuperación.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-09</td>
+                <td>Dashboard de monitoreo.</td>
+                <td>Monitoreo.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-10</td>
+                <td>Reporte mensual de SLA.</td>
+                <td>SLA.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-11</td>
+                <td>Checklist operativo.</td>
+                <td>Procedimientos.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+              <tr>
+                <td>EV-DC-12</td>
+                <td>Medición energética.</td>
+                <td>Eficiencia.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          14.1 Estructura de carpetas
+        </h3>
+
+        <div class="code-block">
+<pre>CE0332_CE0333_Evidencias/
+│
+├── 01_Hardware/
+│   ├── lscpu.png
+│   ├── memoria.png
+│   ├── discos.png
+│   └── interfaces.png
+│
+├── 02_Virtualizacion/
+│   ├── listado-vm.png
+│   ├── recursos-vm.png
+│   ├── red-virtual.png
+│   └── snapshots.png
+│
+├── 03_Servicios/
+│   ├── samba-ad.png
+│   ├── dns.png
+│   ├── nginx.png
+│   ├── fastapi.png
+│   └── mysql.png
+│
+├── 04_Almacenamiento/
+│   ├── raid-status.png
+│   ├── smart-disks.png
+│   ├── iscsi-target.png
+│   └── iscsi-session.png
+│
+├── 05_Backups/
+│   ├── backup-vm.png
+│   ├── backup-db.png
+│   ├── checksum.png
+│   └── restauracion.png
+│
+├── 06_SLA/
+│   ├── disponibilidad.pdf
+│   ├── incidentes.pdf
+│   └── cumplimiento-sla.pdf
+│
+├── 07_Monitoreo/
+│   ├── dashboard.png
+│   ├── alertas.png
+│   ├── capacidad.png
+│   └── logs/
+│
+├── 08_Procedimientos/
+│   ├── inicio-diario.pdf
+│   ├── mantenimiento.pdf
+│   ├── cambios.pdf
+│   └── incidentes.pdf
+│
+└── 09_Energia/
+    ├── consumo-kwh.pdf
+    ├── ups.png
+    └── eficiencia.pdf</pre>
+        </div>
+
+      </section>
+
+
+      <!-- 15. ÉTICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          15. Consideraciones Éticas y Operativas
+        </h2>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-01</div>
+            <div class="req-body">
+              No exponer contraseñas ni claves administrativas.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-02</div>
+            <div class="req-body">
+              No usar datos biométricos reales en pruebas no autorizadas.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-03</div>
+            <div class="req-body">
+              Mantener trazabilidad de cambios y accesos.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-04</div>
+            <div class="req-body">
+              Aplicar eficiencia energética sin afectar la disponibilidad.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-05</div>
+            <div class="req-body">
+              Eliminar de forma segura medios y respaldos vencidos.
+            </div>
+          </div>
+
+          <div class="req-block" style="margin-bottom:0">
+            <div class="req-id">ET-06</div>
+            <div class="req-body">
+              Diferenciar resultados simulados, esperados y reales.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 16. CONCLUSIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          16. Conclusiones
+        </h2>
+
+        <p class="section-body">
+          La arquitectura propuesta integra servidores virtuales, servicios
+          institucionales, almacenamiento redundante, copias de seguridad y
+          monitoreo centralizado.
+        </p>
+
+        <p class="section-body">
+          La virtualización permite consolidar recursos y separar las
+          funciones de identidad, aplicación, inteligencia artificial,
+          base de datos y monitoreo.
+        </p>
+
+        <p class="section-body">
+          RAID 1, NAS e iSCSI ofrecen redundancia y almacenamiento compartido,
+          mientras la política 3-2-1 permite fortalecer la recuperación.
+        </p>
+
+        <p class="section-body">
+          Los SLA y umbrales de monitoreo convierten la operación en un
+          proceso medible y permiten detectar degradaciones antes de que
+          produzcan interrupciones graves.
+        </p>
+
+        <p class="section-body">
+          La eficiencia energética debe evaluarse mediante mediciones reales,
+          evitando sobredimensionamiento y conservando la disponibilidad de
+          los servicios críticos.
+        </p>
+
+      </section>
+
+
+      <!-- 17. REFERENCIAS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          17. Referencias y Marcos Utilizados
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Marco o tecnología</th>
+                <th>Aplicación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Uptime Institute</td>
+                <td>Disponibilidad y redundancia.</td>
+              </tr>
+
+              <tr>
+                <td>TIA-942</td>
+                <td>Infraestructura de centros de datos.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 22237</td>
+                <td>Instalaciones y operación.</td>
+              </tr>
+
+              <tr>
+                <td>ISO/IEC 27001 y 27002</td>
+                <td>Seguridad de infraestructura y servicios.</td>
+              </tr>
+
+              <tr>
+                <td>Proxmox VE</td>
+                <td>Virtualización y administración de VM.</td>
+              </tr>
+
+              <tr>
+                <td>Samba Active Directory</td>
+                <td>Identidad, dominio y DNS.</td>
+              </tr>
+
+              <tr>
+                <td>mdadm e iSCSI</td>
+                <td>RAID y almacenamiento compartido.</td>
+              </tr>
+
+              <tr>
+                <td>Zabbix / Grafana</td>
+                <td>Monitoreo y visualización.</td>
+              </tr>
+
+              <tr>
+                <td>Código de Ética ACM</td>
+                <td>Responsabilidad, privacidad y sostenibilidad.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 18. ANEXOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          18. Anexos
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Anexo</th>
+                <th>Descripción</th>
+                <th>Archivo</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Anexo A</td>
+                <td>Arquitectura operativa.</td>
+                <td>e6-arquitectura-operativa-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo B</td>
+                <td>Servidores y servicios.</td>
+                <td>e6-servidores-servicios-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo C</td>
+                <td>Almacenamiento y backups.</td>
+                <td>e6-almacenamiento-backup-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo D</td>
+                <td>SLA y monitoreo.</td>
+                <td>e6-sla-monitoreo-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo E</td>
+                <td>Procedimientos operativos.</td>
+                <td>e6-procedimientos-operativos-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo F</td>
+                <td>Eficiencia energética.</td>
+                <td>e6-eficiencia-energetica-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo G</td>
+                <td>Estructura de evidencias.</td>
+                <td>e6-estructura-evidencias-qhawai.png</td>
+                <td>Pendiente de generar.</td>
+              </tr>
+
+              <tr>
+                <td>Anexo H</td>
+                <td>Configuraciones y métricas.</td>
+                <td>Carpeta de evidencias.</td>
+                <td>Pendiente.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- RÚBRICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Verificación de la Rúbrica CE0332–CE0333
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>Evidencia preparada</th>
+                <th>Estado actual</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Servidores físicos y virtuales</td>
+                <td>
+                  Especificaciones, VM, recursos y comandos de configuración.
+                </td>
+                <td>Preparado; falta evidencia.</td>
+              </tr>
+
+              <tr>
+                <td>Servicios AD, DNS y otros</td>
+                <td>
+                  Samba AD, DNS, Nginx, Laravel, FastAPI y MySQL.
+                </td>
+                <td>Preparado; falta validación.</td>
+              </tr>
+
+              <tr>
+                <td>Almacenamiento RAID y SAN</td>
+                <td>
+                  RAID 1, NAS e iSCSI.
+                </td>
+                <td>Preparado; falta captura.</td>
+              </tr>
+
+              <tr>
+                <td>Políticas de respaldo</td>
+                <td>
+                  Estrategia 3-2-1, automatización y restauración.
+                </td>
+                <td>Falta ejecutar pruebas.</td>
+              </tr>
+
+              <tr>
+                <td>Definición de SLA</td>
+                <td>
+                  Disponibilidad, RTO, RPO y prioridades.
+                </td>
+                <td>Desarrollado.</td>
+              </tr>
+
+              <tr>
+                <td>Implementación de monitoreo</td>
+                <td>
+                  Zabbix, métricas, umbrales y alertas.
+                </td>
+                <td>Falta dashboard real.</td>
+              </tr>
+
+              <tr>
+                <td>Procedimientos y eficiencia</td>
+                <td>
+                  Operación, mantenimiento, cambios y energía.
+                </td>
+                <td>Desarrollado; falta medición.</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

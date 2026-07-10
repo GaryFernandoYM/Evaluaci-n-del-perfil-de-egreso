@@ -1,201 +1,2159 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E1 · Requerimientos y Diseño — QhawAI</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Entregable 1 CE0311: Diseño de Red para el sistema inteligente de asistencia mediante reconocimiento facial QhawAI."
+  >
+
+  <title>E1 · Diseño de Red — QhawAI</title>
+
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+
 <div class="layout">
+
+  <!-- ===================================================== -->
+  <!-- SIDEBAR -->
+  <!-- ===================================================== -->
+
   <aside class="sidebar">
+
     <div class="sidebar-brand">
+
       <div class="brand-logo">
+
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="4"/><path d="M2 7V5a2 2 0 012-2h2M2 17v2a2 2 0 002 2h2M22 7V5a2 2 0 00-2-2h-2M22 17v2a2 2 0 01-2 2h-2"/>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="4"></circle>
+
+            <path
+              d="M2 7V5a2 2 0 012-2h2
+                 M2 17v2a2 2 0 002 2h2
+                 M22 7V5a2 2 0 00-2-2h-2
+                 M22 17v2a2 2 0 01-2 2h-2"
+            ></path>
           </svg>
         </div>
+
         <span class="brand-name">QhawAI</span>
+
       </div>
-      <div class="brand-sub">Línea: <strong>Infraestructura</strong><br>UPeU 2026-I</div>
+
+      <div class="brand-sub">
+        Línea:
+        <strong>Infraestructura</strong>
+        <br>
+        UPeU 2026-I
+      </div>
+
     </div>
+
+
     <nav class="sidebar-nav">
+
+      <!-- PORTADA GENERAL -->
+
       <a href="../index.html" class="sidebar-top-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+        </svg>
+
         Portada General
+
       </a>
+
+
+      <!-- SOFTWARE -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="software">
+
+        <button class="acc-header" data-acc="software">
+
           <span class="acc-dot software"></span>
+
           Software
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-software">
-          <a href="../software/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="../software/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>E2 · Plataforma de Datos</a>
-          <a href="../software/arquitectura.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="9" y="3" width="6" height="6" rx="1"/><rect x="16" y="3" width="6" height="6" rx="1"/><rect x="2" y="15" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><path d="M5 9v6m7-6v6m7-6v6"/></svg>E3 · Sistema Funcional</a>
-          <a href="../software/base_datos.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Referencia BD — SQL</a>
-          <a href="../software/manual_usuario.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div class="acc-body" id="acc-software">
+
+          <a
+            href="../software/entregable1.html"
+            class="nav-link"
+          >
+            E1 · Requerimientos y Diseño
+          </a>
+
+          <a
+            href="../software/entregable2.html"
+            class="nav-link"
+          >
+            E2 · Plataforma de Datos
+          </a>
+
+          <a
+            href="../software/arquitectura.html"
+            class="nav-link"
+          >
+            E3 · Sistema Funcional
+          </a>
+
+          <a
+            href="../software/manual_usuario.html"
+            class="nav-link"
+          >
+            E4 · Calidad y Operación
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- INFRAESTRUCTURA -->
+
       <div class="acc-group">
-        <button class="acc-header open " data-acc="infra">
+
+        <button
+          class="acc-header open"
+          data-acc="infra"
+        >
+
           <span class="acc-dot infra"></span>
+
           Infraestructura
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body open " id="acc-infra">
-          <a href="index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>Portafolio</a>
-          <a href="entregable1.html" class="nav-link active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>E1 · Requerimientos y Diseño</a>
-          <a href="entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>E2 · Implementación</a>
-          <a href="entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>E3 · Sistema en Producción</a>
-          <a href="entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Calidad y Operación</a>
+
+        <div
+          class="acc-body open"
+          id="acc-infra"
+        >
+
+          <a href="index.html" class="nav-link">
+            Portafolio
+          </a>
+
+          <a
+            href="entregable1.html"
+            class="nav-link active"
+          >
+            E1 · Diseño de Red
+          </a>
+
+          <a
+            href="entregable2.html"
+            class="nav-link"
+          >
+            E2 · Planificación de Seguridad
+          </a>
+
+          <a
+            href="entregable3.html"
+            class="nav-link"
+          >
+            E3 · Diseño de Centro de Datos
+          </a>
+
+          <a
+            href="entregable4.html"
+            class="nav-link"
+          >
+            E4 · Implementación y Testing de Red
+          </a>
+
+          <a
+            href="entregable5.html"
+            class="nav-link"
+          >
+            E5 · Seguridad, Monitoreo y Ética
+          </a>
+
+          <a
+            href="entregable6.html"
+            class="nav-link"
+          >
+            E6 · Control de Centro de Datos
+          </a>
+
         </div>
+
       </div>
+
+
+      <!-- GESTIÓN -->
+
       <div class="acc-group">
-        <button class="acc-header " data-acc="gestion">
+
+        <button class="acc-header" data-acc="gestion">
+
           <span class="acc-dot gestion"></span>
+
           Gestión
-          <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>
+
+          <svg
+            class="acc-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            width="14"
+            height="14"
+          >
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+
         </button>
-        <div class="acc-body " id="acc-gestion">
-          <a href="../gestion/index.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Portafolio</a>
-          <a href="../gestion/entregable1.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>E1 · Diagnóstico</a>
-          <a href="../gestion/entregable2.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 012 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>E2 · Modelado de Procesos</a>
-          <a href="../gestion/entregable3.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>E3 · Plan de Proyecto</a>
-          <a href="../gestion/entregable4.html" class="nav-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>E4 · Auditoría y Cierre</a>
+
+        <div class="acc-body" id="acc-gestion">
+
+          <a
+            href="../gestion/index.html"
+            class="nav-link"
+          >
+            Portafolio
+          </a>
+
+          <a
+            href="../gestion/entregable1.html"
+            class="nav-link"
+          >
+            E1 · Diagnóstico
+          </a>
+
+          <a
+            href="../gestion/entregable2.html"
+            class="nav-link"
+          >
+            E2 · Modelado de Procesos
+          </a>
+
+          <a
+            href="../gestion/entregable3.html"
+            class="nav-link"
+          >
+            E3 · Plan de Proyecto
+          </a>
+
+          <a
+            href="../gestion/entregable4.html"
+            class="nav-link"
+          >
+            E4 · Auditoría y Cierre
+          </a>
+
         </div>
+
       </div>
+
     </nav>
+
+
     <div class="sidebar-footer">
-      Semestre 2026-I · CE021–CE024<br>
+      Semestre 2026-I
+      <br>
+      CE03 · Infraestructura Tecnológica
+      <br>
       Ingeniería de Sistemas
     </div>
+
   </aside>
+
+
   <div class="sidebar-overlay"></div>
+
+
+  <!-- ===================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
+  <!-- ===================================================== -->
+
   <div class="main-content">
+
+    <!-- TOPBAR -->
+
     <div class="topbar">
+
       <div class="breadcrumb">
-        <a href="../index.html" style="color:var(--text-muted);text-decoration:none">Perfil de Egreso</a>
+
+        <a
+          href="../index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Perfil de Egreso
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <a href="index.html" style="color:var(--text-muted);text-decoration:none">Línea de Infraestructura</a>
+
+        <a
+          href="index.html"
+          style="color:var(--text-muted);text-decoration:none"
+        >
+          Infraestructura
+        </a>
+
         <span class="breadcrumb-sep">›</span>
-        <span class="breadcrumb-current">E1 · Requerimientos y Diseño</span>
+
+        <span class="breadcrumb-current">
+          E1 · Diseño de Red
+        </span>
+
       </div>
-      <button class="hamburger" aria-label="Menú">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+
+
+      <button
+        class="hamburger"
+        aria-label="Abrir menú"
+        type="button"
+      >
+
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
+
       </button>
+
     </div>
-    <div class="content">
-      <div class="hero" style="border-left:4px solid #059669">
-        <div class="hero-eyebrow" style="color:#059669">Línea de Infraestructura · CE021</div>
-        <h1 class="hero-title" style="font-size:1.8rem">E1 — Requerimientos y Diseño de Infraestructura</h1>
-        <p class="hero-desc">Inventario de componentes, requerimientos técnicos de infraestructura, diagrama de arquitectura lógica y especificaciones del servidor VPS.</p>
+
+
+    <!-- =================================================== -->
+    <!-- CONTENIDO -->
+    <!-- =================================================== -->
+
+    <main class="content">
+
+      <!-- PORTADA DIGITAL -->
+
+      <section
+        class="hero"
+        style="border-left:4px solid #059669"
+      >
+
+        <div
+          class="hero-eyebrow"
+          style="color:#059669"
+        >
+          Línea de Infraestructura Tecnológica · CE0311
+        </div>
+
+        <h1
+          class="hero-title"
+          style="font-size:1.8rem"
+        >
+          Entregable 1 — Diseño de Red
+        </h1>
+
+        <p class="hero-desc">
+          Diseño de una infraestructura de red segura, segmentada,
+          escalable y disponible para el sistema inteligente de control
+          de asistencia mediante reconocimiento facial QhawAI, orientado
+          a una institución educativa.
+        </p>
+
+
         <div class="hero-meta">
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Línea</span>
-            <span class="hero-meta-value"><span class="linea-badge infra">Infraestructura</span></span>
+            <span class="hero-meta-label">
+              Competencia
+            </span>
+
+            <span class="hero-meta-value">
+              CE0311
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Universidad</span>
-            <span class="hero-meta-value">UPeU</span>
+            <span class="hero-meta-label">
+              Línea
+            </span>
+
+            <span class="hero-meta-value">
+              <span class="linea-badge infra">
+                Infraestructura
+              </span>
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Semestre</span>
-            <span class="hero-meta-value">2026-I</span>
+            <span class="hero-meta-label">
+              Universidad
+            </span>
+
+            <span class="hero-meta-value">
+              Universidad Peruana Unión
+            </span>
           </div>
+
+
           <div class="hero-meta-item">
-            <span class="hero-meta-label">Estudiante</span>
-            <span class="hero-meta-value">[FALTA COMPLEMENTAR]</span>
+            <span class="hero-meta-label">
+              Semestre
+            </span>
+
+            <span class="hero-meta-value">
+              2026-I
+            </span>
           </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Estudiante
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR NOMBRE]
+            </span>
+          </div>
+
+
+          <div class="hero-meta-item">
+            <span class="hero-meta-label">
+              Fecha
+            </span>
+
+            <span class="hero-meta-value">
+              [COMPLETAR FECHA]
+            </span>
+          </div>
+
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">2. Descripción del Sistema</h2>
-        <p class="section-body">QhawAI es un sistema de control de asistencia con reconocimiento facial. Su infraestructura es distribuida y orientada a servicios, sin depender de una red LAN física propia — aprovecha servicios en la nube (Firebase) y un servidor VPS.</p>
-      </div>
+      </section>
 
-      <div class="section">
-        <h2 class="section-title">3. Inventario de Componentes</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Componente</th><th>Tipo</th><th>Tecnología</th><th>Ubicación</th></tr></thead>
-          <tbody>
-            <tr><td>Servidor web/API</td><td>VPS</td><td>Ubuntu + Nginx</td><td>Nube (proveedor)</td></tr>
-            <tr><td>Backend Laravel</td><td>Aplicación web</td><td>PHP 8.3 + Laravel</td><td>VPS</td></tr>
-            <tr><td>Motor IA</td><td>Contenedor Docker</td><td>FastAPI + Nginx (Docker)</td><td>VPS :80 interno</td></tr>
-            <tr><td>Base de datos</td><td>SGBD relacional</td><td>MySQL 8.0</td><td>VPS local</td></tr>
-            <tr><td>Autenticación</td><td>BaaS</td><td>Firebase Auth</td><td>Google Cloud</td></tr>
-            <tr><td>Notificaciones push</td><td>BaaS</td><td>Firebase FCM</td><td>Google Cloud</td></tr>
-            <tr><td>App Android</td><td>Cliente móvil</td><td>Kotlin + Android</td><td>Dispositivos IE</td></tr>
-            <tr><td>CI/CD Pipeline</td><td>Automatización</td><td>GitHub Actions</td><td>GitHub Cloud</td></tr>
-          </tbody>
-        </table></div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">4. Requerimientos de Infraestructura</h2>
-        <div class="card-grid cols-2" style="gap:10px">
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-01</div><div class="req-body">VPS con mínimo 2 vCPU y 2 GB RAM para ejecutar Laravel + FastAPI simultáneamente.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-02</div><div class="req-body">PHP >= 8.3, Python >= 3.10, MySQL >= 8.0 instalados en el servidor.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-03</div><div class="req-body">Comunicaciones cliente-servidor mediante HTTPS (TLS 1.2+) para proteger datos biométricos.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-04</div><div class="req-body">Firebase configurado con reglas de seguridad que restrinjan acceso a usuarios autenticados.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-05</div><div class="req-body">Sistema soporta hasta [FALTA] usuarios concurrentes sin degradación.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-06</div><div class="req-body">Tiempo de respuesta de la API de reconocimiento facial &lt;= 3 segundos.</div></div>
-          <div class="req-block" style="margin-bottom:0"><div class="req-id">RI-07</div><div class="req-body">Base de datos con backup automático diario.</div></div>
+      <!-- RESUMEN EJECUTIVO -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Resumen Ejecutivo
+        </h2>
+
+        <p class="section-body">
+          El presente entregable desarrolla el diseño de red para QhawAI,
+          una propuesta tecnológica orientada a automatizar el control de
+          asistencia en una institución educativa mediante reconocimiento
+          facial.
+        </p>
+
+        <p class="section-body">
+          La solución requiere una infraestructura capaz de comunicar de
+          manera segura a los usuarios, dispositivos de captura, servidores,
+          servicios de inteligencia artificial, base de datos y plataformas
+          externas de notificación.
+        </p>
+
+        <p class="section-body">
+          Firebase se utiliza únicamente mediante Firebase Cloud Messaging
+          para el envío de notificaciones push. El procesamiento principal
+          del sistema se realiza mediante Laravel, FastAPI, MySQL y los
+          componentes de reconocimiento facial.
+        </p>
+
+        <p class="section-body">
+          El diseño propuesto incluye levantamiento de requerimientos,
+          topología lógica, topología física, segmentación mediante VLAN,
+          direccionamiento IP, subnetting, zona DMZ, matriz de comunicaciones,
+          redundancia, alta disponibilidad y aplicación de estándares
+          internacionales.
+        </p>
+
+        <div
+          class="callout success"
+          style="margin-top:14px"
+        >
+          <strong>Resultado esperado:</strong>
+          una red organizada, protegida, escalable y preparada para soportar
+          el funcionamiento de QhawAI y su crecimiento futuro.
         </div>
-      </div>
 
-      <div class="section">
-        <h2 class="section-title">5. Diagrama de Arquitectura Lógica</h2>
+      </section>
+
+
+      <!-- 1. INTRODUCCIÓN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          1. Introducción
+        </h2>
+
+        <p class="section-body">
+          El control de asistencia representa un proceso importante dentro
+          de las instituciones educativas. Los métodos manuales pueden
+          ocasionar demoras, errores, duplicidad de información y dificultades
+          para verificar la identidad de los usuarios.
+        </p>
+
+        <p class="section-body">
+          QhawAI propone automatizar este proceso mediante reconocimiento
+          facial. Para garantizar su funcionamiento, se requiere una
+          infraestructura de red que proporcione conectividad, seguridad,
+          rendimiento, disponibilidad y capacidad de crecimiento.
+        </p>
+
+        <p class="section-body">
+          Este documento presenta una propuesta de diseño de red alineada
+          con la competencia CE0311, considerando aspectos técnicos,
+          organizacionales y éticos.
+        </p>
+
+      </section>
+
+
+      <!-- 2. DESCRIPCIÓN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          2. Descripción del Proyecto
+        </h2>
+
+        <p class="section-body">
+          QhawAI es un sistema inteligente de control de asistencia mediante
+          reconocimiento facial. Su finalidad es identificar a los usuarios,
+          registrar la asistencia y generar información útil para el personal
+          autorizado de una institución educativa.
+        </p>
+
+        <p class="section-body">
+          El sistema integra un cliente móvil o web, una API desarrollada con
+          Laravel, un servicio de inteligencia artificial implementado con
+          FastAPI, una base de datos MySQL y Firebase Cloud Messaging para
+          el envío de notificaciones push.
+        </p>
+
+
+        <div
+          class="info-grid"
+          style="margin-top:14px"
+        >
+
+          <div class="info-item">
+            <div class="info-label">
+              Aplicación cliente
+            </div>
+
+            <div class="info-value">
+              Aplicación móvil o plataforma web
+            </div>
+          </div>
+
+
+          <div class="info-item">
+            <div class="info-label">
+              Backend
+            </div>
+
+            <div class="info-value">
+              Laravel y PHP
+            </div>
+          </div>
+
+
+          <div class="info-item">
+            <div class="info-label">
+              Inteligencia artificial
+            </div>
+
+            <div class="info-value">
+              FastAPI y modelos de reconocimiento facial
+            </div>
+          </div>
+
+
+          <div class="info-item">
+            <div class="info-label">
+              Base de datos
+            </div>
+
+            <div class="info-value">
+              MySQL 8.0
+            </div>
+          </div>
+
+
+          <div class="info-item">
+            <div class="info-label">
+              Notificaciones
+            </div>
+
+            <div class="info-value">
+              Firebase Cloud Messaging
+            </div>
+          </div>
+
+
+          <div class="info-item">
+            <div class="info-label">
+              Infraestructura
+            </div>
+
+            <div class="info-value">
+              Red institucional y servicios protegidos
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 3. OBJETIVOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          3. Objetivos del Diseño de Red
+        </h2>
+
+
+        <h3>3.1 Objetivo general</h3>
+
+        <p class="section-body">
+          Diseñar una infraestructura de red segura, escalable y disponible
+          para soportar la operación del sistema inteligente de control de
+          asistencia QhawAI en una institución educativa.
+        </p>
+
+
+        <h3>3.2 Objetivos específicos</h3>
+
+
+        <div class="req-block">
+
+          <div class="req-id">
+            OE-01
+          </div>
+
+          <div class="req-body">
+            Identificar los requerimientos técnicos y de negocio relacionados
+            con la operación del sistema.
+          </div>
+
+        </div>
+
+
+        <div class="req-block">
+
+          <div class="req-id">
+            OE-02
+          </div>
+
+          <div class="req-body">
+            Diseñar una topología lógica y física que represente la
+            comunicación entre usuarios, dispositivos y servicios.
+          </div>
+
+        </div>
+
+
+        <div class="req-block">
+
+          <div class="req-id">
+            OE-03
+          </div>
+
+          <div class="req-body">
+            Aplicar segmentación mediante VLAN, subnetting y controles
+            de comunicación.
+          </div>
+
+        </div>
+
+
+        <div class="req-block">
+
+          <div class="req-id">
+            OE-04
+          </div>
+
+          <div class="req-body">
+            Incorporar mecanismos de redundancia y alta disponibilidad
+            para disminuir puntos únicos de fallo.
+          </div>
+
+        </div>
+
+
+        <div class="req-block">
+
+          <div class="req-id">
+            OE-05
+          </div>
+
+          <div class="req-body">
+            Alinear el diseño con estándares internacionales de red,
+            cableado y administración de infraestructura.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 4. REQUERIMIENTOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          4. Levantamiento de Requerimientos
+        </h2>
+
+
+        <h3>4.1 Requerimientos de negocio</h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Requerimiento</th>
+                <th>Prioridad</th>
+                <th>Justificación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>RN-01</td>
+
+                <td>
+                  Reducir el tiempo utilizado en el registro de asistencia.
+                </td>
+
+                <td>Alta</td>
+
+                <td>
+                  Evita interrupciones prolongadas durante las actividades
+                  académicas.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>RN-02</td>
+
+                <td>
+                  Registrar asistencias mediante verificación de identidad.
+                </td>
+
+                <td>Alta</td>
+
+                <td>
+                  Reduce errores y posibles registros realizados por terceros.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>RN-03</td>
+
+                <td>
+                  Proteger los datos personales y biométricos.
+                </td>
+
+                <td>Crítica</td>
+
+                <td>
+                  El sistema procesa información sensible de los usuarios.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>RN-04</td>
+
+                <td>
+                  Permitir el crecimiento progresivo del sistema.
+                </td>
+
+                <td>Media</td>
+
+                <td>
+                  La infraestructura debe poder ampliarse hacia más usuarios
+                  y ambientes.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>RN-05</td>
+
+                <td>
+                  Enviar notificaciones push sobre eventos autorizados.
+                </td>
+
+                <td>Media</td>
+
+                <td>
+                  Firebase Cloud Messaging permitirá distribuir avisos
+                  relacionados con el sistema.
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.2 Requerimientos técnicos
+        </h3>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-01
+            </div>
+
+            <div class="req-body">
+              La infraestructura deberá separar el tráfico administrativo,
+              biométrico, servidores, gestión y usuarios.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-02
+            </div>
+
+            <div class="req-body">
+              Las comunicaciones externas deberán utilizar HTTPS con
+              TLS 1.2 o superior.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-03
+            </div>
+
+            <div class="req-body">
+              La base de datos MySQL no deberá exponerse directamente
+              a Internet.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-04
+            </div>
+
+            <div class="req-body">
+              El servicio FastAPI deberá comunicarse únicamente con los
+              servicios autorizados.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-05
+            </div>
+
+            <div class="req-body">
+              La infraestructura deberá soportar la cantidad de usuarios
+              definida en el dimensionamiento del proyecto.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-06
+            </div>
+
+            <div class="req-body">
+              La red local deberá mantener una latencia promedio menor o
+              igual a 10 ms hacia los servicios internos.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-07
+            </div>
+
+            <div class="req-body">
+              Los equipos críticos deberán generar registros de eventos
+              y métricas de operación.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              RT-08
+            </div>
+
+            <div class="req-body">
+              El diseño deberá considerar crecimiento mínimo durante
+              los próximos tres años.
+            </div>
+          </div>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          4.3 Inventario preliminar
+        </h3>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Tipo</th>
+                <th>Función</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Router institucional</td>
+                <td>Red</td>
+                <td>Acceso y encaminamiento principal</td>
+                <td>Por validar</td>
+              </tr>
+
+
+              <tr>
+                <td>Firewall</td>
+                <td>Seguridad</td>
+                <td>Filtrado y protección perimetral</td>
+                <td>Propuesto</td>
+              </tr>
+
+
+              <tr>
+                <td>Switch administrable</td>
+                <td>Red</td>
+                <td>Segmentación mediante VLAN</td>
+                <td>Propuesto</td>
+              </tr>
+
+
+              <tr>
+                <td>Dispositivo de captura</td>
+                <td>Biométrico</td>
+                <td>Captura de imagen facial</td>
+                <td>Por validar</td>
+              </tr>
+
+
+              <tr>
+                <td>Servidor Laravel</td>
+                <td>Aplicación</td>
+                <td>API y lógica principal</td>
+                <td>Componente del proyecto</td>
+              </tr>
+
+
+              <tr>
+                <td>Servicio FastAPI</td>
+                <td>Inteligencia artificial</td>
+                <td>Procesamiento facial</td>
+                <td>Componente del proyecto</td>
+              </tr>
+
+
+              <tr>
+                <td>MySQL 8.0</td>
+                <td>Base de datos</td>
+                <td>Persistencia de información</td>
+                <td>Componente del proyecto</td>
+              </tr>
+
+
+              <tr>
+                <td>Firebase Cloud Messaging</td>
+                <td>Servicio cloud</td>
+                <td>Notificaciones push</td>
+                <td>Componente del proyecto</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 5. ANCHO DE BANDA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          5. Estimación de Ancho de Banda
+        </h2>
+
+        <p class="section-body">
+          El dimensionamiento del ancho de banda debe considerar el tráfico
+          generado por las imágenes, las solicitudes a la API, las respuestas
+          del servidor, el monitoreo, los registros y las comunicaciones con
+          servicios externos.
+        </p>
+
+
+        <div class="code-block">
+
+          <pre>Ancho de banda total =
+Cantidad de dispositivos
+× tráfico promedio por dispositivo
+× factor de crecimiento</pre>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Cantidad estimada</th>
+                <th>Consumo unitario</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Captura biométrica</td>
+                <td>1 dispositivo inicial</td>
+                <td>2 Mbps estimados</td>
+                <td>2 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>Aplicaciones administrativas</td>
+                <td>5 usuarios</td>
+                <td>0.5 Mbps</td>
+                <td>2.5 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>Solicitudes hacia la API</td>
+                <td>10 sesiones</td>
+                <td>0.2 Mbps</td>
+                <td>2 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>Monitoreo y logs</td>
+                <td>Servicios internos</td>
+                <td>1 Mbps</td>
+                <td>1 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>Consumo base estimado</td>
+                <td colspan="2">
+                  Operación inicial
+                </td>
+                <td>7.5 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>Margen de crecimiento</td>
+                <td colspan="2">
+                  30 %
+                </td>
+                <td>2.25 Mbps</td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <strong>Total proyectado</strong>
+                </td>
+
+                <td colspan="2">
+                  <strong>Escenario inicial</strong>
+                </td>
+
+                <td>
+                  <strong>9.75 Mbps</strong>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <div
+          class="callout warning"
+          style="margin-top:14px"
+        >
+          Estos valores corresponden a una estimación inicial y deberán
+          actualizarse cuando se confirme la cantidad real de usuarios,
+          dispositivos y ambientes.
+        </div>
+
+      </section>
+
+
+      <!-- 6. TOPOLOGÍA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          6. Diseño de Topología
+        </h2>
+
+
+        <h3>6.1 Topología lógica</h3>
+
+        <p class="section-body">
+          La topología lógica representa la comunicación entre la red
+          institucional, los segmentos internos, los servicios de QhawAI
+          y Firebase Cloud Messaging.
+        </p>
+
+
         <div class="img-evidence">
-          <img src="../software/img/infra-e1-diagrama-c4.png" alt="Diagrama C4 Context" style="min-height:200px">
-          <div class="img-caption">Diagrama C4 Context — interacción entre componentes · guardar como <code>infra-e1-diagrama-c4.png</code></div>
-        </div>
-        <div class="code-block" style="margin-top:12px"><pre>App Android  ──HTTPS──▶  Laravel API (VPS :443)
-                                 │
-                     ┌───────────┼────────────┐
-                     ▼           ▼            ▼
-         Docker [Nginx→FastAPI]  MySQL 8.0  Firebase SDK
-               (VPS :80 int.)  (VPS :3306)  Google Cloud
-            YOLO-Face + ArcFace  solo local  Auth · FCM
 
-Navegador web ──HTTPS──▶  Laravel  ──▶  MySQL + Docker FastAPI</pre></div>
-        <div class="info-grid" style="margin-top:12px">
-          <div class="info-item"><div class="info-label">Puerto 443</div><div class="info-value">HTTPS — Laravel web + API REST</div></div>
-          <div class="info-item"><div class="info-label">Puerto 80 (interno)</div><div class="info-value">Docker [Nginx → FastAPI IA] — solo acceso desde Laravel</div></div>
-          <div class="info-item"><div class="info-label">Puerto 3306</div><div class="info-value">MySQL — solo localhost, no expuesto</div></div>
-          <div class="info-item"><div class="info-label">Firebase SDK</div><div class="info-value">HTTPS a googleapis.com</div></div>
-        </div>
-      </div>
+          <img
+            src="img/e1-topologia-logica-qhawai.png"
+            alt="Topología lógica de red de QhawAI"
+            style="min-height:260px"
+          >
 
-      <div class="section">
-        <h2 class="section-title">6. Especificaciones del Servidor VPS</h2>
-        <div class="table-wrapper"><table class="req-table">
-          <thead><tr><th>Parámetro</th><th>Valor</th></tr></thead>
-          <tbody>
-            <tr><td>Sistema operativo</td><td>Ubuntu [FALTA] LTS</td></tr>
-            <tr><td>vCPU</td><td>[FALTA] núcleos</td></tr>
-            <tr><td>RAM</td><td>[FALTA] GB</td></tr>
-            <tr><td>Almacenamiento</td><td>[FALTA] GB SSD</td></tr>
-            <tr><td>Proveedor VPS</td><td>[FALTA]</td></tr>
-            <tr><td>Dominio</td><td>[FALTA]</td></tr>
-            <tr><td>Certificado SSL</td><td>Let's Encrypt (auto-renovación)</td></tr>
-            <tr><td>Servidor web</td><td>Nginx (proxy reverso)</td></tr>
-          </tbody>
-        </table></div>
-        <div class="img-evidence" style="margin-top:12px">
-          <img src="../software/img/infra-e1-panel-vps.png" alt="Panel VPS" style="min-height:160px">
-          <div class="img-caption">Panel de control del VPS (sin mostrar IP o credenciales) · <code>infra-e1-panel-vps.png</code></div>
-        </div>
-      </div>
+          <div class="img-caption">
+            Figura 1. Topología lógica propuesta para la infraestructura
+            de QhawAI.
+          </div>
 
-    </div>
+        </div>
+
+
+        <div
+          class="code-block"
+          style="margin-top:14px"
+        >
+
+          <pre>Internet
+   │
+Router institucional
+   │
+Firewall
+   │
+Switch administrable
+   ├── VLAN 10 · Administración
+   ├── VLAN 20 · Dispositivos biométricos
+   ├── VLAN 30 · Servidores
+   ├── VLAN 40 · Gestión TI
+   ├── VLAN 50 · Usuarios
+   ├── VLAN 60 · Monitoreo
+   └── VLAN 100 · DMZ
+                │
+                ├── Laravel API
+                ├── FastAPI
+                ├── MySQL
+                └── Firebase Cloud Messaging por HTTPS</pre>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          6.2 Topología física
+        </h3>
+
+        <p class="section-body">
+          La topología física muestra la ubicación y conexión de los equipos
+          de red, servidores, estaciones autorizadas y dispositivos de captura.
+        </p>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e1-topologia-fisica-qhawai.png"
+            alt="Topología física de red de QhawAI"
+            style="min-height:260px"
+          >
+
+          <div class="img-caption">
+            Figura 2. Topología física propuesta para la infraestructura
+            de QhawAI.
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 7. VLAN -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          7. Segmentación de Red, VLAN y Subnetting
+        </h2>
+
+        <p class="section-body">
+          La segmentación permite separar los diferentes tipos de tráfico,
+          reducir la superficie de exposición y aplicar controles específicos
+          según la función de cada red.
+        </p>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e1-segmentacion-vlan-qhawai.png"
+            alt="Segmentación VLAN propuesta para QhawAI"
+            style="min-height:240px"
+          >
+
+          <div class="img-caption">
+            Figura 3. Segmentación lógica mediante VLAN.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>VLAN</th>
+                <th>Nombre</th>
+                <th>Red</th>
+                <th>Gateway</th>
+                <th>Uso</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>10</td>
+                <td>Administración</td>
+                <td>10.31.10.0/24</td>
+                <td>10.31.10.1</td>
+                <td>Personal administrativo autorizado</td>
+              </tr>
+
+
+              <tr>
+                <td>20</td>
+                <td>Biometría</td>
+                <td>10.31.20.0/24</td>
+                <td>10.31.20.1</td>
+                <td>Dispositivos de captura facial</td>
+              </tr>
+
+
+              <tr>
+                <td>30</td>
+                <td>Servidores</td>
+                <td>10.31.30.0/24</td>
+                <td>10.31.30.1</td>
+                <td>Laravel, FastAPI y MySQL</td>
+              </tr>
+
+
+              <tr>
+                <td>40</td>
+                <td>Gestión TI</td>
+                <td>10.31.40.0/24</td>
+                <td>10.31.40.1</td>
+                <td>Administración técnica</td>
+              </tr>
+
+
+              <tr>
+                <td>50</td>
+                <td>Usuarios</td>
+                <td>10.31.50.0/24</td>
+                <td>10.31.50.1</td>
+                <td>Usuarios finales autorizados</td>
+              </tr>
+
+
+              <tr>
+                <td>60</td>
+                <td>Monitoreo</td>
+                <td>10.31.60.0/24</td>
+                <td>10.31.60.1</td>
+                <td>Métricas, registros y alertas</td>
+              </tr>
+
+
+              <tr>
+                <td>100</td>
+                <td>DMZ</td>
+                <td>10.31.100.0/24</td>
+                <td>10.31.100.1</td>
+                <td>Servicios publicados de forma controlada</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <div
+          class="callout info"
+          style="margin-top:14px"
+        >
+          El direccionamiento IP forma parte del diseño propuesto y podrá
+          modificarse después de revisar la red existente de la institución
+          educativa.
+        </div>
+
+      </section>
+
+
+      <!-- 8. DMZ -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          8. Diseño de la Zona DMZ
+        </h2>
+
+        <p class="section-body">
+          La DMZ se utilizará para ubicar los servicios que deban ser
+          accesibles desde redes externas, evitando la exposición directa
+          de los servidores internos y de la base de datos.
+        </p>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Servicio</th>
+                <th>Ubicación</th>
+                <th>Acceso permitido</th>
+                <th>Restricción</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Proxy reverso Nginx</td>
+                <td>DMZ</td>
+                <td>HTTPS desde Internet</td>
+                <td>Solo puertos necesarios</td>
+              </tr>
+
+
+              <tr>
+                <td>Laravel API</td>
+                <td>Red de servidores</td>
+                <td>Desde el proxy reverso</td>
+                <td>No expuesto directamente</td>
+              </tr>
+
+
+              <tr>
+                <td>FastAPI</td>
+                <td>Red de servidores</td>
+                <td>Solo desde Laravel</td>
+                <td>Sin acceso público</td>
+              </tr>
+
+
+              <tr>
+                <td>MySQL</td>
+                <td>Red de servidores</td>
+                <td>Solo desde servicios autorizados</td>
+                <td>Puerto 3306 bloqueado desde Internet</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 9. COMUNICACIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          9. Matriz de Comunicaciones
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Puerto / Protocolo</th>
+                <th>Acción</th>
+                <th>Justificación</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Aplicación cliente</td>
+                <td>Laravel API</td>
+                <td>443 / HTTPS</td>
+                <td>Permitir</td>
+                <td>Consumo seguro de servicios</td>
+              </tr>
+
+
+              <tr>
+                <td>Laravel</td>
+                <td>FastAPI</td>
+                <td>8000 interno</td>
+                <td>Permitir</td>
+                <td>Procesamiento biométrico</td>
+              </tr>
+
+
+              <tr>
+                <td>Laravel</td>
+                <td>MySQL</td>
+                <td>3306 / TCP</td>
+                <td>Permitir</td>
+                <td>Persistencia de información</td>
+              </tr>
+
+
+              <tr>
+                <td>Internet</td>
+                <td>MySQL</td>
+                <td>3306 / TCP</td>
+                <td>Denegar</td>
+                <td>Evitar exposición directa</td>
+              </tr>
+
+
+              <tr>
+                <td>Laravel</td>
+                <td>Firebase FCM</td>
+                <td>443 / HTTPS</td>
+                <td>Permitir</td>
+                <td>Envío de notificaciones push</td>
+              </tr>
+
+
+              <tr>
+                <td>Usuarios</td>
+                <td>Red de gestión TI</td>
+                <td>Cualquiera</td>
+                <td>Denegar</td>
+                <td>Proteger la administración técnica</td>
+              </tr>
+
+
+              <tr>
+                <td>Gestión TI</td>
+                <td>Equipos de red</td>
+                <td>22 / SSH y 443 / HTTPS</td>
+                <td>Permitir</td>
+                <td>Administración autorizada</td>
+              </tr>
+
+
+              <tr>
+                <td>Monitoreo</td>
+                <td>Activos críticos</td>
+                <td>SNMPv3 / Syslog</td>
+                <td>Permitir</td>
+                <td>Recopilación de métricas y registros</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 10. REDUNDANCIA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          10. Redundancia y Alta Disponibilidad
+        </h2>
+
+        <p class="section-body">
+          El diseño considera mecanismos de recuperación y continuidad
+          para disminuir el impacto de fallos en los componentes críticos.
+        </p>
+
+
+        <div class="img-evidence">
+
+          <img
+            src="img/e1-redundancia-qhawai.png"
+            alt="Diseño de redundancia y alta disponibilidad de QhawAI"
+            style="min-height:240px"
+          >
+
+          <div class="img-caption">
+            Figura 4. Propuesta de redundancia y alta disponibilidad.
+          </div>
+
+        </div>
+
+
+        <div
+          class="table-wrapper"
+          style="margin-top:14px"
+        >
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Componente</th>
+                <th>Fallo posible</th>
+                <th>Impacto</th>
+                <th>Medida propuesta</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Internet</td>
+                <td>Caída del proveedor</td>
+                <td>Interrupción de servicios externos</td>
+                <td>Enlace secundario o funcionamiento local temporal</td>
+              </tr>
+
+
+              <tr>
+                <td>Switch principal</td>
+                <td>Falla física</td>
+                <td>Pérdida de conectividad interna</td>
+                <td>Equipo de respaldo y configuración exportada</td>
+              </tr>
+
+
+              <tr>
+                <td>Servidor</td>
+                <td>Falla de hardware o servicio</td>
+                <td>Indisponibilidad del sistema</td>
+                <td>Virtualización, backup y recuperación</td>
+              </tr>
+
+
+              <tr>
+                <td>Energía</td>
+                <td>Corte o variación eléctrica</td>
+                <td>Apagado inesperado</td>
+                <td>UPS y apagado controlado</td>
+              </tr>
+
+
+              <tr>
+                <td>Almacenamiento</td>
+                <td>Falla de disco</td>
+                <td>Pérdida de datos</td>
+                <td>RAID o copias externas cifradas</td>
+              </tr>
+
+
+              <tr>
+                <td>Configuración de red</td>
+                <td>Error o corrupción</td>
+                <td>Falla de comunicación</td>
+                <td>Versionado y respaldo de configuraciones</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <h3 style="margin-top:24px">
+          10.1 Análisis de puntos únicos de fallo
+        </h3>
+
+        <p class="section-body">
+          El servidor principal, el firewall, el switch central y la conexión
+          a Internet representan posibles puntos únicos de fallo. Durante la
+          fase inicial podrán existir como componentes individuales, pero
+          deberán contar con respaldos, procedimientos de recuperación y
+          opciones de sustitución.
+        </p>
+
+      </section>
+
+
+      <!-- 11. ESTÁNDARES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          11. Cumplimiento de Estándares
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Estándar</th>
+                <th>Aplicación en el proyecto</th>
+                <th>Evidencia prevista</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>TIA/EIA-568</td>
+                <td>
+                  Cableado estructurado, conectores y terminaciones.
+                </td>
+                <td>
+                  Plano físico y especificación del cableado.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>TIA-569</td>
+                <td>
+                  Canalizaciones y espacios de telecomunicaciones.
+                </td>
+                <td>
+                  Distribución física de la red.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>TIA-606</td>
+                <td>
+                  Etiquetado de cables, puertos y equipos.
+                </td>
+                <td>
+                  Inventario y codificación.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>IEEE 802.1Q</td>
+                <td>
+                  VLAN y enlaces troncales.
+                </td>
+                <td>
+                  Configuración de segmentación.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>IEEE 802.1w</td>
+                <td>
+                  Prevención de bucles y convergencia rápida.
+                </td>
+                <td>
+                  Diseño de redundancia.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>IEEE 802.3</td>
+                <td>
+                  Conectividad Ethernet.
+                </td>
+                <td>
+                  Selección de interfaces y velocidades.
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>ISO/IEC 11801</td>
+                <td>
+                  Cableado genérico de telecomunicaciones.
+                </td>
+                <td>
+                  Diseño integral de cableado.
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- 12. ÉTICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          12. Calidad Documental y Ética ACM
+        </h2>
+
+        <p class="section-body">
+          El diseño de la infraestructura considera la protección de la
+          privacidad, la confidencialidad, la integridad y el uso responsable
+          de la información biométrica.
+        </p>
+
+        <p class="section-body">
+          La red y los servicios no deberán utilizarse para vigilancia no
+          autorizada ni para finalidades diferentes al control de asistencia
+          informado a los usuarios.
+        </p>
+
+
+        <div
+          class="card-grid cols-2"
+          style="gap:10px"
+        >
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-01
+            </div>
+
+            <div class="req-body">
+              Minimizar la recopilación y exposición de datos personales.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-02
+            </div>
+
+            <div class="req-body">
+              Restringir el acceso a personal autorizado.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-03
+            </div>
+
+            <div class="req-body">
+              Evitar daños ocasionados por errores o accesos indebidos.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-04
+            </div>
+
+            <div class="req-body">
+              Documentar decisiones técnicas, riesgos y controles.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-05
+            </div>
+
+            <div class="req-body">
+              Utilizar los datos biométricos exclusivamente para la finalidad
+              autorizada.
+            </div>
+          </div>
+
+
+          <div
+            class="req-block"
+            style="margin-bottom:0"
+          >
+            <div class="req-id">
+              ACM-06
+            </div>
+
+            <div class="req-body">
+              Evitar exponer credenciales, direcciones privadas o información
+              sensible en las evidencias.
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- 13. CONCLUSIONES -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          13. Conclusiones
+        </h2>
+
+        <p class="section-body">
+          El diseño propuesto establece una infraestructura segmentada,
+          escalable y protegida para soportar los servicios de QhawAI.
+        </p>
+
+        <p class="section-body">
+          La separación entre usuarios, dispositivos biométricos, servidores,
+          gestión TI, monitoreo y DMZ permite reducir la exposición de los
+          componentes críticos.
+        </p>
+
+        <p class="section-body">
+          La aplicación de VLAN, subnetting, reglas de comunicación,
+          redundancia y estándares internacionales proporciona una base
+          técnica para la futura implementación y validación de la red.
+        </p>
+
+        <p class="section-body">
+          Los valores definitivos de capacidad, usuarios y dispositivos
+          deberán ser actualizados cuando se realice el levantamiento
+          técnico completo de la institución educativa.
+        </p>
+
+      </section>
+
+
+      <!-- 14. ANEXOS -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          14. Anexos
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Anexo</th>
+                <th>Descripción</th>
+                <th>Archivo relacionado</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Anexo A</td>
+                <td>Topología lógica</td>
+                <td>e1-topologia-logica-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+
+              <tr>
+                <td>Anexo B</td>
+                <td>Topología física</td>
+                <td>e1-topologia-fisica-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+
+              <tr>
+                <td>Anexo C</td>
+                <td>Segmentación mediante VLAN</td>
+                <td>e1-segmentacion-vlan-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+
+              <tr>
+                <td>Anexo D</td>
+                <td>Diseño de redundancia</td>
+                <td>e1-redundancia-qhawai.png</td>
+                <td>Pendiente de generar</td>
+              </tr>
+
+
+              <tr>
+                <td>Anexo E</td>
+                <td>Lista de requerimientos</td>
+                <td>Incluida en el entregable</td>
+                <td>Avance inicial</td>
+              </tr>
+
+
+              <tr>
+                <td>Anexo F</td>
+                <td>Plan de direccionamiento IP</td>
+                <td>Incluido en el entregable</td>
+                <td>Propuesto</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- RÚBRICA -->
+
+      <section class="section">
+
+        <h2 class="section-title">
+          Verificación de la Rúbrica CE0311
+        </h2>
+
+
+        <div class="table-wrapper">
+
+          <table class="req-table">
+
+            <thead>
+              <tr>
+                <th>Criterio</th>
+                <th>Evidencia en el entregable</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr>
+                <td>Levantamiento de requerimientos</td>
+                <td>
+                  Requerimientos técnicos y de negocio con justificación.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+
+              <tr>
+                <td>Topología lógica y física</td>
+                <td>
+                  Secciones 6.1 y 6.2 con espacios para diagramas.
+                </td>
+                <td>Pendiente de imágenes</td>
+              </tr>
+
+
+              <tr>
+                <td>VLAN, DMZ y subnetting</td>
+                <td>
+                  Tabla de VLAN, direccionamiento y matriz de comunicaciones.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+
+              <tr>
+                <td>Redundancia y disponibilidad</td>
+                <td>
+                  Análisis de fallos y medidas de recuperación.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+
+              <tr>
+                <td>Estándares internacionales</td>
+                <td>
+                  TIA/EIA, IEEE e ISO/IEC.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+
+              <tr>
+                <td>Calidad documental y ética</td>
+                <td>
+                  Estructura profesional y sección ética ACM.
+                </td>
+                <td>Desarrollado</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
   </div>
+
 </div>
+
+
 <script src="../js/main.js"></script>
+
 </body>
 </html>
+```
