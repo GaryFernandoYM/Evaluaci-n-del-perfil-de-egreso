@@ -1,0 +1,41 @@
+ infraestructura/entregable1.html                   | 2212 [32m++++++++++++++[m[31m-[m
+ infraestructura/entregable2.html                   | 2315 [32m++++++++++++++[m[31m--[m
+ infraestructura/entregable3.html                   | 2718 [32m+++++++++++++++++[m[31m-[m
+ infraestructura/entregable4.html                   | 2453 [32m+++++++++++++++[m[31m--[m
+ infraestructura/entregable5.html                   | 2726 [32m++++++++++++++++++[m
+ infraestructura/entregable6.html                   | 2911 [32m++++++++++++++++++++[m
+ infraestructura/img/e1-redundancia-qhawai.png      |  Bin [31m0[m -> [32m1783049[m bytes
+ .../img/e1-segmentacion-vlan-qhawai.png            |  Bin [31m0[m -> [32m1709073[m bytes
+ infraestructura/img/e1-topologia-fisica-qhawai.png |  Bin [31m0[m -> [32m2026252[m bytes
+ infraestructura/img/e1-topologia-logica-qhawai.png |  Bin [31m0[m -> [32m1787087[m bytes
+ .../img/e2-ciclo-tratamiento-riesgos-qhawai.png    |  Bin [31m0[m -> [32m1772918[m bytes
+ infraestructura/img/e2-mapa-activos-qhawai.png     |  Bin [31m0[m -> [32m1842339[m bytes
+ infraestructura/img/e2-matriz-riesgos-qhawai.png   |  Bin [31m0[m -> [32m1749865[m bytes
+ .../img/e2-organigrama-seguridad-qhawai.png        |  Bin [31m0[m -> [32m1619760[m bytes
+ .../img/e3-arquitectura-tier-qhawai.png            |  Bin [31m0[m -> [32m1747899[m bytes
+ .../img/e3-dimensionamiento-capacidad-qhawai.png   |  Bin [31m0[m -> [32m1865330[m bytes
+ infraestructura/img/e3-elevacion-rack-qhawai .png  |  Bin [31m0[m -> [32m1916635[m bytes
+ infraestructura/img/e3-flujo-backup-qhawai.png     |  Bin [31m0[m -> [32m1698489[m bytes
+ infraestructura/img/e3-layout-fisico-qhawai.png    |  Bin [31m0[m -> [32m1653672[m bytes
+ .../img/e3-virtualizacion-cloud-hibrido-qhawai.png |  Bin [31m0[m -> [32m1772432[m bytes
+ .../img/e4-configuracion-vlan-routing-qhawai.png   |  Bin [31m0[m -> [32m2013068[m bytes
+ infraestructura/img/e4-controles-acl-qhawai.png    |  Bin [31m0[m -> [32m1871887[m bytes
+ .../img/e4-estructura-evidencias-qhawai.png        |  Bin [31m0[m -> [32m1640139[m bytes
+ .../img/e4-monitoreo-snmp-syslog-qhawai.png        |  Bin [31m0[m -> [32m1820788[m bytes
+ .../img/e4-pruebas-rendimiento-qhawai.png          |  Bin [31m0[m -> [32m1891074[m bytes
+ .../img/e4-topologia-implementacion-qhawai.png     |  Bin [31m0[m -> [32m1749426[m bytes
+ .../img/e5-arquitectura-seguridad-qhawai.png       |  Bin [31m0[m -> [32m1703445[m bytes
+ .../img/e5-continuidad-rto-rpo-qhawai.png          |  Bin [31m0[m -> [32m1678872[m bytes
+ .../img/e5-dashboard-kpi-seguridad-qhawai.png      |  Bin [31m0[m -> [32m2018315[m bytes
+ infraestructura/img/e5-etica-acm-qhawai.png        |  Bin [31m0[m -> [32m1774298[m bytes
+ .../img/e5-iam-minimo-privilegio-qhawai.png        |  Bin [31m0[m -> [32m1663197[m bytes
+ .../img/e5-registro-auditoria-qhawai.png           |  Bin [31m0[m -> [32m1643226[m bytes
+ .../img/e5-vulnerabilidades-mejora-qhawai.png      |  Bin [31m0[m -> [32m1676078[m bytes
+ .../img/e6-almacenamiento-backup-qhawai.png        |  Bin [31m0[m -> [32m1707607[m bytes
+ .../img/e6-arquitectura-operativa-qhawai.png       |  Bin [31m0[m -> [32m1735899[m bytes
+ .../img/e6-eficiencia-energetica-qhawai.png        |  Bin [31m0[m -> [32m1710349[m bytes
+ .../img/e6-estructura-evidencias-qhawai.png        |  Bin [31m0[m -> [32m1718334[m bytes
+ .../img/e6-procedimientos-operativos-qhawai.png    |  Bin [31m0[m -> [32m1676678[m bytes
+ .../img/e6-servidores-servicios-qhawai.png         |  Bin [31m0[m -> [32m1689576[m bytes
+ infraestructura/img/e6-sla-monitoreo-qhawai.png    |  Bin [31m0[m -> [32m1819574[m bytes
+ 40 files changed, 14754 insertions(+), 581 deletions(-)
