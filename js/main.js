@@ -115,7 +115,7 @@ function initVideo() {
 
   if (!modal || !iframe) return;
 
-  const ONEDRIVE_EMBED = 'https://upeuedupe-my.sharepoint.com/:v:/g/personal/gary_yunganina_upeu_edu_pe/IQDSc_wgFQC1QYQHqGy6MVZ_AQcQ-oOH1NmdRtzQHMBLDkI?embed=1';
+  const ONEDRIVE_EMBED = 'https://www.youtube.com/embed/Earvmk3rGqs?autoplay=1&mute=1&rel=0';
 
   const openModal = () => {
     iframe.src = ONEDRIVE_EMBED;
